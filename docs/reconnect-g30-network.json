@@ -1,0 +1,260 @@
+{
+  "duration_seconds": 123.17199999999866,
+  "route": "192.168.144.10 dev eth0 src 192.168.144.11 uid 2000 \n    cache",
+  "average_interface_mbps": 12.550456467379085,
+  "rx_error_delta": 0,
+  "rx_drop_delta": 0,
+  "interval_mbps": [
+    12.604245853658536,
+    12.463649805448883,
+    12.471363121951219,
+    12.516447219512195,
+    12.476000778059662,
+    12.427079556507431,
+    12.494021789884682,
+    13.018662529094744,
+    12.523087609756097,
+    12.47525307317073,
+    12.502927609756098,
+    12.383097451849764,
+    12.481652596771974,
+    12.45037268292683,
+    12.804855744763193,
+    12.735287820017888,
+    12.529714285712858,
+    12.455483268483901,
+    12.44845424390244,
+    12.48723824390244,
+    12.506279024390244,
+    12.442673951219513,
+    13.058236140829592,
+    12.452427154251064
+  ],
+  "samples": [
+    {
+      "t": 16802.078,
+      "rx": [
+        30329877592,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:550471952 segs_out:169938 segs_in:412873 data_segs_out:1 data_segs_in:412871 send 156.8Mbps lastsnd:365852 lastack:94040 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:5.977 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16807.203,
+      "rx": [
+        30337952187,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:558171546 segs_out:172325 segs_in:418690 data_segs_out:1 data_segs_in:418688 send 156.8Mbps lastsnd:370988 lastack:99176 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:6.543 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16812.343,
+      "rx": [
+        30345960082,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:565859671 segs_out:174721 segs_in:424515 data_segs_out:1 data_segs_in:424513 send 156.8Mbps lastsnd:376116 lastrcv:4 lastack:104304 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:5.847 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16817.468,
+      "rx": [
+        30353949549,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:573546568 segs_out:177069 segs_in:430283 data_segs_out:1 data_segs_in:430281 send 156.8Mbps lastsnd:381248 lastrcv:8 lastack:109436 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:6.152 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16822.593,
+      "rx": [
+        30361967898,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:581255762 segs_out:179455 segs_in:436112 data_segs_out:1 data_segs_in:436110 send 156.8Mbps lastsnd:386388 lastack:114576 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:5.424 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16827.734,
+      "rx": [
+        30369985288,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n7246   0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:588957040 segs_out:181866 segs_in:441942 data_segs_out:1 data_segs_in:441940 send 156.8Mbps lastsnd:391528 lastrcv:4 lastack:119716 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:5.114 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16832.875,
+      "rx": [
+        30377971240,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:596624755 segs_out:184287 segs_in:447733 data_segs_out:1 data_segs_in:447731 send 156.8Mbps lastsnd:396664 lastack:124852 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:5.428 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16838.015,
+      "rx": [
+        30385998649,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:604737209 segs_out:186804 segs_in:453844 data_segs_out:1 data_segs_in:453842 send 156.8Mbps lastsnd:401828 lastack:130016 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:4.629 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16843.171,
+      "rx": [
+        30394389177,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:612392014 segs_out:189182 segs_in:459626 data_segs_out:1 data_segs_in:459624 send 156.8Mbps lastsnd:406952 lastrcv:8 lastack:135140 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:6.847 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16848.296,
+      "rx": [
+        30402411780,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:620096731 segs_out:191573 segs_in:465481 data_segs_out:1 data_segs_in:465479 send 156.8Mbps lastsnd:412072 lastrcv:8 lastack:140260 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:5.552 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16853.421,
+      "rx": [
+        30410403739,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:627769751 segs_out:193959 segs_in:471305 data_segs_out:1 data_segs_in:471303 send 156.8Mbps lastsnd:417204 lastrcv:4 lastack:145392 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:5.26 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16858.546,
+      "rx": [
+        30418413427,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:635460972 segs_out:196333 segs_in:477112 data_segs_out:1 data_segs_in:477110 send 156.8Mbps lastsnd:422336 lastrcv:12 lastack:150524 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:5.547 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16863.687,
+      "rx": [
+        30426371115,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:643116218 segs_out:198689 segs_in:482882 data_segs_out:1 data_segs_in:482880 send 156.8Mbps lastsnd:427476 lastack:155664 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:6.412 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16868.828,
+      "rx": [
+        30434392137,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:650815076 segs_out:201075 segs_in:488715 data_segs_out:1 data_segs_in:488713 send 156.8Mbps lastsnd:432600 lastack:160788 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:6.102 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16873.953,
+      "rx": [
+        30442368157,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n2896   0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:658467411 segs_out:203408 segs_in:494491 data_segs_out:1 data_segs_in:494489 send 156.8Mbps lastsnd:437720 lastack:165908 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:5.67 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16879.062,
+      "rx": [
+        30450545658,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:666561462 segs_out:205912 segs_in:500587 data_segs_out:1 data_segs_in:500585 send 156.8Mbps lastsnd:442860 lastrcv:4 lastack:171048 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:4.987 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16884.218,
+      "rx": [
+        30458753551,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:674213046 segs_out:208249 segs_in:506379 data_segs_out:1 data_segs_in:506377 send 156.8Mbps lastsnd:447984 lastack:176172 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:4.915 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16889.328,
+      "rx": [
+        30466756906,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:681905591 segs_out:210640 segs_in:512213 data_segs_out:1 data_segs_in:512211 send 156.8Mbps lastsnd:453120 lastack:181308 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:4.933 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16894.468,
+      "rx": [
+        30474759554,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:689573874 segs_out:213015 segs_in:518025 data_segs_out:1 data_segs_in:518023 send 156.8Mbps lastsnd:458248 lastrcv:12 lastack:186436 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:5.363 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16899.593,
+      "rx": [
+        30482734345,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n658    0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:697246828 segs_out:215349 segs_in:523832 data_segs_out:1 data_segs_in:523830 send 156.8Mbps lastsnd:463368 lastack:191556 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:5.369 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16904.718,
+      "rx": [
+        30490733982,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:704933861 segs_out:217705 segs_in:529623 data_segs_out:1 data_segs_in:529621 send 156.8Mbps lastsnd:468492 lastrcv:4 lastack:196680 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:4.673 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16909.843,
+      "rx": [
+        30498745817,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:712634611 segs_out:220125 segs_in:535429 data_segs_out:1 data_segs_in:535427 send 156.8Mbps lastsnd:473624 lastrcv:4 lastack:201812 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:4.478 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16914.968,
+      "rx": [
+        30506716905,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:720269898 segs_out:222473 segs_in:541205 data_segs_out:1 data_segs_in:541203 send 156.8Mbps lastsnd:478760 lastrcv:12 lastack:206948 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:6.18 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16920.109,
+      "rx": [
+        30515108454,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:728367566 segs_out:224933 segs_in:547293 data_segs_out:1 data_segs_in:547291 send 156.8Mbps lastsnd:483892 lastack:212080 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:5.416 rcv_space:334883 minrtt:0.698"
+    },
+    {
+      "t": 16925.25,
+      "rx": [
+        30523110695,
+        0,
+        0
+      ],
+      "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:46060                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.739/0.345 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:736042516 segs_out:227281 segs_in:553095 data_segs_out:1 data_segs_in:553093 send 156.8Mbps lastsnd:489012 lastrcv:4 lastack:217200 pacing_rate 313.1Mbps delivery_rate 11.2Mbps app_limited rcv_rtt:6.552 rcv_space:334883 minrtt:0.698"
+    }
+  ]
+}

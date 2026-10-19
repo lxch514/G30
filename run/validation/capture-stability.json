@@ -1,17 +1,9 @@
 {
   "scope": "Two-minute live capture and encoding counter observation; not long-run reliability acceptance",
-  "duration_seconds": 120.36876483300011,
+  "duration_seconds": 120.39716922699995,
   "deltas": [
     {
       "camera": 0,
-      "valid_frames": 3603,
-      "incomplete": 0,
-      "bad_headers": 0,
-      "encoded_frames": 3611,
-      "restarts": 0
-    },
-    {
-      "camera": 1,
       "valid_frames": 3603,
       "incomplete": 0,
       "bad_headers": 0,
@@ -19,8 +11,16 @@
       "restarts": 0
     },
     {
-      "camera": 2,
+      "camera": 1,
       "valid_frames": 3604,
+      "incomplete": 0,
+      "bad_headers": 0,
+      "encoded_frames": 3611,
+      "restarts": 0
+    },
+    {
+      "camera": 2,
+      "valid_frames": 3603,
       "incomplete": 0,
       "bad_headers": 0,
       "encoded_frames": 3611,
@@ -64,71 +64,235 @@
         {
           "camera": 0,
           "captured_fps": 29.98,
-          "frames": 4324,
-          "received": 4324,
+          "frames": 8199,
+          "received": 8199,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4305,
-          "encoded_fps": 30.02,
+          "encoded_frames": 8169,
+          "encoded_fps": 29.96,
           "restarts": 1,
           "error": ""
         },
         {
           "camera": 1,
           "captured_fps": 29.98,
-          "frames": 4324,
-          "received": 4324,
+          "frames": 8198,
+          "received": 8198,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4274,
-          "encoded_fps": 30.06,
-          "restarts": 2,
+          "encoded_frames": 8169,
+          "encoded_fps": 29.98,
+          "restarts": 1,
           "error": ""
         },
         {
           "camera": 2,
           "captured_fps": 29.98,
-          "frames": 4324,
-          "received": 4324,
+          "frames": 8199,
+          "received": 8199,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4304,
-          "encoded_fps": 30.02,
+          "encoded_frames": 8169,
+          "encoded_fps": 30.05,
           "restarts": 1,
           "error": ""
         },
         {
           "camera": 3,
           "captured_fps": 29.98,
-          "frames": 4324,
-          "received": 4324,
+          "frames": 8199,
+          "received": 8199,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4305,
-          "encoded_fps": 30.06,
+          "encoded_frames": 8169,
+          "encoded_fps": 29.97,
           "restarts": 1,
           "error": ""
         },
         {
           "camera": 4,
           "captured_fps": 29.98,
-          "frames": 4324,
-          "received": 4324,
+          "frames": 8199,
+          "received": 8199,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4306,
-          "encoded_fps": 30.02,
+          "encoded_frames": 8168,
+          "encoded_fps": 29.96,
           "restarts": 1,
           "error": ""
         },
         {
           "camera": 5,
           "captured_fps": 29.98,
-          "frames": 4323,
-          "received": 4323,
+          "frames": 8198,
+          "received": 8198,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4305,
+          "encoded_frames": 8169,
+          "encoded_fps": 29.94,
+          "restarts": 1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "all_online": true,
+      "mode": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      },
+      "channels": [
+        {
+          "camera": 0,
+          "captured_fps": 29.98,
+          "frames": 8349,
+          "received": 8349,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 8319,
+          "encoded_fps": 29.98,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 1,
+          "captured_fps": 29.98,
+          "frames": 8348,
+          "received": 8348,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 8320,
+          "encoded_fps": 29.97,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 2,
+          "captured_fps": 29.98,
+          "frames": 8349,
+          "received": 8349,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 8319,
+          "encoded_fps": 30.09,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 3,
+          "captured_fps": 29.98,
+          "frames": 8349,
+          "received": 8349,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 8319,
+          "encoded_fps": 29.95,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 4,
+          "captured_fps": 29.98,
+          "frames": 8349,
+          "received": 8349,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 8318,
+          "encoded_fps": 30.05,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 5,
+          "captured_fps": 29.98,
+          "frames": 8348,
+          "received": 8348,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 8319,
+          "encoded_fps": 29.98,
+          "restarts": 1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "all_online": true,
+      "mode": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      },
+      "channels": [
+        {
+          "camera": 0,
+          "captured_fps": 29.98,
+          "frames": 8499,
+          "received": 8499,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 8469,
+          "encoded_fps": 30.08,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 1,
+          "captured_fps": 29.98,
+          "frames": 8499,
+          "received": 8499,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 8470,
+          "encoded_fps": 30.03,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 2,
+          "captured_fps": 29.98,
+          "frames": 8499,
+          "received": 8499,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 8469,
+          "encoded_fps": 30.08,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 3,
+          "captured_fps": 29.98,
+          "frames": 8499,
+          "received": 8499,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 8469,
+          "encoded_fps": 30.04,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 4,
+          "captured_fps": 29.98,
+          "frames": 8499,
+          "received": 8499,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 8468,
+          "encoded_fps": 29.69,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 5,
+          "captured_fps": 29.98,
+          "frames": 8498,
+          "received": 8498,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 8470,
           "encoded_fps": 30.05,
           "restarts": 1,
           "error": ""
@@ -145,72 +309,72 @@
       "channels": [
         {
           "camera": 0,
-          "captured_fps": 29.96,
-          "frames": 4474,
-          "received": 4474,
+          "captured_fps": 29.98,
+          "frames": 8649,
+          "received": 8649,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4455,
+          "encoded_frames": 8620,
           "encoded_fps": 30.02,
           "restarts": 1,
           "error": ""
         },
         {
           "camera": 1,
-          "captured_fps": 29.96,
-          "frames": 4474,
-          "received": 4474,
+          "captured_fps": 29.98,
+          "frames": 8649,
+          "received": 8649,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4424,
-          "encoded_fps": 29.97,
-          "restarts": 2,
+          "encoded_frames": 8620,
+          "encoded_fps": 30.04,
+          "restarts": 1,
           "error": ""
         },
         {
           "camera": 2,
           "captured_fps": 29.98,
-          "frames": 4475,
-          "received": 4475,
+          "frames": 8649,
+          "received": 8649,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4454,
-          "encoded_fps": 29.97,
+          "encoded_frames": 8620,
+          "encoded_fps": 30.03,
           "restarts": 1,
           "error": ""
         },
         {
           "camera": 3,
           "captured_fps": 29.98,
-          "frames": 4474,
-          "received": 4474,
+          "frames": 8649,
+          "received": 8649,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4456,
-          "encoded_fps": 29.95,
+          "encoded_frames": 8620,
+          "encoded_fps": 30.01,
           "restarts": 1,
           "error": ""
         },
         {
           "camera": 4,
-          "captured_fps": 29.98,
-          "frames": 4474,
-          "received": 4474,
+          "captured_fps": 30.96,
+          "frames": 8650,
+          "received": 8650,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4456,
-          "encoded_fps": 29.99,
+          "encoded_frames": 8618,
+          "encoded_fps": 30.11,
           "restarts": 1,
           "error": ""
         },
         {
           "camera": 5,
-          "captured_fps": 29.98,
-          "frames": 4473,
-          "received": 4473,
+          "captured_fps": 29.96,
+          "frames": 8648,
+          "received": 8648,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4456,
+          "encoded_frames": 8620,
           "encoded_fps": 29.93,
           "restarts": 1,
           "error": ""
@@ -227,73 +391,73 @@
       "channels": [
         {
           "camera": 0,
-          "captured_fps": 29.98,
-          "frames": 4624,
-          "received": 4624,
+          "captured_fps": 30.94,
+          "frames": 8800,
+          "received": 8800,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4606,
-          "encoded_fps": 29.97,
+          "encoded_frames": 8769,
+          "encoded_fps": 29.67,
           "restarts": 1,
           "error": ""
         },
         {
           "camera": 1,
-          "captured_fps": 29.98,
-          "frames": 4624,
-          "received": 4624,
+          "captured_fps": 29.95,
+          "frames": 8799,
+          "received": 8799,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4575,
-          "encoded_fps": 30.01,
-          "restarts": 2,
+          "encoded_frames": 8771,
+          "encoded_fps": 29.99,
+          "restarts": 1,
           "error": ""
         },
         {
           "camera": 2,
-          "captured_fps": 29.98,
-          "frames": 4625,
-          "received": 4625,
+          "captured_fps": 29.95,
+          "frames": 8799,
+          "received": 8799,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4605,
+          "encoded_frames": 8770,
           "encoded_fps": 30.01,
           "restarts": 1,
           "error": ""
         },
         {
           "camera": 3,
-          "captured_fps": 29.98,
-          "frames": 4624,
-          "received": 4624,
+          "captured_fps": 29.95,
+          "frames": 8799,
+          "received": 8799,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4606,
-          "encoded_fps": 29.99,
+          "encoded_frames": 8770,
+          "encoded_fps": 30.0,
           "restarts": 1,
           "error": ""
         },
         {
           "camera": 4,
-          "captured_fps": 30.96,
-          "frames": 4625,
-          "received": 4625,
+          "captured_fps": 29.95,
+          "frames": 8800,
+          "received": 8800,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4607,
-          "encoded_fps": 29.97,
+          "encoded_frames": 8769,
+          "encoded_fps": 30.07,
           "restarts": 1,
           "error": ""
         },
         {
           "camera": 5,
-          "captured_fps": 29.96,
-          "frames": 4623,
-          "received": 4623,
+          "captured_fps": 29.95,
+          "frames": 8798,
+          "received": 8798,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4606,
-          "encoded_fps": 30.04,
+          "encoded_frames": 8770,
+          "encoded_fps": 29.98,
           "restarts": 1,
           "error": ""
         }
@@ -310,47 +474,539 @@
         {
           "camera": 0,
           "captured_fps": 29.98,
-          "frames": 4774,
-          "received": 4774,
+          "frames": 8950,
+          "received": 8950,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4756,
-          "encoded_fps": 30.02,
+          "encoded_frames": 8920,
+          "encoded_fps": 30.11,
           "restarts": 1,
           "error": ""
         },
         {
           "camera": 1,
           "captured_fps": 29.98,
-          "frames": 4775,
-          "received": 4775,
+          "frames": 8949,
+          "received": 8949,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4725,
-          "encoded_fps": 30.06,
-          "restarts": 2,
+          "encoded_frames": 8921,
+          "encoded_fps": 30.02,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 2,
+          "captured_fps": 29.97,
+          "frames": 8950,
+          "received": 8950,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 8921,
+          "encoded_fps": 29.95,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 3,
+          "captured_fps": 29.97,
+          "frames": 8950,
+          "received": 8950,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 8921,
+          "encoded_fps": 30.05,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 4,
+          "captured_fps": 29.97,
+          "frames": 8950,
+          "received": 8950,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 8919,
+          "encoded_fps": 29.98,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 5,
+          "captured_fps": 29.97,
+          "frames": 8949,
+          "received": 8949,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 8921,
+          "encoded_fps": 29.95,
+          "restarts": 1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "all_online": true,
+      "mode": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      },
+      "channels": [
+        {
+          "camera": 0,
+          "captured_fps": 29.98,
+          "frames": 9100,
+          "received": 9100,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9070,
+          "encoded_fps": 30.04,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 1,
+          "captured_fps": 29.98,
+          "frames": 9099,
+          "received": 9099,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9072,
+          "encoded_fps": 29.99,
+          "restarts": 1,
           "error": ""
         },
         {
           "camera": 2,
           "captured_fps": 29.98,
-          "frames": 4775,
-          "received": 4775,
+          "frames": 9100,
+          "received": 9100,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4755,
-          "encoded_fps": 30.1,
+          "encoded_frames": 9071,
+          "encoded_fps": 30.12,
           "restarts": 1,
           "error": ""
         },
         {
           "camera": 3,
           "captured_fps": 29.98,
-          "frames": 4774,
-          "received": 4774,
+          "frames": 9100,
+          "received": 9100,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4757,
+          "encoded_frames": 9071,
+          "encoded_fps": 30.03,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 4,
+          "captured_fps": 29.98,
+          "frames": 9100,
+          "received": 9100,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9070,
+          "encoded_fps": 30.02,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 5,
+          "captured_fps": 29.98,
+          "frames": 9099,
+          "received": 9099,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9071,
+          "encoded_fps": 30.02,
+          "restarts": 1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "all_online": true,
+      "mode": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      },
+      "channels": [
+        {
+          "camera": 0,
+          "captured_fps": 29.98,
+          "frames": 9250,
+          "received": 9250,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9220,
+          "encoded_fps": 30.05,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 1,
+          "captured_fps": 29.98,
+          "frames": 9249,
+          "received": 9249,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9222,
+          "encoded_fps": 29.99,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 2,
+          "captured_fps": 29.98,
+          "frames": 9250,
+          "received": 9250,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9222,
+          "encoded_fps": 30.07,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 3,
+          "captured_fps": 29.98,
+          "frames": 9250,
+          "received": 9250,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9222,
+          "encoded_fps": 29.89,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 4,
+          "captured_fps": 29.98,
+          "frames": 9250,
+          "received": 9250,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9220,
+          "encoded_fps": 29.99,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 5,
+          "captured_fps": 29.98,
+          "frames": 9249,
+          "received": 9249,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9222,
+          "encoded_fps": 29.98,
+          "restarts": 1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "all_online": true,
+      "mode": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      },
+      "channels": [
+        {
+          "camera": 0,
+          "captured_fps": 29.98,
+          "frames": 9400,
+          "received": 9400,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9371,
+          "encoded_fps": 30.06,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 1,
+          "captured_fps": 29.98,
+          "frames": 9400,
+          "received": 9400,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9373,
+          "encoded_fps": 30.07,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 2,
+          "captured_fps": 29.98,
+          "frames": 9400,
+          "received": 9400,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9372,
+          "encoded_fps": 30.06,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 3,
+          "captured_fps": 29.98,
+          "frames": 9400,
+          "received": 9400,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9372,
+          "encoded_fps": 30.06,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 4,
+          "captured_fps": 29.98,
+          "frames": 9400,
+          "received": 9400,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9370,
+          "encoded_fps": 30.06,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 5,
+          "captured_fps": 29.98,
+          "frames": 9399,
+          "received": 9399,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9372,
+          "encoded_fps": 30.01,
+          "restarts": 1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "all_online": true,
+      "mode": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      },
+      "channels": [
+        {
+          "camera": 0,
+          "captured_fps": 29.98,
+          "frames": 9550,
+          "received": 9550,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9521,
+          "encoded_fps": 30.0,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 1,
+          "captured_fps": 29.98,
+          "frames": 9550,
+          "received": 9550,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9523,
+          "encoded_fps": 30.01,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 2,
+          "captured_fps": 29.98,
+          "frames": 9550,
+          "received": 9550,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9522,
+          "encoded_fps": 30.03,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 3,
+          "captured_fps": 29.98,
+          "frames": 9550,
+          "received": 9550,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9523,
+          "encoded_fps": 30.01,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 4,
+          "captured_fps": 30.97,
+          "frames": 9551,
+          "received": 9551,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9521,
+          "encoded_fps": 30.01,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 5,
+          "captured_fps": 29.98,
+          "frames": 9549,
+          "received": 9549,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9522,
+          "encoded_fps": 30.09,
+          "restarts": 1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "all_online": true,
+      "mode": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      },
+      "channels": [
+        {
+          "camera": 0,
+          "captured_fps": 29.98,
+          "frames": 9700,
+          "received": 9700,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9672,
+          "encoded_fps": 29.98,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 1,
+          "captured_fps": 29.98,
+          "frames": 9700,
+          "received": 9700,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9674,
+          "encoded_fps": 29.99,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 2,
+          "captured_fps": 29.98,
+          "frames": 9700,
+          "received": 9700,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9673,
+          "encoded_fps": 29.97,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 3,
+          "captured_fps": 29.98,
+          "frames": 9700,
+          "received": 9700,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9673,
+          "encoded_fps": 30.04,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 4,
+          "captured_fps": 29.98,
+          "frames": 9701,
+          "received": 9701,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9671,
+          "encoded_fps": 30.07,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 5,
+          "captured_fps": 29.98,
+          "frames": 9699,
+          "received": 9699,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9673,
+          "encoded_fps": 30.0,
+          "restarts": 1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "all_online": true,
+      "mode": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      },
+      "channels": [
+        {
+          "camera": 0,
+          "captured_fps": 29.98,
+          "frames": 9850,
+          "received": 9850,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9822,
+          "encoded_fps": 29.93,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 1,
+          "captured_fps": 29.98,
+          "frames": 9850,
+          "received": 9850,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9824,
+          "encoded_fps": 29.96,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 2,
+          "captured_fps": 29.98,
+          "frames": 9850,
+          "received": 9850,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9823,
+          "encoded_fps": 29.99,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 3,
+          "captured_fps": 29.98,
+          "frames": 9850,
+          "received": 9850,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 9823,
           "encoded_fps": 30.08,
           "restarts": 1,
           "error": ""
@@ -358,11 +1014,11 @@
         {
           "camera": 4,
           "captured_fps": 29.98,
-          "frames": 4775,
-          "received": 4775,
+          "frames": 9851,
+          "received": 9851,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4757,
+          "encoded_frames": 9822,
           "encoded_fps": 30.01,
           "restarts": 1,
           "error": ""
@@ -370,12 +1026,12 @@
         {
           "camera": 5,
           "captured_fps": 29.98,
-          "frames": 4773,
-          "received": 4773,
+          "frames": 9849,
+          "received": 9849,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4757,
-          "encoded_fps": 30.02,
+          "encoded_frames": 9823,
+          "encoded_fps": 29.94,
           "restarts": 1,
           "error": ""
         }
@@ -391,892 +1047,72 @@
       "channels": [
         {
           "camera": 0,
-          "captured_fps": 29.98,
-          "frames": 4924,
-          "received": 4924,
+          "captured_fps": 28.98,
+          "frames": 10000,
+          "received": 10000,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4907,
-          "encoded_fps": 29.99,
+          "encoded_frames": 9972,
+          "encoded_fps": 29.77,
           "restarts": 1,
           "error": ""
         },
         {
           "camera": 1,
           "captured_fps": 29.98,
-          "frames": 4925,
-          "received": 4925,
+          "frames": 10000,
+          "received": 10000,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4875,
-          "encoded_fps": 30.05,
-          "restarts": 2,
+          "encoded_frames": 9973,
+          "encoded_fps": 29.55,
+          "restarts": 1,
           "error": ""
         },
         {
           "camera": 2,
           "captured_fps": 29.98,
-          "frames": 4925,
-          "received": 4925,
+          "frames": 10001,
+          "received": 10001,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 4906,
-          "encoded_fps": 30.01,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 3,
-          "captured_fps": 29.98,
-          "frames": 4924,
-          "received": 4924,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 4907,
-          "encoded_fps": 29.96,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 4,
-          "captured_fps": 29.98,
-          "frames": 4925,
-          "received": 4925,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 4908,
-          "encoded_fps": 30.06,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 5,
-          "captured_fps": 29.98,
-          "frames": 4923,
-          "received": 4923,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 4907,
-          "encoded_fps": 29.96,
-          "restarts": 1,
-          "error": ""
-        }
-      ]
-    },
-    {
-      "all_online": true,
-      "mode": {
-        "width": 1920,
-        "height": 1080,
-        "fps": 30
-      },
-      "channels": [
-        {
-          "camera": 0,
-          "captured_fps": 29.98,
-          "frames": 5074,
-          "received": 5074,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5057,
-          "encoded_fps": 29.91,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 1,
-          "captured_fps": 29.98,
-          "frames": 5075,
-          "received": 5075,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5026,
-          "encoded_fps": 29.98,
-          "restarts": 2,
-          "error": ""
-        },
-        {
-          "camera": 2,
-          "captured_fps": 29.98,
-          "frames": 5075,
-          "received": 5075,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5056,
-          "encoded_fps": 30.0,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 3,
-          "captured_fps": 29.98,
-          "frames": 5075,
-          "received": 5075,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5058,
-          "encoded_fps": 30.07,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 4,
-          "captured_fps": 29.98,
-          "frames": 5075,
-          "received": 5075,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5058,
-          "encoded_fps": 30.03,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 5,
-          "captured_fps": 30.98,
-          "frames": 5074,
-          "received": 5074,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5058,
-          "encoded_fps": 30.03,
-          "restarts": 1,
-          "error": ""
-        }
-      ]
-    },
-    {
-      "all_online": true,
-      "mode": {
-        "width": 1920,
-        "height": 1080,
-        "fps": 30
-      },
-      "channels": [
-        {
-          "camera": 0,
-          "captured_fps": 30.96,
-          "frames": 5225,
-          "received": 5225,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5208,
-          "encoded_fps": 29.97,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 1,
-          "captured_fps": 29.96,
-          "frames": 5225,
-          "received": 5225,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5176,
-          "encoded_fps": 30.0,
-          "restarts": 2,
-          "error": ""
-        },
-        {
-          "camera": 2,
-          "captured_fps": 29.96,
-          "frames": 5225,
-          "received": 5225,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5207,
-          "encoded_fps": 30.01,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 3,
-          "captured_fps": 29.96,
-          "frames": 5225,
-          "received": 5225,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5208,
-          "encoded_fps": 29.97,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 4,
-          "captured_fps": 29.96,
-          "frames": 5225,
-          "received": 5225,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5208,
-          "encoded_fps": 29.99,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 5,
-          "captured_fps": 29.96,
-          "frames": 5224,
-          "received": 5224,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5208,
-          "encoded_fps": 29.98,
-          "restarts": 1,
-          "error": ""
-        }
-      ]
-    },
-    {
-      "all_online": true,
-      "mode": {
-        "width": 1920,
-        "height": 1080,
-        "fps": 30
-      },
-      "channels": [
-        {
-          "camera": 0,
-          "captured_fps": 29.98,
-          "frames": 5375,
-          "received": 5375,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5358,
+          "encoded_frames": 9974,
           "encoded_fps": 29.94,
           "restarts": 1,
           "error": ""
         },
         {
-          "camera": 1,
-          "captured_fps": 29.98,
-          "frames": 5375,
-          "received": 5375,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5327,
-          "encoded_fps": 29.99,
-          "restarts": 2,
-          "error": ""
-        },
-        {
-          "camera": 2,
-          "captured_fps": 29.98,
-          "frames": 5375,
-          "received": 5375,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5357,
-          "encoded_fps": 30.01,
-          "restarts": 1,
-          "error": ""
-        },
-        {
           "camera": 3,
           "captured_fps": 29.98,
-          "frames": 5375,
-          "received": 5375,
+          "frames": 10001,
+          "received": 10001,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 5359,
-          "encoded_fps": 29.99,
+          "encoded_frames": 9974,
+          "encoded_fps": 29.76,
           "restarts": 1,
           "error": ""
         },
         {
           "camera": 4,
           "captured_fps": 29.98,
-          "frames": 5375,
-          "received": 5375,
+          "frames": 10001,
+          "received": 10001,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 5359,
-          "encoded_fps": 29.97,
+          "encoded_frames": 9972,
+          "encoded_fps": 29.59,
           "restarts": 1,
           "error": ""
         },
         {
           "camera": 5,
-          "captured_fps": 29.98,
-          "frames": 5374,
-          "received": 5374,
+          "captured_fps": 29.97,
+          "frames": 10000,
+          "received": 10000,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 5359,
-          "encoded_fps": 29.98,
-          "restarts": 1,
-          "error": ""
-        }
-      ]
-    },
-    {
-      "all_online": true,
-      "mode": {
-        "width": 1920,
-        "height": 1080,
-        "fps": 30
-      },
-      "channels": [
-        {
-          "camera": 0,
-          "captured_fps": 29.98,
-          "frames": 5525,
-          "received": 5525,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5509,
-          "encoded_fps": 30.04,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 1,
-          "captured_fps": 29.98,
-          "frames": 5525,
-          "received": 5525,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5477,
-          "encoded_fps": 30.03,
-          "restarts": 2,
-          "error": ""
-        },
-        {
-          "camera": 2,
-          "captured_fps": 29.98,
-          "frames": 5526,
-          "received": 5526,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5508,
-          "encoded_fps": 29.98,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 3,
-          "captured_fps": 29.98,
-          "frames": 5525,
-          "received": 5525,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5509,
-          "encoded_fps": 29.94,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 4,
-          "captured_fps": 29.98,
-          "frames": 5525,
-          "received": 5525,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5509,
-          "encoded_fps": 30.01,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 5,
-          "captured_fps": 29.98,
-          "frames": 5524,
-          "received": 5524,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5509,
-          "encoded_fps": 29.96,
-          "restarts": 1,
-          "error": ""
-        }
-      ]
-    },
-    {
-      "all_online": true,
-      "mode": {
-        "width": 1920,
-        "height": 1080,
-        "fps": 30
-      },
-      "channels": [
-        {
-          "camera": 0,
-          "captured_fps": 29.95,
-          "frames": 5675,
-          "received": 5675,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5659,
-          "encoded_fps": 30.02,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 1,
-          "captured_fps": 29.96,
-          "frames": 5675,
-          "received": 5675,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5628,
-          "encoded_fps": 30.02,
-          "restarts": 2,
-          "error": ""
-        },
-        {
-          "camera": 2,
-          "captured_fps": 29.96,
-          "frames": 5676,
-          "received": 5676,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5658,
-          "encoded_fps": 29.98,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 3,
-          "captured_fps": 29.96,
-          "frames": 5675,
-          "received": 5675,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5660,
-          "encoded_fps": 29.98,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 4,
-          "captured_fps": 29.98,
-          "frames": 5676,
-          "received": 5676,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5660,
-          "encoded_fps": 30.0,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 5,
-          "captured_fps": 29.98,
-          "frames": 5674,
-          "received": 5674,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5660,
-          "encoded_fps": 30.03,
-          "restarts": 1,
-          "error": ""
-        }
-      ]
-    },
-    {
-      "all_online": true,
-      "mode": {
-        "width": 1920,
-        "height": 1080,
-        "fps": 30
-      },
-      "channels": [
-        {
-          "camera": 0,
-          "captured_fps": 29.98,
-          "frames": 5825,
-          "received": 5825,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5810,
-          "encoded_fps": 29.92,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 1,
-          "captured_fps": 29.98,
-          "frames": 5826,
-          "received": 5826,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5778,
-          "encoded_fps": 30.04,
-          "restarts": 2,
-          "error": ""
-        },
-        {
-          "camera": 2,
-          "captured_fps": 29.98,
-          "frames": 5826,
-          "received": 5826,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5808,
-          "encoded_fps": 30.0,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 3,
-          "captured_fps": 29.98,
-          "frames": 5825,
-          "received": 5825,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5810,
-          "encoded_fps": 29.92,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 4,
-          "captured_fps": 29.98,
-          "frames": 5826,
-          "received": 5826,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5810,
-          "encoded_fps": 30.0,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 5,
-          "captured_fps": 29.98,
-          "frames": 5824,
-          "received": 5824,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5810,
-          "encoded_fps": 29.98,
-          "restarts": 1,
-          "error": ""
-        }
-      ]
-    },
-    {
-      "all_online": true,
-      "mode": {
-        "width": 1920,
-        "height": 1080,
-        "fps": 30
-      },
-      "channels": [
-        {
-          "camera": 0,
-          "captured_fps": 29.98,
-          "frames": 5975,
-          "received": 5975,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5960,
-          "encoded_fps": 29.96,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 1,
-          "captured_fps": 29.98,
-          "frames": 5976,
-          "received": 5976,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5929,
-          "encoded_fps": 30.06,
-          "restarts": 2,
-          "error": ""
-        },
-        {
-          "camera": 2,
-          "captured_fps": 29.98,
-          "frames": 5976,
-          "received": 5976,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5959,
-          "encoded_fps": 29.98,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 3,
-          "captured_fps": 29.98,
-          "frames": 5975,
-          "received": 5975,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5961,
-          "encoded_fps": 30.06,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 4,
-          "captured_fps": 29.98,
-          "frames": 5976,
-          "received": 5976,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5961,
-          "encoded_fps": 30.11,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 5,
-          "captured_fps": 29.98,
-          "frames": 5974,
-          "received": 5974,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 5961,
-          "encoded_fps": 30.04,
-          "restarts": 1,
-          "error": ""
-        }
-      ]
-    },
-    {
-      "all_online": true,
-      "mode": {
-        "width": 1920,
-        "height": 1080,
-        "fps": 30
-      },
-      "channels": [
-        {
-          "camera": 0,
-          "captured_fps": 29.98,
-          "frames": 6125,
-          "received": 6125,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6111,
-          "encoded_fps": 30.0,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 1,
-          "captured_fps": 29.98,
-          "frames": 6126,
-          "received": 6126,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6079,
-          "encoded_fps": 30.01,
-          "restarts": 2,
-          "error": ""
-        },
-        {
-          "camera": 2,
-          "captured_fps": 29.98,
-          "frames": 6126,
-          "received": 6126,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6110,
-          "encoded_fps": 30.03,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 3,
-          "captured_fps": 29.98,
-          "frames": 6126,
-          "received": 6126,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6111,
-          "encoded_fps": 30.07,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 4,
-          "captured_fps": 29.98,
-          "frames": 6126,
-          "received": 6126,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6111,
-          "encoded_fps": 30.04,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 5,
-          "captured_fps": 29.98,
-          "frames": 6124,
-          "received": 6124,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6111,
-          "encoded_fps": 30.05,
-          "restarts": 1,
-          "error": ""
-        }
-      ]
-    },
-    {
-      "all_online": true,
-      "mode": {
-        "width": 1920,
-        "height": 1080,
-        "fps": 30
-      },
-      "channels": [
-        {
-          "camera": 0,
-          "captured_fps": 29.98,
-          "frames": 6275,
-          "received": 6275,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6261,
-          "encoded_fps": 29.98,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 1,
-          "captured_fps": 29.98,
-          "frames": 6276,
-          "received": 6276,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6230,
-          "encoded_fps": 29.99,
-          "restarts": 2,
-          "error": ""
-        },
-        {
-          "camera": 2,
-          "captured_fps": 29.98,
-          "frames": 6276,
-          "received": 6276,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6260,
-          "encoded_fps": 30.01,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 3,
-          "captured_fps": 29.98,
-          "frames": 6276,
-          "received": 6276,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6261,
-          "encoded_fps": 30.05,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 4,
-          "captured_fps": 29.98,
-          "frames": 6276,
-          "received": 6276,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6262,
-          "encoded_fps": 29.97,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 5,
-          "captured_fps": 29.98,
-          "frames": 6275,
-          "received": 6275,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6261,
-          "encoded_fps": 30.05,
-          "restarts": 1,
-          "error": ""
-        }
-      ]
-    },
-    {
-      "all_online": true,
-      "mode": {
-        "width": 1920,
-        "height": 1080,
-        "fps": 30
-      },
-      "channels": [
-        {
-          "camera": 0,
-          "captured_fps": 29.98,
-          "frames": 6426,
-          "received": 6426,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6412,
-          "encoded_fps": 30.02,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 1,
-          "captured_fps": 29.98,
-          "frames": 6426,
-          "received": 6426,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6380,
-          "encoded_fps": 30.01,
-          "restarts": 2,
-          "error": ""
-        },
-        {
-          "camera": 2,
-          "captured_fps": 30.94,
-          "frames": 6427,
-          "received": 6427,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6410,
-          "encoded_fps": 30.0,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 3,
-          "captured_fps": 29.95,
-          "frames": 6426,
-          "received": 6426,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6412,
-          "encoded_fps": 30.03,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 4,
-          "captured_fps": 29.95,
-          "frames": 6426,
-          "received": 6426,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6412,
-          "encoded_fps": 30.0,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 5,
-          "captured_fps": 29.95,
-          "frames": 6425,
-          "received": 6425,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6412,
+          "encoded_frames": 9974,
           "encoded_fps": 29.9,
           "restarts": 1,
           "error": ""
@@ -1294,400 +1130,72 @@
         {
           "camera": 0,
           "captured_fps": 29.98,
-          "frames": 6576,
-          "received": 6576,
+          "frames": 10151,
+          "received": 10151,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 6562,
+          "encoded_frames": 10124,
+          "encoded_fps": 29.88,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 1,
+          "captured_fps": 29.98,
+          "frames": 10150,
+          "received": 10150,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10125,
           "encoded_fps": 30.02,
           "restarts": 1,
           "error": ""
         },
         {
-          "camera": 1,
-          "captured_fps": 29.98,
-          "frames": 6576,
-          "received": 6576,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6531,
-          "encoded_fps": 29.98,
-          "restarts": 2,
-          "error": ""
-        },
-        {
           "camera": 2,
           "captured_fps": 29.98,
-          "frames": 6577,
-          "received": 6577,
+          "frames": 10151,
+          "received": 10151,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 6561,
-          "encoded_fps": 29.97,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 3,
-          "captured_fps": 29.98,
-          "frames": 6576,
-          "received": 6576,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6562,
-          "encoded_fps": 29.92,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 4,
-          "captured_fps": 29.98,
-          "frames": 6576,
-          "received": 6576,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6563,
-          "encoded_fps": 29.92,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 5,
-          "captured_fps": 29.98,
-          "frames": 6575,
-          "received": 6575,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6562,
-          "encoded_fps": 29.99,
-          "restarts": 1,
-          "error": ""
-        }
-      ]
-    },
-    {
-      "all_online": true,
-      "mode": {
-        "width": 1920,
-        "height": 1080,
-        "fps": 30
-      },
-      "channels": [
-        {
-          "camera": 0,
-          "captured_fps": 29.98,
-          "frames": 6726,
-          "received": 6726,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6712,
-          "encoded_fps": 30.09,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 1,
-          "captured_fps": 29.98,
-          "frames": 6726,
-          "received": 6726,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6681,
-          "encoded_fps": 30.0,
-          "restarts": 2,
-          "error": ""
-        },
-        {
-          "camera": 2,
-          "captured_fps": 29.98,
-          "frames": 6727,
-          "received": 6727,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6711,
-          "encoded_fps": 29.99,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 3,
-          "captured_fps": 29.98,
-          "frames": 6726,
-          "received": 6726,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6713,
-          "encoded_fps": 29.99,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 4,
-          "captured_fps": 30.96,
-          "frames": 6727,
-          "received": 6727,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6713,
-          "encoded_fps": 29.99,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 5,
-          "captured_fps": 29.96,
-          "frames": 6725,
-          "received": 6725,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6713,
-          "encoded_fps": 29.99,
-          "restarts": 1,
-          "error": ""
-        }
-      ]
-    },
-    {
-      "all_online": true,
-      "mode": {
-        "width": 1920,
-        "height": 1080,
-        "fps": 30
-      },
-      "channels": [
-        {
-          "camera": 0,
-          "captured_fps": 29.98,
-          "frames": 6876,
-          "received": 6876,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6863,
-          "encoded_fps": 29.94,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 1,
-          "captured_fps": 29.98,
-          "frames": 6876,
-          "received": 6876,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6831,
-          "encoded_fps": 30.03,
-          "restarts": 2,
-          "error": ""
-        },
-        {
-          "camera": 2,
-          "captured_fps": 29.98,
-          "frames": 6877,
-          "received": 6877,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6862,
-          "encoded_fps": 30.03,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 3,
-          "captured_fps": 29.98,
-          "frames": 6876,
-          "received": 6876,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6863,
-          "encoded_fps": 29.95,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 4,
-          "captured_fps": 29.98,
-          "frames": 6877,
-          "received": 6877,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6864,
-          "encoded_fps": 30.04,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 5,
-          "captured_fps": 29.98,
-          "frames": 6875,
-          "received": 6875,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6863,
-          "encoded_fps": 30.04,
-          "restarts": 1,
-          "error": ""
-        }
-      ]
-    },
-    {
-      "all_online": true,
-      "mode": {
-        "width": 1920,
-        "height": 1080,
-        "fps": 30
-      },
-      "channels": [
-        {
-          "camera": 0,
-          "captured_fps": 29.98,
-          "frames": 7026,
-          "received": 7026,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7013,
-          "encoded_fps": 29.95,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 1,
-          "captured_fps": 29.98,
-          "frames": 7027,
-          "received": 7027,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 6982,
-          "encoded_fps": 29.97,
-          "restarts": 2,
-          "error": ""
-        },
-        {
-          "camera": 2,
-          "captured_fps": 29.98,
-          "frames": 7027,
-          "received": 7027,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7012,
-          "encoded_fps": 29.99,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 3,
-          "captured_fps": 29.98,
-          "frames": 7026,
-          "received": 7026,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7014,
-          "encoded_fps": 30.12,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 4,
-          "captured_fps": 29.98,
-          "frames": 7027,
-          "received": 7027,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7014,
+          "encoded_frames": 10125,
           "encoded_fps": 30.05,
           "restarts": 1,
           "error": ""
         },
         {
-          "camera": 5,
-          "captured_fps": 29.98,
-          "frames": 7025,
-          "received": 7025,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7014,
-          "encoded_fps": 29.99,
-          "restarts": 1,
-          "error": ""
-        }
-      ]
-    },
-    {
-      "all_online": true,
-      "mode": {
-        "width": 1920,
-        "height": 1080,
-        "fps": 30
-      },
-      "channels": [
-        {
-          "camera": 0,
-          "captured_fps": 29.98,
-          "frames": 7176,
-          "received": 7176,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7164,
-          "encoded_fps": 30.03,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 1,
-          "captured_fps": 29.98,
-          "frames": 7177,
-          "received": 7177,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7132,
-          "encoded_fps": 29.97,
-          "restarts": 2,
-          "error": ""
-        },
-        {
-          "camera": 2,
-          "captured_fps": 29.98,
-          "frames": 7177,
-          "received": 7177,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7163,
-          "encoded_fps": 30.0,
-          "restarts": 1,
-          "error": ""
-        },
-        {
           "camera": 3,
           "captured_fps": 29.98,
-          "frames": 7177,
-          "received": 7177,
+          "frames": 10151,
+          "received": 10151,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 7164,
-          "encoded_fps": 30.09,
+          "encoded_frames": 10125,
+          "encoded_fps": 30.0,
           "restarts": 1,
           "error": ""
         },
         {
           "camera": 4,
           "captured_fps": 29.98,
-          "frames": 7177,
-          "received": 7177,
+          "frames": 10151,
+          "received": 10151,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 7164,
-          "encoded_fps": 29.98,
+          "encoded_frames": 10123,
+          "encoded_fps": 30.0,
           "restarts": 1,
           "error": ""
         },
         {
           "camera": 5,
           "captured_fps": 29.98,
-          "frames": 7175,
-          "received": 7175,
+          "frames": 10150,
+          "received": 10150,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 7164,
-          "encoded_fps": 30.03,
+          "encoded_frames": 10125,
+          "encoded_fps": 30.02,
           "restarts": 1,
           "error": ""
         }
@@ -1703,75 +1211,75 @@
       "channels": [
         {
           "camera": 0,
-          "captured_fps": 29.97,
-          "frames": 7326,
-          "received": 7326,
+          "captured_fps": 29.98,
+          "frames": 10301,
+          "received": 10301,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 7314,
-          "encoded_fps": 29.93,
+          "encoded_frames": 10274,
+          "encoded_fps": 30.03,
           "restarts": 1,
           "error": ""
         },
         {
           "camera": 1,
-          "captured_fps": 29.97,
-          "frames": 7327,
-          "received": 7327,
+          "captured_fps": 29.98,
+          "frames": 10300,
+          "received": 10300,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 7283,
-          "encoded_fps": 29.94,
-          "restarts": 2,
+          "encoded_frames": 10275,
+          "encoded_fps": 30.02,
+          "restarts": 1,
           "error": ""
         },
         {
           "camera": 2,
-          "captured_fps": 29.97,
-          "frames": 7327,
-          "received": 7327,
+          "captured_fps": 29.98,
+          "frames": 10301,
+          "received": 10301,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 7313,
+          "encoded_frames": 10275,
+          "encoded_fps": 30.05,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 3,
+          "captured_fps": 29.98,
+          "frames": 10301,
+          "received": 10301,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10275,
+          "encoded_fps": 30.0,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 4,
+          "captured_fps": 29.98,
+          "frames": 10301,
+          "received": 10301,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10274,
+          "encoded_fps": 29.99,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 5,
+          "captured_fps": 29.98,
+          "frames": 10300,
+          "received": 10300,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10275,
           "encoded_fps": 30.01,
           "restarts": 1,
           "error": ""
-        },
-        {
-          "camera": 3,
-          "captured_fps": 29.97,
-          "frames": 7327,
-          "received": 7327,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7314,
-          "encoded_fps": 30.1,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 4,
-          "captured_fps": 29.97,
-          "frames": 7327,
-          "received": 7327,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7315,
-          "encoded_fps": 30.02,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 5,
-          "captured_fps": 29.97,
-          "frames": 7326,
-          "received": 7326,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7314,
-          "encoded_fps": 30.02,
-          "restarts": 1,
-          "error": ""
         }
       ]
     },
@@ -1785,94 +1293,12 @@
       "channels": [
         {
           "camera": 0,
-          "captured_fps": 29.98,
-          "frames": 7477,
-          "received": 7477,
+          "captured_fps": 29.97,
+          "frames": 10451,
+          "received": 10451,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 7464,
-          "encoded_fps": 29.99,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 1,
-          "captured_fps": 29.98,
-          "frames": 7477,
-          "received": 7477,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7433,
-          "encoded_fps": 29.97,
-          "restarts": 2,
-          "error": ""
-        },
-        {
-          "camera": 2,
-          "captured_fps": 29.98,
-          "frames": 7477,
-          "received": 7477,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7463,
-          "encoded_fps": 30.0,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 3,
-          "captured_fps": 29.98,
-          "frames": 7477,
-          "received": 7477,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7465,
-          "encoded_fps": 29.87,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 4,
-          "captured_fps": 29.98,
-          "frames": 7477,
-          "received": 7477,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7465,
-          "encoded_fps": 29.98,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 5,
-          "captured_fps": 29.98,
-          "frames": 7476,
-          "received": 7476,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7465,
-          "encoded_fps": 29.96,
-          "restarts": 1,
-          "error": ""
-        }
-      ]
-    },
-    {
-      "all_online": true,
-      "mode": {
-        "width": 1920,
-        "height": 1080,
-        "fps": 30
-      },
-      "channels": [
-        {
-          "camera": 0,
-          "captured_fps": 29.98,
-          "frames": 7627,
-          "received": 7627,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7615,
+          "encoded_frames": 10425,
           "encoded_fps": 29.93,
           "restarts": 1,
           "error": ""
@@ -1880,224 +1306,798 @@
         {
           "camera": 1,
           "captured_fps": 29.98,
-          "frames": 7627,
-          "received": 7627,
+          "frames": 10451,
+          "received": 10451,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 7583,
-          "encoded_fps": 29.95,
-          "restarts": 2,
-          "error": ""
-        },
-        {
-          "camera": 2,
-          "captured_fps": 29.98,
-          "frames": 7627,
-          "received": 7627,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7614,
+          "encoded_frames": 10425,
           "encoded_fps": 30.01,
           "restarts": 1,
           "error": ""
         },
         {
-          "camera": 3,
-          "captured_fps": 29.98,
-          "frames": 7627,
-          "received": 7627,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7615,
-          "encoded_fps": 29.99,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 4,
-          "captured_fps": 29.98,
-          "frames": 7627,
-          "received": 7627,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7615,
-          "encoded_fps": 29.97,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 5,
-          "captured_fps": 29.98,
-          "frames": 7626,
-          "received": 7626,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7615,
-          "encoded_fps": 29.99,
-          "restarts": 1,
-          "error": ""
-        }
-      ]
-    },
-    {
-      "all_online": true,
-      "mode": {
-        "width": 1920,
-        "height": 1080,
-        "fps": 30
-      },
-      "channels": [
-        {
-          "camera": 0,
-          "captured_fps": 29.98,
-          "frames": 7777,
-          "received": 7777,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7765,
-          "encoded_fps": 30.03,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 1,
-          "captured_fps": 29.98,
-          "frames": 7777,
-          "received": 7777,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7734,
-          "encoded_fps": 30.02,
-          "restarts": 2,
-          "error": ""
-        },
-        {
           "camera": 2,
           "captured_fps": 29.98,
-          "frames": 7778,
-          "received": 7778,
+          "frames": 10451,
+          "received": 10451,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 7764,
-          "encoded_fps": 30.0,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 3,
-          "captured_fps": 29.98,
-          "frames": 7777,
-          "received": 7777,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7766,
-          "encoded_fps": 29.94,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 4,
-          "captured_fps": 29.98,
-          "frames": 7777,
-          "received": 7777,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7766,
-          "encoded_fps": 30.0,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 5,
-          "captured_fps": 29.98,
-          "frames": 7776,
-          "received": 7776,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7766,
-          "encoded_fps": 29.95,
-          "restarts": 1,
-          "error": ""
-        }
-      ]
-    },
-    {
-      "all_online": true,
-      "mode": {
-        "width": 1920,
-        "height": 1080,
-        "fps": 30
-      },
-      "channels": [
-        {
-          "camera": 0,
-          "captured_fps": 29.98,
-          "frames": 7927,
-          "received": 7927,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7916,
+          "encoded_frames": 10426,
           "encoded_fps": 29.98,
           "restarts": 1,
           "error": ""
         },
         {
-          "camera": 1,
-          "captured_fps": 29.98,
-          "frames": 7927,
-          "received": 7927,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7884,
-          "encoded_fps": 30.03,
-          "restarts": 2,
-          "error": ""
-        },
-        {
-          "camera": 2,
-          "captured_fps": 29.98,
-          "frames": 7928,
-          "received": 7928,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7915,
-          "encoded_fps": 29.99,
-          "restarts": 1,
-          "error": ""
-        },
-        {
           "camera": 3,
           "captured_fps": 29.98,
-          "frames": 7927,
-          "received": 7927,
+          "frames": 10451,
+          "received": 10451,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 7916,
-          "encoded_fps": 29.94,
-          "restarts": 1,
-          "error": ""
-        },
-        {
-          "camera": 4,
-          "captured_fps": 29.98,
-          "frames": 7927,
-          "received": 7927,
-          "incomplete": 0,
-          "bad_headers": 0,
-          "encoded_frames": 7917,
+          "encoded_frames": 10426,
           "encoded_fps": 30.04,
           "restarts": 1,
           "error": ""
         },
         {
-          "camera": 5,
+          "camera": 4,
           "captured_fps": 29.98,
-          "frames": 7926,
-          "received": 7926,
+          "frames": 10451,
+          "received": 10451,
           "incomplete": 0,
           "bad_headers": 0,
-          "encoded_frames": 7916,
+          "encoded_frames": 10424,
+          "encoded_fps": 30.0,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 5,
+          "captured_fps": 29.98,
+          "frames": 10450,
+          "received": 10450,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10426,
+          "encoded_fps": 30.06,
+          "restarts": 1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "all_online": true,
+      "mode": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      },
+      "channels": [
+        {
+          "camera": 0,
+          "captured_fps": 29.98,
+          "frames": 10601,
+          "received": 10601,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10575,
           "encoded_fps": 29.99,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 1,
+          "captured_fps": 29.98,
+          "frames": 10601,
+          "received": 10601,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10576,
+          "encoded_fps": 29.98,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 2,
+          "captured_fps": 29.98,
+          "frames": 10601,
+          "received": 10601,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10576,
+          "encoded_fps": 30.05,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 3,
+          "captured_fps": 29.98,
+          "frames": 10601,
+          "received": 10601,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10576,
+          "encoded_fps": 30.01,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 4,
+          "captured_fps": 29.98,
+          "frames": 10601,
+          "received": 10601,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10575,
+          "encoded_fps": 29.94,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 5,
+          "captured_fps": 29.98,
+          "frames": 10600,
+          "received": 10600,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10576,
+          "encoded_fps": 30.11,
+          "restarts": 1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "all_online": true,
+      "mode": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      },
+      "channels": [
+        {
+          "camera": 0,
+          "captured_fps": 29.98,
+          "frames": 10751,
+          "received": 10751,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10726,
+          "encoded_fps": 30.11,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 1,
+          "captured_fps": 29.98,
+          "frames": 10751,
+          "received": 10751,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10727,
+          "encoded_fps": 29.96,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 2,
+          "captured_fps": 29.98,
+          "frames": 10751,
+          "received": 10751,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10727,
+          "encoded_fps": 29.99,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 3,
+          "captured_fps": 29.98,
+          "frames": 10751,
+          "received": 10751,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10727,
+          "encoded_fps": 30.0,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 4,
+          "captured_fps": 30.98,
+          "frames": 10752,
+          "received": 10752,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10725,
+          "encoded_fps": 29.94,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 5,
+          "captured_fps": 29.98,
+          "frames": 10750,
+          "received": 10750,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10727,
+          "encoded_fps": 30.07,
+          "restarts": 1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "all_online": true,
+      "mode": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      },
+      "channels": [
+        {
+          "camera": 0,
+          "captured_fps": 29.98,
+          "frames": 10901,
+          "received": 10901,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10876,
+          "encoded_fps": 30.09,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 1,
+          "captured_fps": 29.98,
+          "frames": 10901,
+          "received": 10901,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10877,
+          "encoded_fps": 29.99,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 2,
+          "captured_fps": 29.98,
+          "frames": 10901,
+          "received": 10901,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10878,
+          "encoded_fps": 30.05,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 3,
+          "captured_fps": 29.98,
+          "frames": 10901,
+          "received": 10901,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10877,
+          "encoded_fps": 29.91,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 4,
+          "captured_fps": 29.98,
+          "frames": 10902,
+          "received": 10902,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10876,
+          "encoded_fps": 30.0,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 5,
+          "captured_fps": 29.98,
+          "frames": 10900,
+          "received": 10900,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 10877,
+          "encoded_fps": 30.01,
+          "restarts": 1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "all_online": true,
+      "mode": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      },
+      "channels": [
+        {
+          "camera": 0,
+          "captured_fps": 29.98,
+          "frames": 11051,
+          "received": 11051,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11027,
+          "encoded_fps": 29.99,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 1,
+          "captured_fps": 29.98,
+          "frames": 11051,
+          "received": 11051,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11027,
+          "encoded_fps": 29.98,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 2,
+          "captured_fps": 29.98,
+          "frames": 11051,
+          "received": 11051,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11028,
+          "encoded_fps": 29.99,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 3,
+          "captured_fps": 29.98,
+          "frames": 11051,
+          "received": 11051,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11028,
+          "encoded_fps": 30.0,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 4,
+          "captured_fps": 29.98,
+          "frames": 11052,
+          "received": 11052,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11026,
+          "encoded_fps": 29.96,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 5,
+          "captured_fps": 30.95,
+          "frames": 11051,
+          "received": 11051,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11028,
+          "encoded_fps": 29.94,
+          "restarts": 1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "all_online": true,
+      "mode": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      },
+      "channels": [
+        {
+          "camera": 0,
+          "captured_fps": 29.98,
+          "frames": 11202,
+          "received": 11202,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11177,
+          "encoded_fps": 30.04,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 1,
+          "captured_fps": 29.98,
+          "frames": 11201,
+          "received": 11201,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11178,
+          "encoded_fps": 29.99,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 2,
+          "captured_fps": 29.98,
+          "frames": 11202,
+          "received": 11202,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11178,
+          "encoded_fps": 30.06,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 3,
+          "captured_fps": 29.98,
+          "frames": 11202,
+          "received": 11202,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11178,
+          "encoded_fps": 30.05,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 4,
+          "captured_fps": 29.98,
+          "frames": 11202,
+          "received": 11202,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11177,
+          "encoded_fps": 30.02,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 5,
+          "captured_fps": 29.98,
+          "frames": 11201,
+          "received": 11201,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11178,
+          "encoded_fps": 29.98,
+          "restarts": 1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "all_online": true,
+      "mode": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      },
+      "channels": [
+        {
+          "camera": 0,
+          "captured_fps": 29.98,
+          "frames": 11352,
+          "received": 11352,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11328,
+          "encoded_fps": 29.93,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 1,
+          "captured_fps": 29.98,
+          "frames": 11351,
+          "received": 11351,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11328,
+          "encoded_fps": 29.92,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 2,
+          "captured_fps": 29.98,
+          "frames": 11352,
+          "received": 11352,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11329,
+          "encoded_fps": 29.92,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 3,
+          "captured_fps": 29.98,
+          "frames": 11352,
+          "received": 11352,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11329,
+          "encoded_fps": 30.0,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 4,
+          "captured_fps": 29.98,
+          "frames": 11352,
+          "received": 11352,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11327,
+          "encoded_fps": 29.99,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 5,
+          "captured_fps": 29.98,
+          "frames": 11351,
+          "received": 11351,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11329,
+          "encoded_fps": 30.08,
+          "restarts": 1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "all_online": true,
+      "mode": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      },
+      "channels": [
+        {
+          "camera": 0,
+          "captured_fps": 29.98,
+          "frames": 11502,
+          "received": 11502,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11478,
+          "encoded_fps": 29.98,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 1,
+          "captured_fps": 29.98,
+          "frames": 11501,
+          "received": 11501,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11479,
+          "encoded_fps": 29.99,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 2,
+          "captured_fps": 29.98,
+          "frames": 11502,
+          "received": 11502,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11479,
+          "encoded_fps": 30.06,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 3,
+          "captured_fps": 29.98,
+          "frames": 11502,
+          "received": 11502,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11479,
+          "encoded_fps": 30.08,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 4,
+          "captured_fps": 29.98,
+          "frames": 11502,
+          "received": 11502,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11478,
+          "encoded_fps": 29.96,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 5,
+          "captured_fps": 29.98,
+          "frames": 11501,
+          "received": 11501,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11479,
+          "encoded_fps": 30.07,
+          "restarts": 1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "all_online": true,
+      "mode": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      },
+      "channels": [
+        {
+          "camera": 0,
+          "captured_fps": 29.98,
+          "frames": 11652,
+          "received": 11652,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11629,
+          "encoded_fps": 30.04,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 1,
+          "captured_fps": 29.98,
+          "frames": 11651,
+          "received": 11651,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11629,
+          "encoded_fps": 29.99,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 2,
+          "captured_fps": 29.98,
+          "frames": 11652,
+          "received": 11652,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11630,
+          "encoded_fps": 29.95,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 3,
+          "captured_fps": 29.98,
+          "frames": 11652,
+          "received": 11652,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11630,
+          "encoded_fps": 29.96,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 4,
+          "captured_fps": 29.98,
+          "frames": 11652,
+          "received": 11652,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11628,
+          "encoded_fps": 29.92,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 5,
+          "captured_fps": 29.98,
+          "frames": 11651,
+          "received": 11651,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11630,
+          "encoded_fps": 30.02,
+          "restarts": 1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "all_online": true,
+      "mode": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      },
+      "channels": [
+        {
+          "camera": 0,
+          "captured_fps": 29.98,
+          "frames": 11802,
+          "received": 11802,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11779,
+          "encoded_fps": 30.08,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 1,
+          "captured_fps": 29.98,
+          "frames": 11802,
+          "received": 11802,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11780,
+          "encoded_fps": 30.0,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 2,
+          "captured_fps": 29.98,
+          "frames": 11802,
+          "received": 11802,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11780,
+          "encoded_fps": 30.02,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 3,
+          "captured_fps": 29.98,
+          "frames": 11802,
+          "received": 11802,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11780,
+          "encoded_fps": 29.93,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 4,
+          "captured_fps": 29.98,
+          "frames": 11802,
+          "received": 11802,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11779,
+          "encoded_fps": 29.95,
+          "restarts": 1,
+          "error": ""
+        },
+        {
+          "camera": 5,
+          "captured_fps": 29.98,
+          "frames": 11801,
+          "received": 11801,
+          "incomplete": 0,
+          "bad_headers": 0,
+          "encoded_frames": 11780,
+          "encoded_fps": 29.97,
           "restarts": 1,
           "error": ""
         }

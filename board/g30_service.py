@@ -147,7 +147,7 @@ class Manager:
         return dict(ok=True,project='G30-six-camera',codec='H264',transport='HTTP/TCP or RTP/UDP',
                     mode=dict(width=self.config['width'],height=self.config['height'],fps=self.config['fps']),
                     bitrate_per_camera=self.hub.bitrate,nominal_total_mbps=6*self.hub.bitrate/1e6,
-                    cameras=sources,sessions=sessions,http_viewers=self.http_viewers,
+                    cameras=sources,sessions=sessions,http_viewers=self.http_viewers,http_resyncs_total=self.hub.tcp_resyncs,
                     all_online=all(s['source']['online'] and s['transcode']['online'] for s in sources),
                     test_pattern=(BASE/'run/test-pattern.flag').exists())
 
@@ -181,7 +181,7 @@ def main():
                 else:self.reply(dict(error='Not found'),404)
             except (BrokenPipeError,ConnectionResetError):pass
         def feed(self):
-            subscription=manager.hub.subscribe()
+            subscription=manager.hub.subscribe(recover=True)
             with manager.lock:manager.http_viewers+=1
             self.connection.settimeout(3)
             self.close_connection=True
