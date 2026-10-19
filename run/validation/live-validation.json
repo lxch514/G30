@@ -1,0 +1,529 @@
+{
+  "scope": "Six simultaneous RTP/H264 receivers decoded by FFmpeg, not G30 display acceptance",
+  "test_pattern": false,
+  "duration_seconds": 21.026145514000007,
+  "bitrate_per_camera": 2000000,
+  "mode": {
+    "width": 640,
+    "height": 480,
+    "fps": 30
+  },
+  "results": [
+    {
+      "camera": 0,
+      "decoded_frames": 0,
+      "progress": null,
+      "exit_code": 1,
+      "errors": "/root/G30/run/validation/cam0.sdp: Connection timed out\nCannot determine format of input stream 0:0 after EOF\nError marking filters as finished\n",
+      "encoded_fps_delta": 0.0,
+      "encoded_mbps_delta": 0.0,
+      "restarts_delta": 0,
+      "source_online": false,
+      "passed": false
+    },
+    {
+      "camera": 1,
+      "decoded_frames": 0,
+      "progress": null,
+      "exit_code": 1,
+      "errors": "/root/G30/run/validation/cam1.sdp: Connection timed out\nCannot determine format of input stream 0:0 after EOF\nError marking filters as finished\n",
+      "encoded_fps_delta": 0.0,
+      "encoded_mbps_delta": 0.0,
+      "restarts_delta": 0,
+      "source_online": false,
+      "passed": false
+    },
+    {
+      "camera": 2,
+      "decoded_frames": 0,
+      "progress": null,
+      "exit_code": 1,
+      "errors": "/root/G30/run/validation/cam2.sdp: Connection timed out\nCannot determine format of input stream 0:0 after EOF\nError marking filters as finished\n",
+      "encoded_fps_delta": 0.0,
+      "encoded_mbps_delta": 0.0,
+      "restarts_delta": 0,
+      "source_online": false,
+      "passed": false
+    },
+    {
+      "camera": 3,
+      "decoded_frames": 0,
+      "progress": null,
+      "exit_code": 1,
+      "errors": "/root/G30/run/validation/cam3.sdp: Connection timed out\nCannot determine format of input stream 0:0 after EOF\nError marking filters as finished\n",
+      "encoded_fps_delta": 0.0,
+      "encoded_mbps_delta": 0.0,
+      "restarts_delta": 0,
+      "source_online": false,
+      "passed": false
+    },
+    {
+      "camera": 4,
+      "decoded_frames": 0,
+      "progress": null,
+      "exit_code": 1,
+      "errors": "/root/G30/run/validation/cam4.sdp: Connection timed out\nCannot determine format of input stream 0:0 after EOF\nError marking filters as finished\n",
+      "encoded_fps_delta": 0.0,
+      "encoded_mbps_delta": 0.0,
+      "restarts_delta": 0,
+      "source_online": false,
+      "passed": false
+    },
+    {
+      "camera": 5,
+      "decoded_frames": 0,
+      "progress": null,
+      "exit_code": 1,
+      "errors": "/root/G30/run/validation/cam5.sdp: Connection timed out\nCannot determine format of input stream 0:0 after EOF\nError marking filters as finished\n",
+      "encoded_fps_delta": 0.0,
+      "encoded_mbps_delta": 0.0,
+      "restarts_delta": 0,
+      "source_online": false,
+      "passed": false
+    }
+  ],
+  "passed": false,
+  "before": {
+    "ok": true,
+    "project": "G30-six-camera",
+    "codec": "H264",
+    "transport": "HTTP/TCP or RTP/UDP",
+    "mode": {
+      "width": 640,
+      "height": 480,
+      "fps": 30
+    },
+    "bitrate_per_camera": 2000000,
+    "nominal_total_mbps": 12.0,
+    "cameras": [
+      {
+        "camera": 0,
+        "label": "camera0",
+        "source": {
+          "online": false,
+          "captured_fps": 0,
+          "resolution": {
+            "width": 640,
+            "height": 480
+          },
+          "desired_fps": 30
+        },
+        "transcode": {
+          "type": "H264_HW",
+          "decoder": "mppjpegdec",
+          "encoder": "mpph264enc",
+          "online": false,
+          "target_bps": 2000000,
+          "encoded_fps": 0,
+          "encoded_mbps": 0,
+          "frames": 0,
+          "bytes": 0,
+          "submitted": 0,
+          "input_dropped": 0,
+          "restarts": 0,
+          "error": "",
+          "mode": null,
+          "encode_latency_ms": null,
+          "last_capture_us": 0
+        }
+      },
+      {
+        "camera": 1,
+        "label": "camera1",
+        "source": {
+          "online": false,
+          "captured_fps": 0,
+          "resolution": {
+            "width": 640,
+            "height": 480
+          },
+          "desired_fps": 30
+        },
+        "transcode": {
+          "type": "H264_HW",
+          "decoder": "mppjpegdec",
+          "encoder": "mpph264enc",
+          "online": false,
+          "target_bps": 2000000,
+          "encoded_fps": 0,
+          "encoded_mbps": 0,
+          "frames": 0,
+          "bytes": 0,
+          "submitted": 0,
+          "input_dropped": 0,
+          "restarts": 0,
+          "error": "",
+          "mode": null,
+          "encode_latency_ms": null,
+          "last_capture_us": 0
+        }
+      },
+      {
+        "camera": 2,
+        "label": "camera2",
+        "source": {
+          "online": false,
+          "captured_fps": 0,
+          "resolution": {
+            "width": 640,
+            "height": 480
+          },
+          "desired_fps": 30
+        },
+        "transcode": {
+          "type": "H264_HW",
+          "decoder": "mppjpegdec",
+          "encoder": "mpph264enc",
+          "online": false,
+          "target_bps": 2000000,
+          "encoded_fps": 0,
+          "encoded_mbps": 0,
+          "frames": 0,
+          "bytes": 0,
+          "submitted": 0,
+          "input_dropped": 0,
+          "restarts": 0,
+          "error": "",
+          "mode": null,
+          "encode_latency_ms": null,
+          "last_capture_us": 0
+        }
+      },
+      {
+        "camera": 3,
+        "label": "camera3",
+        "source": {
+          "online": false,
+          "captured_fps": 0,
+          "resolution": {
+            "width": 640,
+            "height": 480
+          },
+          "desired_fps": 30
+        },
+        "transcode": {
+          "type": "H264_HW",
+          "decoder": "mppjpegdec",
+          "encoder": "mpph264enc",
+          "online": false,
+          "target_bps": 2000000,
+          "encoded_fps": 0,
+          "encoded_mbps": 0,
+          "frames": 0,
+          "bytes": 0,
+          "submitted": 0,
+          "input_dropped": 0,
+          "restarts": 0,
+          "error": "",
+          "mode": null,
+          "encode_latency_ms": null,
+          "last_capture_us": 0
+        }
+      },
+      {
+        "camera": 4,
+        "label": "camera4",
+        "source": {
+          "online": false,
+          "captured_fps": 0,
+          "resolution": {
+            "width": 640,
+            "height": 480
+          },
+          "desired_fps": 30
+        },
+        "transcode": {
+          "type": "H264_HW",
+          "decoder": "mppjpegdec",
+          "encoder": "mpph264enc",
+          "online": false,
+          "target_bps": 2000000,
+          "encoded_fps": 0,
+          "encoded_mbps": 0,
+          "frames": 0,
+          "bytes": 0,
+          "submitted": 0,
+          "input_dropped": 0,
+          "restarts": 0,
+          "error": "",
+          "mode": null,
+          "encode_latency_ms": null,
+          "last_capture_us": 0
+        }
+      },
+      {
+        "camera": 5,
+        "label": "camera5",
+        "source": {
+          "online": false,
+          "captured_fps": 0,
+          "resolution": {
+            "width": 640,
+            "height": 480
+          },
+          "desired_fps": 30
+        },
+        "transcode": {
+          "type": "H264_HW",
+          "decoder": "mppjpegdec",
+          "encoder": "mpph264enc",
+          "online": false,
+          "target_bps": 2000000,
+          "encoded_fps": 0,
+          "encoded_mbps": 0,
+          "frames": 0,
+          "bytes": 0,
+          "submitted": 0,
+          "input_dropped": 0,
+          "restarts": 0,
+          "error": "",
+          "mode": null,
+          "encode_latency_ms": null,
+          "last_capture_us": 0
+        }
+      }
+    ],
+    "sessions": [],
+    "http_viewers": 0,
+    "all_online": false,
+    "test_pattern": false
+  },
+  "after": {
+    "ok": true,
+    "project": "G30-six-camera",
+    "codec": "H264",
+    "transport": "HTTP/TCP or RTP/UDP",
+    "mode": {
+      "width": 640,
+      "height": 480,
+      "fps": 30
+    },
+    "bitrate_per_camera": 2000000,
+    "nominal_total_mbps": 12.0,
+    "cameras": [
+      {
+        "camera": 0,
+        "label": "camera0",
+        "source": {
+          "online": false,
+          "captured_fps": 0,
+          "resolution": {
+            "width": 640,
+            "height": 480
+          },
+          "desired_fps": 30
+        },
+        "transcode": {
+          "type": "H264_HW",
+          "decoder": "mppjpegdec",
+          "encoder": "mpph264enc",
+          "online": false,
+          "target_bps": 2000000,
+          "encoded_fps": 0,
+          "encoded_mbps": 0,
+          "frames": 0,
+          "bytes": 0,
+          "submitted": 0,
+          "input_dropped": 0,
+          "restarts": 0,
+          "error": "",
+          "mode": null,
+          "encode_latency_ms": null,
+          "last_capture_us": 0
+        }
+      },
+      {
+        "camera": 1,
+        "label": "camera1",
+        "source": {
+          "online": false,
+          "captured_fps": 0,
+          "resolution": {
+            "width": 640,
+            "height": 480
+          },
+          "desired_fps": 30
+        },
+        "transcode": {
+          "type": "H264_HW",
+          "decoder": "mppjpegdec",
+          "encoder": "mpph264enc",
+          "online": false,
+          "target_bps": 2000000,
+          "encoded_fps": 0,
+          "encoded_mbps": 0,
+          "frames": 0,
+          "bytes": 0,
+          "submitted": 0,
+          "input_dropped": 0,
+          "restarts": 0,
+          "error": "",
+          "mode": null,
+          "encode_latency_ms": null,
+          "last_capture_us": 0
+        }
+      },
+      {
+        "camera": 2,
+        "label": "camera2",
+        "source": {
+          "online": false,
+          "captured_fps": 0,
+          "resolution": {
+            "width": 640,
+            "height": 480
+          },
+          "desired_fps": 30
+        },
+        "transcode": {
+          "type": "H264_HW",
+          "decoder": "mppjpegdec",
+          "encoder": "mpph264enc",
+          "online": false,
+          "target_bps": 2000000,
+          "encoded_fps": 0,
+          "encoded_mbps": 0,
+          "frames": 0,
+          "bytes": 0,
+          "submitted": 0,
+          "input_dropped": 0,
+          "restarts": 0,
+          "error": "",
+          "mode": null,
+          "encode_latency_ms": null,
+          "last_capture_us": 0
+        }
+      },
+      {
+        "camera": 3,
+        "label": "camera3",
+        "source": {
+          "online": false,
+          "captured_fps": 0,
+          "resolution": {
+            "width": 640,
+            "height": 480
+          },
+          "desired_fps": 30
+        },
+        "transcode": {
+          "type": "H264_HW",
+          "decoder": "mppjpegdec",
+          "encoder": "mpph264enc",
+          "online": false,
+          "target_bps": 2000000,
+          "encoded_fps": 0,
+          "encoded_mbps": 0,
+          "frames": 0,
+          "bytes": 0,
+          "submitted": 0,
+          "input_dropped": 0,
+          "restarts": 0,
+          "error": "",
+          "mode": null,
+          "encode_latency_ms": null,
+          "last_capture_us": 0
+        }
+      },
+      {
+        "camera": 4,
+        "label": "camera4",
+        "source": {
+          "online": false,
+          "captured_fps": 0,
+          "resolution": {
+            "width": 640,
+            "height": 480
+          },
+          "desired_fps": 30
+        },
+        "transcode": {
+          "type": "H264_HW",
+          "decoder": "mppjpegdec",
+          "encoder": "mpph264enc",
+          "online": false,
+          "target_bps": 2000000,
+          "encoded_fps": 0,
+          "encoded_mbps": 0,
+          "frames": 0,
+          "bytes": 0,
+          "submitted": 0,
+          "input_dropped": 0,
+          "restarts": 0,
+          "error": "",
+          "mode": null,
+          "encode_latency_ms": null,
+          "last_capture_us": 0
+        }
+      },
+      {
+        "camera": 5,
+        "label": "camera5",
+        "source": {
+          "online": false,
+          "captured_fps": 0,
+          "resolution": {
+            "width": 640,
+            "height": 480
+          },
+          "desired_fps": 30
+        },
+        "transcode": {
+          "type": "H264_HW",
+          "decoder": "mppjpegdec",
+          "encoder": "mpph264enc",
+          "online": false,
+          "target_bps": 2000000,
+          "encoded_fps": 0,
+          "encoded_mbps": 0,
+          "frames": 0,
+          "bytes": 0,
+          "submitted": 0,
+          "input_dropped": 0,
+          "restarts": 0,
+          "error": "",
+          "mode": null,
+          "encode_latency_ms": null,
+          "last_capture_us": 0
+        }
+      }
+    ],
+    "sessions": [
+      {
+        "id": "g30-ffmpeg-7553dd03bbbb424e960d5313358de8f2",
+        "host": "127.0.0.1",
+        "rtp_source": "127.0.0.1",
+        "ports": [
+          15700,
+          15702,
+          15704,
+          15706,
+          15708,
+          15710
+        ],
+        "packets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "bytes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rejoins": 0,
+        "error": "",
+        "lease_remaining": 11.0
+      }
+    ],
+    "http_viewers": 0,
+    "all_online": false,
+    "test_pattern": false
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "scope": "Single TCP connection from board RAM to G30; no camera encoding, MediaCodec or recording in the transfer",
+  "port": 18096,
+  "peer": "192.168.144.11",
+  "seconds": 6.003957870000022,
+  "complete_block_bytes_written": 70975488,
+  "write_mbps": 94.57160031670874,
+  "error": ""
+}

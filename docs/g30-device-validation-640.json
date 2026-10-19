@@ -1,0 +1,45 @@
+{
+  "client_date": "2026-10-19",
+  "app_version": "1.1.0",
+  "package": "g30.sixcamera.app",
+  "android": "14",
+  "installed": true,
+  "display_resolution": [
+    1920,
+    1200
+  ],
+  "mode": {
+    "width": 640,
+    "height": 480,
+    "fps": 30,
+    "bitrate_per_camera": 2000000
+  },
+  "routes": {
+    "board": "192.168.144.10 eth0",
+    "g30": "192.168.144.11 eth0"
+  },
+  "labels": {
+    "names": [
+      "camera0",
+      "camera1",
+      "camera2",
+      "camera3",
+      "camera4",
+      "camera5"
+    ],
+    "font_sp": 14,
+    "anchor": "Visible image top-left; follows letterboxing"
+  },
+  "tests": {
+    "six_real_cameras_displayed": true,
+    "each_camera_fullscreen_and_return": true,
+    "back_key_returns_to_grid": true,
+    "cold_start": true,
+    "background_foreground_recovery": true,
+    "telemetry_visible_in_grid_and_fullscreen": true
+  },
+  "final_screen": "six-camera grid",
+  "optical_power_measured": false,
+  "high_bitrate_6m_8m_tested": false,
+  "long_duration_acceptance": false
+}

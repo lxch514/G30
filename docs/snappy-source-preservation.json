@@ -1,0 +1,6 @@
+{
+  "scope": "snappy-real rk3588 and Android src: cpp,hpp,kt,json,xml; absolute paths sorted with sha256sum",
+  "before": "97b239616ebbad9904cc299b95870458204b96a0c3a9cffa549275052e150106",
+  "after": "97b239616ebbad9904cc299b95870458204b96a0c3a9cffa549275052e150106",
+  "unchanged": true
+}

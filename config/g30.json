@@ -1,0 +1,22 @@
+{
+  "listen": "0.0.0.0",
+  "http_port": 8096,
+  "cameras": 6,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "bitrate": 2000000,
+  "payload_limit": 1536,
+  "rtp_base_port": 5700,
+  "rtp_stride": 2,
+  "mtu": 1200,
+  "lease_seconds": 12,
+  "payload_limits": [
+    1024,
+    1024,
+    3072,
+    1536,
+    1536,
+    1536
+  ]
+}

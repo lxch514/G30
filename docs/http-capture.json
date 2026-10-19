@@ -1,0 +1,44 @@
+{
+  "scope": "Real camera H264 over one HTTP/TCP connection from board to development PC, not G30 fiber acceptance",
+  "test_pattern": false,
+  "counts": [
+    300,
+    300,
+    300,
+    300,
+    300,
+    300
+  ],
+  "keyframes": [
+    10,
+    10,
+    10,
+    10,
+    10,
+    10
+  ],
+  "bytes": [
+    2499175,
+    2509570,
+    2500793,
+    2512262,
+    2496496,
+    2509341
+  ],
+  "duration_seconds": 10.625,
+  "mode": {
+    "width": 640,
+    "height": 480,
+    "fps": 30
+  },
+  "bitrate_per_camera": 2000000,
+  "restarts_delta": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "passed": true
+}

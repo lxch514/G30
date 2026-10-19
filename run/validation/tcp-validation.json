@@ -1,0 +1,92 @@
+{
+  "scope": "Six real cameras received simultaneously over one local TCP connection; clips decoded by FFmpeg. Not G30 display acceptance.",
+  "test_pattern": false,
+  "bitrate_per_camera": 2000000,
+  "mode": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "capture_seconds": 10.659614506000253,
+  "results": [
+    {
+      "camera": 0,
+      "received_frames": 300,
+      "keyframes": 10,
+      "bytes": 2494219,
+      "decoded_frames": 300,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "exit_code": 0,
+      "errors": "",
+      "probe_exit_code": 0,
+      "probe_errors": ""
+    },
+    {
+      "camera": 1,
+      "received_frames": 300,
+      "keyframes": 10,
+      "bytes": 2491347,
+      "decoded_frames": 300,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "exit_code": 0,
+      "errors": "",
+      "probe_exit_code": 0,
+      "probe_errors": ""
+    },
+    {
+      "camera": 2,
+      "received_frames": 300,
+      "keyframes": 10,
+      "bytes": 2508551,
+      "decoded_frames": 300,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "exit_code": 0,
+      "errors": "",
+      "probe_exit_code": 0,
+      "probe_errors": ""
+    },
+    {
+      "camera": 3,
+      "received_frames": 300,
+      "keyframes": 10,
+      "bytes": 2495741,
+      "decoded_frames": 300,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "exit_code": 0,
+      "errors": "",
+      "probe_exit_code": 0,
+      "probe_errors": ""
+    },
+    {
+      "camera": 4,
+      "received_frames": 300,
+      "keyframes": 10,
+      "bytes": 2499938,
+      "decoded_frames": 300,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "exit_code": 0,
+      "errors": "",
+      "probe_exit_code": 0,
+      "probe_errors": ""
+    },
+    {
+      "camera": 5,
+      "received_frames": 300,
+      "keyframes": 10,
+      "bytes": 2498331,
+      "decoded_frames": 300,
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "exit_code": 0,
+      "errors": "",
+      "probe_exit_code": 0,
+      "probe_errors": ""
+    }
+  ],
+  "passed": true
+}
