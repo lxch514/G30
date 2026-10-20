@@ -12,6 +12,7 @@
 - 主界面 3 列 × 2 行，`camera0`～`camera5` 贴住实际视频的左上角，字号 14sp；放大后同样跟随图像边缘。
 - 保持原始宽高比完整显示，不拉伸、不裁剪，剩余区域为黑边。
 - 单击任意画面进入全屏；再次点击画面或按返回键回到六宫格。
+- v1.3.0：camera0 四周参考框，camera1 上红下黄两条平行横线；顶部“参考线”可选通道，或长按对应画面调整。两路可独立开关、调节、保存，保存完成后正常重上电仍保留；普通升级使用 install -r。详见 `docs/辅助线使用说明.md`。
 - 顶部显示六路视频实收 Mbps（近 5 秒）、板端实际编码 Mbps、状态响应耗时、重连与追帧次数；放大单路时仍保留统计。每个画面底部显示该路码率与帧率。
 - 全屏操作只改变布局；不重连视频，不创建第七个解码器，六个显示表面均保持连接。
 - 相机断连后，板端采集监督进程会重新枚举并恢复六路；期间 APP 显示相机/连接状态。
@@ -54,7 +55,7 @@ bash scripts/setup.sh
 bash scripts/start.sh
 ```
 
-本次交付已在板端完成 setup 并启动真实摄像头模式，不需要安装 APK 前重复 setup。
+板端此前已完成 setup；2026-10-20 本次只更新 APP 和清理闲置临时文件，图传服务保持停止。需要使用时执行 start，不需要安装 APK 前重复 setup。
 
 日常命令：
 
@@ -107,17 +108,16 @@ gradlew.bat assembleDebug
 
 adb devices
 
-adb uninstall g30.sixcamera.app
 adb install -r app\build\outputs\apk\debug\app-debug.apk
 adb shell am force-stop g30.sixcamera.app
 adb shell am start -n g30.sixcamera.app/.MainActivity
 ```
 
-首次卸载若提示包不存在，继续安装即可。以后普通升级可以省略 uninstall，`install -r` 会保留 APP 中保存的板端地址。**不要卸载 `snappy.remote.app`，那是原来的 K2 APP。** 如果 adb 显示多台设备，请在每条 adb 命令中加入 `-s 目标序列号`。
+首次或普通升级均使用 `install -r`，可保留 APP 中保存的板端地址及两路辅助线设置。不要先卸载或清除本 APP 数据。**不要卸载 `snappy.remote.app`，那是原来的 K2 APP。** 如果 adb 显示多台设备，请在每条 adb 命令中加入 `-s 目标序列号`。
 
 工程使用 JDK 11、Gradle 7.3.3、Android Gradle Plugin 7.2.2、compileSdk/targetSdk 32、minSdk 26。安装目标 G30 为 Android 14；无需依赖云卓专用播放器 AAR 或 RCSDK。首次构建需要能解析 Gradle/Google/Maven 依赖，或有对应缓存。
 
-`dist/g30-sixcamera-debug.apk` 可直接安装。用户于 2026-10-19 进一步授权 ADB 安装与实机验证，当前 v1.1.0 已安装在连接的 G30 上；以上命令保留供以后重新构建或升级使用。普通升级使用 install -r，无需卸载。
+`dist/g30-sixcamera-debug.apk` 可直接安装。当前 v1.3.0 构建和签名检查通过；G30 暂未接 USB，尚未安装。2026-10-19 的 camera0 主要功能实机测试是旧版证据，本次 camera1 与重新上电保留仍待实机验证。普通升级使用 install -r，无需卸载。
 
 ## 光纤网络连接
 

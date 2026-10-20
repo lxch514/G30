@@ -13,8 +13,11 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -24,6 +27,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
@@ -33,11 +37,12 @@ public final class MainActivity extends Activity {
     private LinearLayout header;
     private SixCameraGrid grid;
     private TextView summary,telemetry;
-    private Button settingsButton;
+    private Button settingsButton,guideButton;
     private final ThroughputMeter receiveMeter=new ThroughputMeter(5000);
     private double encodedMbps;
     private long responseMs,lastStateMs,sourceResyncs,connectedAt;
     private ScheduledExecutorService network;
+    private final ExecutorService guideStorage=Executors.newSingleThreadExecutor();
     private SharedPreferences preferences;
     private volatile boolean active;
     private volatile int generation;
@@ -80,19 +85,29 @@ public final class MainActivity extends Activity {
         telemetry=new TextView(this);telemetry.setText("正在统计 TCP 接收速率…");telemetry.setTextColor(0xFF9CE8C7);telemetry.setTextSize(12);telemetry.setSingleLine(true);telemetry.setEllipsize(TextUtils.TruncateAt.END);
         headings.addView(telemetry,new LinearLayout.LayoutParams(-1,-2));
         header.addView(headings,new LinearLayout.LayoutParams(0,-1,1));
+        guideButton=new Button(this);guideButton.setText("参考线");guideButton.setTextSize(12);
+        guideButton.setContentDescription("摄像头参考线设置");guideButton.setOnClickListener(v->guideSettings());
+        header.addView(guideButton,new LinearLayout.LayoutParams(dp(84),dp(42)));
         settingsButton=new Button(this);settingsButton.setText("连接设置");settingsButton.setTextSize(12);settingsButton.setOnClickListener(v->settings());
         header.addView(settingsButton,new LinearLayout.LayoutParams(dp(108),dp(42)));
         root.addView(header,new LinearLayout.LayoutParams(-1,dp(64)));
         grid=new SixCameraGrid(this);root.addView(grid,new LinearLayout.LayoutParams(-1,0,1));
+        for(int camera=0;camera<2;camera++) {
+            final int index=camera;
+            grid.tile(camera).guide().configure(loadGuide(camera));
+            grid.tile(camera).setOnLongClickListener(v->{guideSettings(index);return true;});
+        }
         for(int i=0;i<6;i++){final int index=i;grid.tile(i).setOnClickListener(v->select(grid.selected()<0?index:-1));}
         setContentView(root);immersive();
     }
     private void immersive(){getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY|View.SYSTEM_UI_FLAG_FULLSCREEN|View.SYSTEM_UI_FLAG_HIDE_NAVIGATION|View.SYSTEM_UI_FLAG_LAYOUT_STABLE);}
     @Override public void onWindowFocusChanged(boolean focused){super.onWindowFocusChanged(focused);if(focused)immersive();}
     @Override public void onStart(){super.onStart();active=true;connect();ui.post(ticker);}
-    @Override public void onStop(){active=false;disconnect();ui.removeCallbacksAndMessages(null);super.onStop();}
+    @Override public void onStop(){active=false;disconnect();ui.removeCallbacks(ticker);super.onStop();}
+    @Override public void onDestroy(){guideStorage.shutdown();super.onDestroy();}
     private void select(int index){
         grid.select(index);summary.setVisibility(index<0?View.VISIBLE:View.GONE);settingsButton.setVisibility(index<0?View.VISIBLE:View.GONE);
+        guideButton.setVisibility(index<2?View.VISIBLE:View.GONE);
         LinearLayout.LayoutParams params=(LinearLayout.LayoutParams)header.getLayoutParams();params.height=dp(index<0?64:36);header.setLayoutParams(params);immersive();
     }
     @Override public void onBackPressed(){if(grid.selected()>=0)select(-1);else super.onBackPressed();}
@@ -188,5 +203,86 @@ public final class MainActivity extends Activity {
             disconnect();host=next;apiPort=nextPort;preferences.edit().putString("host",host).putInt("port",apiPort).apply();
             if(active)connect();dialog.dismiss();immersive();
         }));dialog.show();
+    }
+    private void guideSettings() {
+        int selected=grid.selected();
+        if(selected==0||selected==1){guideSettings(selected);return;}
+        new AlertDialog.Builder(this).setTitle("选择参考线通道")
+            .setItems(new String[]{"camera0 · 四周边界","camera1 · 红黄双横线"},(dialog,index)->guideSettings(index))
+            .setNegativeButton("取消",null).show();
+    }
+    private GuideConfig loadGuide(int camera) {
+        GuideConfig defaults=GuideConfig.defaults(camera);String prefix=defaults.prefix();String[] keys=defaults.keys();int[] values=defaults.values();
+        for(int i=0;i<4;i++)values[i]=preferences.getInt(prefix+keys[i],values[i]);
+        return new GuideConfig(camera,preferences.getBoolean(prefix+"enabled",true),values[0],values[1],values[2],values[3]);
+    }
+    private boolean persistGuide(GuideConfig config) {
+        SharedPreferences.Editor edit=preferences.edit().putBoolean(config.prefix()+"enabled",config.enabled);
+        String[] keys=config.keys();int[] values=config.values();
+        for(int i=0;i<4;i++)edit.putInt(config.prefix()+keys[i],values[i]);
+        return edit.commit();
+    }
+    private void guideSettings(int camera) {
+        final CameraGuideView guide=grid.tile(camera).guide();
+        final int previousSelection=grid.selected();
+        final GuideConfig before=guide.config();
+        final GuideConfig[] draft={before};
+        final boolean[] saved={false};
+        select(camera);
+        LinearLayout form=new LinearLayout(this);form.setOrientation(LinearLayout.VERTICAL);form.setPadding(dp(16),dp(4),dp(16),dp(4));
+        TextView note=new TextView(this);note.setText(camera==0?"四周参考边界，仅供人工观察，不代表实际距离。\n物体靠近线条时，请结合现场情况判断。":"上红、下黄两条平行横线，仅供人工观察，不代表实际距离。\n高度从画面顶部计算；红线始终在黄线上方。");note.setTextSize(12);form.addView(note);
+        CheckBox enabled=new CheckBox(this);enabled.setText("显示camera"+camera+"参考线");enabled.setChecked(before.enabled);form.addView(enabled);
+        String[] directions=camera==0?new String[]{"左边距","上边距","右边距","下边距"}:new String[]{"左边距","红线高度","右边距","黄线高度"};
+        SeekBar[] sliders=new SeekBar[4];
+        for(int i=0;i<4;i++) {
+            final int side=i;
+            LinearLayout row=new LinearLayout(this);row.setGravity(Gravity.CENTER_VERTICAL);
+            TextView label=new TextView(this);label.setTextSize(12);label.setGravity(Gravity.CENTER_VERTICAL);label.setText(directions[i]+" "+draft[0].values()[i]+"%");
+            row.addView(label,new LinearLayout.LayoutParams(dp(90),dp(38)));
+            SeekBar slider=new SeekBar(this);sliders[i]=slider;slider.setMax(camera==1&&(i==1||i==3)?(i==1?99:100):40);slider.setProgress(draft[0].values()[i]);
+            slider.setContentDescription("camera"+camera+directions[i]);row.addView(slider,new LinearLayout.LayoutParams(0,dp(38),1));form.addView(row);
+            slider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
+                @Override public void onProgressChanged(SeekBar bar,int value,boolean user){
+                    draft[0]=draft[0].withValue(side,value);int actual=draft[0].values()[side];
+                    if(bar.getProgress()!=actual)bar.setProgress(actual);
+                    label.setText(directions[side]+" "+actual+"%");guide.configure(draft[0]);
+                }
+                @Override public void onStartTrackingTouch(SeekBar bar){}
+                @Override public void onStopTrackingTouch(SeekBar bar){}
+            });
+        }
+        enabled.setOnCheckedChangeListener((button,checked)->{draft[0]=draft[0].withEnabled(checked);guide.configure(draft[0]);});
+        TextView help=new TextView(this);help.setText("位置按实际图像比例计算，六宫格与全屏保持一致。长按camera"+camera+"也可打开设置。\n点击保存并关闭后，位置会保留到下次开机。更新APP请覆盖安装；卸载或清除APP数据会删除设置。");help.setTextSize(11);form.addView(help);
+        ScrollView scroll=new ScrollView(this);scroll.addView(form);
+        AlertDialog dialog=new AlertDialog.Builder(this).setTitle(camera==0?"camera0 · 四周参考线":"camera1 · 红黄双横线").setView(scroll)
+            .setNegativeButton("取消",null).setNeutralButton("恢复默认",null).setPositiveButton("保存",null).create();
+        dialog.setOnDismissListener(d->{if(!saved[0])guide.configure(before);select(previousSelection);});
+        dialog.setOnShowListener(d->{
+            dialog.getWindow().setDimAmount(.18f);
+            dialog.getWindow().setLayout(Math.min(dp(420),getResources().getDisplayMetrics().widthPixels-dp(24)),WindowManager.LayoutParams.WRAP_CONTENT);
+            dialog.getButton(AlertDialog.BUTTON_NEUTRAL).setOnClickListener(v->{
+                draft[0]=GuideConfig.defaults(camera);enabled.setChecked(true);
+                int[] defaults=draft[0].values();for(int i=0;i<4;i++)sliders[i].setProgress(defaults[i]);guide.configure(draft[0]);
+            });
+            dialog.getButton(AlertDialog.BUTTON_POSITIVE).setOnClickListener(v->{
+                final GuideConfig value=draft[0];
+                setGuideFormEnabled(dialog,enabled,sliders,false);dialog.getButton(AlertDialog.BUTTON_POSITIVE).setText("保存中…");
+                guideStorage.execute(()->{
+                    boolean committed;try{committed=persistGuide(value);}catch(RuntimeException error){committed=false;}
+                    final boolean success=committed;
+                    ui.post(()->{
+                        if(isDestroyed())return;
+                        if(success){saved[0]=true;dialog.dismiss();}
+                        else {setGuideFormEnabled(dialog,enabled,sliders,true);dialog.getButton(AlertDialog.BUTTON_POSITIVE).setText("保存");note.setText("保存失败，设置尚未确认写入存储，请重试。");}
+                    });
+                });
+            });
+        });
+        dialog.show();
+    }
+    private void setGuideFormEnabled(AlertDialog dialog,CheckBox enabled,SeekBar[] sliders,boolean value) {
+        dialog.setCancelable(value);dialog.setCanceledOnTouchOutside(value);enabled.setEnabled(value);
+        for(SeekBar slider:sliders)slider.setEnabled(value);
+        for(int button:new int[]{AlertDialog.BUTTON_NEGATIVE,AlertDialog.BUTTON_NEUTRAL,AlertDialog.BUTTON_POSITIVE})dialog.getButton(button).setEnabled(value);
     }
 }

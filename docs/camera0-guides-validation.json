@@ -1,0 +1,111 @@
+{
+  "feature": "camera0 manual image-reference boundary",
+  "app_version": "1.2.0",
+  "version_code": 3,
+  "function_test_date": "2026-10-19",
+  "packaged_date": "2026-10-20",
+  "final_apk_sha256": "4b381ab635ea8378fa8c3ea1b599b8a92b0400685f8ddfa2a06bb2022b1f9c3c",
+  "main_feature_installed_and_verified": true,
+  "final_artifact_installed": false,
+  "pending": "G30 USB/ADB unavailable; user said connection currently inconvenient; final liveness-label adjustment only built, not reinstalled",
+  "default_margins_percent": {
+    "left": 12,
+    "top": 15,
+    "right": 12,
+    "bottom": 15
+  },
+  "tests": {
+    "camera0_only": true,
+    "grid_and_fullscreen": true,
+    "adjustable_four_sides": true,
+    "persistence_after_app_restart": true,
+    "visibility_toggle": true,
+    "reset_defaults": true,
+    "cancel_reverts": true,
+    "long_press_entry": true,
+    "other_camera_fullscreen_unaffected": true,
+    "layout_changes_keep_tcp_connection": true
+  },
+  "evidence": {
+    "scope": "UI actions and evidence; screenshots require visual review",
+    "events": [
+      {
+        "screenshot": "07-adjusted-dialog.png",
+        "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:38054                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.698/0.289 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:689750596 segs_out:204738 segs_in:515748 data_segs_out:1 data_segs_in:515746 send 166.0Mbps lastsnd:458080 lastack:1956 pacing_rate 331.5Mbps delivery_rate 14.2Mbps app_limited rcv_rtt:6.091 rcv_space:118455 minrtt:0.682\n"
+      },
+      {
+        "screenshot": "08-adjusted-grid.png",
+        "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:38054                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.698/0.289 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:692891614 segs_out:205709 segs_in:518094 data_segs_out:1 data_segs_in:518092 send 166.0Mbps lastsnd:460148 lastrcv:4 lastack:1456 pacing_rate 331.5Mbps delivery_rate 14.2Mbps app_limited rcv_rtt:6.061 rcv_space:118455 minrtt:0.682\n"
+      },
+      {
+        "screenshot": "09-adjusted-fullscreen.png",
+        "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:38054                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.698/0.289 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:695951109 segs_out:206673 segs_in:520384 data_segs_out:1 data_segs_in:520382 send 166.0Mbps lastsnd:462192 lastrcv:8 lastack:3500 pacing_rate 331.5Mbps delivery_rate 14.2Mbps app_limited rcv_rtt:5.01 rcv_space:118455 minrtt:0.682\n"
+      },
+      {
+        "screenshot": "10-persisted-grid.png",
+        "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:42006                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.669/0.266 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:7660513 segs_out:2415 segs_in:5704 data_segs_out:1 data_segs_in:5702 send 173.2Mbps lastsnd:5728 lastrcv:12 lastack:4840 pacing_rate 345.9Mbps delivery_rate 18.5Mbps app_limited rcv_rtt:5.48 rcv_space:87718 minrtt:0.626\n"
+      },
+      {
+        "screenshot": "11-persisted-dialog.png",
+        "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:42006                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.669/0.266 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:10401260 segs_out:3275 segs_in:7760 data_segs_out:1 data_segs_in:7758 send 173.2Mbps lastsnd:7536 lastrcv:4 lastack:6648 pacing_rate 345.9Mbps delivery_rate 18.5Mbps app_limited rcv_rtt:6.34 rcv_space:87718 minrtt:0.626\n"
+      },
+      {
+        "screenshot": "12-hidden-grid.png",
+        "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:42006                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.669/0.266 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:14245189 segs_out:4427 segs_in:10630 data_segs_out:1 data_segs_in:10628 send 173.2Mbps lastsnd:9992 lastrcv:12 lastack:1420 pacing_rate 345.9Mbps delivery_rate 18.5Mbps app_limited rcv_rtt:4.101 rcv_space:94650 minrtt:0.626\n"
+      },
+      {
+        "screenshot": "13-restored-default-dialog.png",
+        "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:42006                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.669/0.266 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:17565899 segs_out:5467 segs_in:13106 data_segs_out:1 data_segs_in:13104 send 173.2Mbps lastsnd:12188 lastrcv:8 lastack:3616 pacing_rate 345.9Mbps delivery_rate 18.5Mbps app_limited rcv_rtt:4.461 rcv_space:94650 minrtt:0.626\n"
+      },
+      {
+        "screenshot": "14-default-grid.png",
+        "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:42006                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.669/0.266 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:20767449 segs_out:6451 segs_in:15514 data_segs_out:1 data_segs_in:15512 send 173.2Mbps lastsnd:14360 lastrcv:8 lastack:5788 pacing_rate 345.9Mbps delivery_rate 18.5Mbps app_limited rcv_rtt:5.723 rcv_space:94650 minrtt:0.626\n"
+      },
+      {
+        "screenshot": "15-cancelled-grid.png",
+        "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:42006                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.669/0.266 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:25091332 segs_out:7799 segs_in:18752 data_segs_out:1 data_segs_in:18750 send 173.2Mbps lastsnd:17188 lastack:1216 pacing_rate 345.9Mbps delivery_rate 18.5Mbps app_limited rcv_rtt:5.536 rcv_space:94650 minrtt:0.626\n"
+      },
+      {
+        "screenshot": "16-long-press-dialog.png",
+        "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:42006                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.669/0.266 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:28365858 segs_out:8814 segs_in:21206 data_segs_out:1 data_segs_in:21204 send 173.2Mbps lastsnd:19412 lastrcv:8 lastack:3440 pacing_rate 345.9Mbps delivery_rate 18.5Mbps app_limited rcv_rtt:4.679 rcv_space:94650 minrtt:0.626\n"
+      },
+      {
+        "screenshot": "17-camera2-no-guide.png",
+        "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n0      0        [::ffff:192.168.144.11]:42006                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.669/0.266 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:31820953 segs_out:9882 segs_in:23784 data_segs_out:1 data_segs_in:23782 send 173.2Mbps lastsnd:21732 lastrcv:4 lastack:5760 pacing_rate 345.9Mbps delivery_rate 18.5Mbps app_limited rcv_rtt:5.511 rcv_space:94650 minrtt:0.626\n"
+      },
+      {
+        "screenshot": "18-final-grid.png",
+        "tcp": "Recv-Q Send-Q Local Address:Port                Peer Address:Port              \n13145  0        [::ffff:192.168.144.11]:42006                [::ffff:192.168.144.10]:8096               \n\t cubic wscale:7,9 rto:204 rtt:0.669/0.266 ato:40 mss:1448 rcvmss:1448 advmss:1448 cwnd:10 ssthresh:1400 bytes_acked:186 bytes_received:34914754 segs_out:10829 segs_in:26109 data_segs_out:1 data_segs_in:26107 send 173.2Mbps lastsnd:23804 lastack:7832 pacing_rate 345.9Mbps delivery_rate 18.5Mbps app_limited rcv_rtt:4.346 rcv_space:94650 minrtt:0.626\n"
+      }
+    ]
+  },
+  "actual_distance_measurement": false,
+  "automatic_object_warning": false,
+  "actuator_control": false,
+  "final_screen_at_last_device_test": "six-camera grid, guides on at default margins",
+  "current_board_config": {
+    "listen": "0.0.0.0",
+    "http_port": 8096,
+    "cameras": 6,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "bitrate": 2000000,
+    "payload_limit": 1536,
+    "rtp_base_port": 5700,
+    "rtp_stride": 2,
+    "mtu": 1200,
+    "lease_seconds": 12,
+    "payload_limits": [
+      3072,
+      1024,
+      1024,
+      1536,
+      1536,
+      1536
+    ]
+  },
+  "current_board_service_check": "<urlopen error [Errno 111] Connection refused>",
+  "board_runtime_unchanged": true,
+  "board_backups_created": false
+}
