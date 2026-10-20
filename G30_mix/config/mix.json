@@ -1,0 +1,13 @@
+{
+  "source_dir": "/root/G30/run/frames",
+  "listen": "0.0.0.0",
+  "port": 8097,
+  "fps": 8,
+  "max_width": 1600,
+  "max_height": 1000,
+  "jpeg_quality": 82,
+  "max_input_age_seconds": 1.0,
+  "max_publication_skew_ms": 80,
+  "blend_width_pixels": 12,
+  "opencv_threads": 2
+}

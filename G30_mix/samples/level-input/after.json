@@ -1,0 +1,100 @@
+{
+  "apply": {
+    "ok": true,
+    "view": {
+      "version": 1,
+      "projection": "camera3",
+      "rotation_deg": -0.16,
+      "crop_black": true
+    },
+    "auto_report": {
+      "reference_lines": 7,
+      "correction_deg": -0.16,
+      "method": "long_near_vertical_scene_lines",
+      "lens_calibrated": false
+    },
+    "output_size": [
+      1583,
+      537
+    ],
+    "retained_valid_percent": 82.8
+  },
+  "state": {
+    "project": "G30_mix",
+    "instance": "f0b97a9abc9847f08eaa3c651a6061a9",
+    "pid": 9021,
+    "cameras": [
+      3,
+      4
+    ],
+    "calibrated": true,
+    "running": true,
+    "error": "",
+    "inputs": [
+      {
+        "camera": 3,
+        "age_ms": 120.3
+      },
+      {
+        "camera": 4,
+        "age_ms": 108.3
+      }
+    ],
+    "publication_skew_ms": 12.0,
+    "output_size": [
+      1583,
+      537
+    ],
+    "output_fps": 7.71,
+    "processing_ms": 74.1,
+    "output_age_ms": 20.4,
+    "frames": 12,
+    "source_dir": "/root/G30/run/frames",
+    "transport": "MJPEG over HTTP/TCP",
+    "view": {
+      "version": 1,
+      "projection": "camera3",
+      "rotation_deg": -0.16,
+      "crop_black": true
+    },
+    "lens_calibrated": false,
+    "view_geometry": {
+      "canvas_size": [
+        1600,
+        895
+      ],
+      "crop_rect": [
+        15,
+        159,
+        1583,
+        537
+      ],
+      "retained_valid_percent": 82.8
+    },
+    "seam_percent": 66.0,
+    "calibration_report": {
+      "matches": 47,
+      "inliers": 24,
+      "inlier_ratio": 0.511,
+      "median_error_px": 0.549,
+      "p95_error_px": 1.276,
+      "feature_coverage": [
+        0.060885237805342274,
+        0.05021023886127767
+      ],
+      "model": "planar_homography",
+      "projection": "balanced",
+      "method": "automatic",
+      "alignment_fraction": 0.65,
+      "features": [
+        216,
+        603
+      ],
+      "output_size": [
+        1600,
+        737
+      ],
+      "overlap_fraction": 0.5268
+    }
+  }
+}

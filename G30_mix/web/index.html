@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>camera3 + camera4 拼接试验</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,"Microsoft YaHei",sans-serif;background:#0c141e;color:#e7eef7}*{box-sizing:border-box}body{margin:0 auto;max-width:1700px;padding:18px}header{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}h1{font-size:23px;margin:0}p{line-height:1.55}button,select{font:inherit;color:inherit;background:#243449;border:1px solid #455a73;border-radius:7px;padding:10px 15px;cursor:pointer}button:disabled{opacity:.45;cursor:wait}button.primary{background:#176d65;border-color:#41978d}button:hover{filter:brightness(1.15)}#status{color:#9db4cc;margin:12px 0 6px}#status.ok{color:#9ce8c7}#status.bad,#message.bad{color:#ffc580}#detail{font-size:13px;color:#a6b9ce;margin-bottom:12px}figure{margin:0;background:#000;border-radius:10px;overflow:hidden;min-height:150px}#panorama{display:block;width:100%;min-height:120px;object-fit:contain;max-height:76vh}#panorama.stale{opacity:.45}figcaption{padding:9px 13px;color:#a6b9ce;background:#142233;font-size:13px}details{background:#142233;border-radius:10px;padding:14px;margin-top:16px}summary{cursor:pointer;font-size:17px}.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:14px 0}.hint{font-size:14px;color:#b3c5d8}.sources{display:grid;grid-template-columns:1fr 1fr;gap:14px}.source{min-width:0}.source h3{margin:6px 0;font-size:16px}canvas{display:block;width:100%;background:#000;border:1px solid #455a73;border-radius:6px;touch-action:none}.counts{font-size:14px;color:#a6b9ce;margin-top:7px}input[type=range]{width:min(440px,65vw);accent-color:#6ccfc0;vertical-align:middle}.warning{font-size:13px;color:#a6b9ce}#message{min-height:22px;color:#9ce8c7}a{color:#9fd8ff}@media(max-width:700px){body{padding:10px}.sources{grid-template-columns:1fr}h1{font-size:20px}}
+</style></head><body>
+<header><h1>camera3 + camera4 拼接试验</h1><button onclick="toggleFull()">放大拼接画面</button></header>
+<div id="status">正在连接板端拼接服务…</div><div id="detail">加载状态</div>
+<figure id="figure"><img id="panorama" alt="尚无实时拼接画面，请先完成对齐"><figcaption>可在下方拉正视角并裁掉黑边；裁切会减少上下及边缘视野。近景物体仍可能错位，请结合原始画面判断。</figcaption></figure>
+<details id="viewSettings" open><summary>画面拉正</summary>
+<div class="toolbar"><label for="projection">基准视角</label><select id="projection"><option value="camera3">以camera3为基准</option><option value="camera4">以camera4为基准</option><option value="balanced">原始居中拼接</option></select><label><input id="cropBlack" type="checkbox" checked> 裁掉黑边（减少边缘视野）</label></div>
+<div class="toolbar"><label for="rotation">水平微调：<span id="rotationValue">0.0°</span></label><input id="rotation" type="range" min="-15" max="15" step="0.1" value="0"></div>
+<div class="toolbar"><button class="primary" id="autoLevel">自动拉正并保存</button><button id="saveView">应用微调并保存</button><button id="resetView">恢复原始完整视角</button></div>
+<div id="viewMessage" role="status" aria-live="polite"></div>
+<p class="hint" id="viewDetail">正在读取拉正设置</p><p class="hint">自动拉正参考门框等长竖线，角度只计算一次并保存，不随每帧跳动。微调后点击“应用”才生效。这是视角和水平校正，尚未做镜头畸变标定；同一场景中不同深度的物体仍可能存在透视和接缝错位。</p>
+</details>
+<details id="settings"><summary>调整拼接与接缝</summary>
+<div class="toolbar"><select id="area" aria-label="自动对齐区域"><option value="0.65">优先上部墙面</option><option value="1">整幅画面</option><option value="0.45">仅上部区域</option></select><button class="primary" id="auto">自动对齐并保存</button><button id="capture">拍摄标定图 / 手动选点</button></div>
+<p class="hint">自动对齐不理想时，可拍摄一对固定图，再在两侧按相同顺序选择同一面墙上的对应点，至少4对，尽量分散。避免把近处椅子与远处墙面混在一起选点。</p>
+<div class="sources"><div class="source"><h3>camera3</h3><canvas id="canvas3" width="960" height="540" aria-label="camera3对应点"></canvas><div class="counts" id="count3">0个点</div><button onclick="undo(3)">撤销此侧最后一点</button></div><div class="source"><h3>camera4</h3><canvas id="canvas4" width="960" height="540" aria-label="camera4对应点"></canvas><div class="counts" id="count4">0个点</div><button onclick="undo(4)">撤销此侧最后一点</button></div></div>
+<div class="toolbar"><button class="primary" id="manual">应用手动选点并保存</button><button onclick="clearPoints()">清空选点</button></div>
+<div class="toolbar"><label for="seam">接缝在重叠区的位置：<span id="seamValue">—</span></label><input id="seam" type="range" min="0" max="100" step="1" value="50"><button id="saveSeam">应用接缝并保存</button></div>
+<div id="message" role="status" aria-live="polite"></div>
+<p class="hint">已保存的标定会在拼接程序重新启动后加载。摄像头位置、观察平面或工作距离变化后，应重新检查对齐。<a href="/matches.jpg" target="_blank" rel="noopener">查看标定对应点</a></p>
+</details>
+<p class="warning">本页试验预览使用 MJPEG / HTTP / TCP，默认目标8帧/秒。原六路H.264图传继续独立运行。拼接画面不提供真实距离或自动避障。</p>
+<script>
+let token=null,manualMode=false,busy=false,streaming=false,seamDirty=false,viewDirty=false,lastRunning=false,instance=null;
+const points={3:[],4:[]},images={};
+const el=id=>document.getElementById(id);
+function say(text,bad=false){el('message').textContent=text;el('message').className=bad?'bad':''}
+async function request(path,body){const r=await fetch(path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});const data=await r.json();if(!r.ok)throw Error(data.error||r.status);return data}
+async function action(fn){if(busy)return;busy=true;document.querySelectorAll('button,select,input').forEach(x=>x.disabled=true);say('正在处理，请稍候…');try{await fn()}catch(e){say(e.message,true)}finally{busy=false;document.querySelectorAll('button,select,input').forEach(x=>x.disabled=false);poll()}}
+function draw(camera){const c=el('canvas'+camera),ctx=c.getContext('2d');if(!images[camera])return;c.width=images[camera].naturalWidth;c.height=images[camera].naturalHeight;ctx.drawImage(images[camera],0,0);ctx.lineWidth=Math.max(2,c.width/500);ctx.font=`bold ${Math.max(18,c.width/55)}px sans-serif`;points[camera].forEach((p,i)=>{const x=p[0]*c.width,y=p[1]*c.height;ctx.strokeStyle='#ffe082';ctx.fillStyle='#ffe082';ctx.beginPath();ctx.arc(x,y,c.width/160,0,Math.PI*2);ctx.stroke();ctx.strokeStyle='#000';ctx.strokeText(i+1,x+12,y-12);ctx.fillText(i+1,x+12,y-12)});el('count'+camera).textContent=points[camera].length+'个点'+(manualMode?' · 依次对应另一侧相同编号':' · 点击“拍摄标定图”后开始选点')}
+async function loadSources(frozen){await Promise.all([3,4].map(camera=>new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>{images[camera]=im;draw(camera);resolve()};im.onerror=()=>reject(Error('无法读取camera'+camera+'画面'));im.src=(frozen?'/calibration/':'/source/')+camera+'.jpg?t='+Date.now()})))}
+function clearPoints(){points[3]=[];points[4]=[];draw(3);draw(4)}
+function undo(camera){if(busy)return;points[camera].pop();draw(camera)}
+for(const camera of [3,4])el('canvas'+camera).addEventListener('click',event=>{if(!manualMode||busy){say('先点击“拍摄标定图 / 手动选点”');return}if(points[camera].length>=50)return;const b=event.currentTarget.getBoundingClientRect();points[camera].push([(event.clientX-b.left)/b.width,(event.clientY-b.top)/b.height]);draw(camera)});
+el('auto').onclick=()=>action(async()=>{const data=await request('/api/calibrate',{fraction:Number(el('area').value)});manualMode=false;token=null;clearPoints();await loadSources(false);seamDirty=false;say('已对齐并保存，标定可靠对应点 '+data.report.inliers+' 对。')});
+el('capture').onclick=()=>action(async()=>{const data=await request('/api/capture',{});token=data.token;manualMode=true;clearPoints();await loadSources(true);say('标定图已固定，请按相同顺序选择对应点。')});
+el('manual').onclick=()=>action(async()=>{if(!manualMode||!token)throw Error('请先拍摄标定图');if(points[3].length!==points[4].length||points[3].length<4)throw Error('两侧需要相同数量的对应点，至少4对');const data=await request('/api/manual',{token,points3:points[3],points4:points[4]});manualMode=false;token=null;seamDirty=false;say('手动对齐已保存，采用 '+data.report.inliers+' 对对应点。')});
+el('seam').oninput=()=>{seamDirty=true;el('seamValue').textContent=el('seam').value+'%'};
+el('saveSeam').onclick=()=>action(async()=>{await request('/api/seam',{percent:Number(el('seam').value)});seamDirty=false;say('接缝位置已保存。')});
+function viewDraft(){return {projection:el('projection').value,rotation_deg:Number(el('rotation').value),crop_black:el('cropBlack').checked}}
+function viewChanged(){viewDirty=true;el('rotationValue').textContent=Number(el('rotation').value).toFixed(1)+'°'}
+el('rotation').oninput=viewChanged;el('projection').onchange=viewChanged;el('cropBlack').onchange=viewChanged;
+async function changeView(body){if(busy)return;el('viewMessage').textContent='正在拉正并保存…';try{await action(async()=>{const s=await request('/api/view',body);viewDirty=false;const message='已保存，输出 '+s.output_size.join(' × ')+(s.auto_report?'；参考 '+s.auto_report.reference_lines+' 组竖线。':'。');el('viewMessage').textContent=message;say(message)});if(el('message').classList.contains('bad'))el('viewMessage').textContent=el('message').textContent}catch(e){el('viewMessage').textContent=e.message}}
+el('autoLevel').onclick=()=>changeView({...viewDraft(),auto:true});
+el('saveView').onclick=()=>changeView(viewDraft());
+el('resetView').onclick=()=>changeView({projection:'balanced',rotation_deg:0,crop_black:false});
+function connectStream(){if(streaming)return;streaming=true;el('panorama').src='/live.mjpg?t='+Date.now()}
+el('panorama').onerror=()=>{streaming=false;el('panorama').classList.add('stale')};
+async function poll(){try{const response=await fetch('/api/state');if(!response.ok)throw Error('状态读取失败');const s=await response.json();el('status').className=s.running?'ok':'bad';el('status').textContent=s.running?'实时拼接中':'暂无实时拼接画面：'+(s.error||'正在等待输入');el('panorama').classList.toggle('stale',!s.running);if(instance!==s.instance||!s.running)streaming=false;if(s.running&&(!lastRunning||!streaming))connectStream();instance=s.instance;lastRunning=s.running;if(!s.calibrated)el('settings').open=true;const size=s.output_size?s.output_size.join(' × '):'—';el('detail').textContent=`输出 ${size} · ${s.output_fps.toFixed(1)} 帧/秒 · 两路文件到达差 ${s.publication_skew_ms??'—'} ms · 单次处理 ${s.processing_ms.toFixed(0)} ms`;if(s.seam_percent!==null&&!seamDirty&&!busy){el('seam').value=s.seam_percent;el('seamValue').textContent=s.seam_percent.toFixed(1)+'%'}if(s.view){if(!viewDirty&&!busy){el('projection').value=s.view.projection;el('rotation').value=s.view.rotation_deg;el('rotationValue').textContent=s.view.rotation_deg.toFixed(2)+'°';el('cropBlack').checked=s.view.crop_black}const name={camera3:'camera3',camera4:'camera4',balanced:'原始居中拼接'}[s.view.projection];el('viewDetail').textContent=`当前基准：${name} · 微调 ${s.view.rotation_deg.toFixed(2)}° · ${s.view.crop_black?'已裁黑边，边缘视野有所减少':'保留完整拼接范围'}`}}catch(e){lastRunning=false;streaming=false;el('status').className='bad';el('status').textContent='拼接服务连接中断';el('panorama').classList.add('stale')}}
+function toggleFull(){if(document.fullscreenElement)document.exitFullscreen();else el('figure').requestFullscreen?.()}
+el('settings').addEventListener('toggle',()=>{if(el('settings').open&&!images[3])loadSources(false).catch(e=>say(e.message,true))});
+// Start the endless MJPEG request after the page itself has completed loading.
+window.addEventListener('load',()=>{poll();setInterval(poll,1500)});
+</script></body></html>

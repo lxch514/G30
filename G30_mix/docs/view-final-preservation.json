@@ -1,0 +1,33 @@
+{
+  "original_source_preserved": true,
+  "hashes": {
+    "config/g30.json": "2e2c804543ff9ffacdef6e47b105a6fe77fb10211af9f9ed4ce2cf9d75233d8b",
+    "board/g30_service.py": "f67d37a5ce5cf50630ee96ab3e655b3d8f4bfd0b5f739c69b08246f2aba68115",
+    "board/capture_supervisor.py": "a179649523d5c42ecf645f888bdb28f8066de1e9c75ee27c8fa8f8c0653d33a4",
+    "board/uvc_cap_test.c": "4cf91265495cb75fba6fb6c250d51c7af13bfe130fcc9ff20a4271d4497ff97c",
+    "board/uvc_cap_test": "443c5f9b07a13d1da16c89a1d88c44361bf57bd3f6406f61fff78b8359306d34",
+    "board/h264_encoder.py": "36cdcc475c8bdb663011c3796b0f9254e6de558a18ec5adbe26b1faa9530000d",
+    "remote/android/app/src/main/java/g30/sixcamera/app/MainActivity.java": "0ab2255041d1d0c8675f56b8eb90099ef135d970e72c7701d7bc09a619aba396",
+    "remote/android/app/src/main/java/g30/sixcamera/app/CameraGuideView.java": "dec1fe73784c6d8534f4eefb7cb9bf916ef0c8a25435ddd5efa98f0d0dcf3085"
+  },
+  "original_processes": {
+    "5723": "/usr/bin/python3 /root/G30/board/capture_supervisor.py ",
+    "5724": "/usr/bin/python3 /root/G30/board/g30_service.py ",
+    "5726": "/root/G30/board/uvc_cap_test 1920 1080 30 1536 0 6 /root/G30/run/frames publish "
+  },
+  "same_input_pair": true,
+  "before_size": [
+    1600,
+    737
+  ],
+  "after_size": [
+    1583,
+    537
+  ],
+  "view": {
+    "version": 1,
+    "projection": "camera3",
+    "rotation_deg": -0.16,
+    "crop_black": true
+  }
+}

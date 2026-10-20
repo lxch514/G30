@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "projection": "camera3",
+  "rotation_deg": -0.16,
+  "crop_black": true
+}

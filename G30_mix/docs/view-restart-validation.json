@@ -1,0 +1,94 @@
+{
+  "stopped_live_pid": 9162,
+  "new_pid": 9338,
+  "saved_files_preserved": true,
+  "view_reloaded": true,
+  "view": {
+    "version": 1,
+    "projection": "camera3",
+    "rotation_deg": -0.16,
+    "crop_black": true
+  },
+  "state": {
+    "project": "G30_mix",
+    "instance": "b3a78fe5f1294ee0acd2469e18cf598f",
+    "pid": 9338,
+    "cameras": [
+      3,
+      4
+    ],
+    "calibrated": true,
+    "running": true,
+    "error": "",
+    "inputs": [
+      {
+        "camera": 3,
+        "age_ms": 60.8
+      },
+      {
+        "camera": 4,
+        "age_ms": 44.8
+      }
+    ],
+    "publication_skew_ms": 16.0,
+    "output_size": [
+      1583,
+      537
+    ],
+    "output_fps": 0.0,
+    "processing_ms": 1117.5,
+    "output_age_ms": 45.6,
+    "frames": 1,
+    "source_dir": "/root/G30/run/frames",
+    "transport": "MJPEG over HTTP/TCP",
+    "view": {
+      "version": 1,
+      "projection": "camera3",
+      "rotation_deg": -0.16,
+      "crop_black": true
+    },
+    "lens_calibrated": false,
+    "view_geometry": {
+      "canvas_size": [
+        1600,
+        895
+      ],
+      "crop_rect": [
+        15,
+        159,
+        1583,
+        537
+      ],
+      "retained_valid_percent": 82.8
+    },
+    "seam_percent": 66.0,
+    "calibration_report": {
+      "matches": 47,
+      "inliers": 24,
+      "inlier_ratio": 0.511,
+      "median_error_px": 0.549,
+      "p95_error_px": 1.276,
+      "feature_coverage": [
+        0.060885237805342274,
+        0.05021023886127767
+      ],
+      "model": "planar_homography",
+      "projection": "balanced",
+      "method": "automatic",
+      "alignment_fraction": 0.65,
+      "features": [
+        216,
+        603
+      ],
+      "output_size": [
+        1600,
+        737
+      ],
+      "overlap_fraction": 0.5268
+    }
+  },
+  "hashes": {
+    "config/view.json": "bae19f1653550ff7980c8306fd736dee66ceacf4228b1b0ada9690e59ea9c960",
+    "config/calibration.json": "4558cf2801ee26a995cd53002a94fe54a0634d0c0590eab0721ca4bbd43fcc2c"
+  }
+}

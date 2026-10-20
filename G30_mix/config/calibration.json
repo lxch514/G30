@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "source_cameras": [
+    3,
+    4
+  ],
+  "sizes": [
+    [
+      1920,
+      1080
+    ],
+    [
+      1920,
+      1080
+    ]
+  ],
+  "H_4_to_3": [
+    [
+      2.0398208146185746,
+      0.0088983048621245,
+      -1278.7877178972544
+    ],
+    [
+      0.298357653305151,
+      1.6887262617499101,
+      -305.9612731676171
+    ],
+    [
+      0.0005884016125647383,
+      2.2768340383163678e-05,
+      1.0
+    ]
+  ],
+  "report": {
+    "matches": 47,
+    "inliers": 24,
+    "inlier_ratio": 0.511,
+    "median_error_px": 0.549,
+    "p95_error_px": 1.276,
+    "feature_coverage": [
+      0.060885237805342274,
+      0.05021023886127767
+    ],
+    "model": "planar_homography",
+    "projection": "balanced",
+    "method": "automatic",
+    "alignment_fraction": 0.65,
+    "features": [
+      216,
+      603
+    ],
+    "output_size": [
+      1600,
+      737
+    ],
+    "overlap_fraction": 0.5268
+  },
+  "updated_at_ns": 1792459168432183879,
+  "seam_fraction": 0.52,
+  "publication_timestamps_ns": [
+    1792459168092724319,
+    1792459168108723705
+  ],
+  "source_note": "Input file publication times, not synchronized camera exposures"
+}

@@ -1,0 +1,155 @@
+{
+  "calibration": {
+    "version": 1,
+    "source_cameras": [
+      3,
+      4
+    ],
+    "sizes": [
+      [
+        1920,
+        1080
+      ],
+      [
+        1920,
+        1080
+      ]
+    ],
+    "H_4_to_3": [
+      [
+        2.0398208146185746,
+        0.0088983048621245,
+        -1278.7877178972544
+      ],
+      [
+        0.298357653305151,
+        1.6887262617499101,
+        -305.9612731676171
+      ],
+      [
+        0.0005884016125647383,
+        2.2768340383163678e-05,
+        1.0
+      ]
+    ],
+    "report": {
+      "matches": 47,
+      "inliers": 24,
+      "inlier_ratio": 0.511,
+      "median_error_px": 0.549,
+      "p95_error_px": 1.276,
+      "feature_coverage": [
+        0.060885237805342274,
+        0.05021023886127767
+      ],
+      "model": "planar_homography",
+      "projection": "balanced",
+      "method": "automatic",
+      "alignment_fraction": 0.65,
+      "features": [
+        216,
+        603
+      ],
+      "output_size": [
+        1600,
+        737
+      ],
+      "overlap_fraction": 0.5268
+    },
+    "updated_at_ns": 1792459168432183879,
+    "seam_fraction": 0.66,
+    "publication_timestamps_ns": [
+      1792459168092724319,
+      1792459168108723705
+    ],
+    "source_note": "Input file publication times, not synchronized camera exposures"
+  },
+  "config": {
+    "source_dir": "/root/G30/run/frames",
+    "listen": "0.0.0.0",
+    "port": 8097,
+    "fps": 8,
+    "max_width": 1600,
+    "max_height": 1000,
+    "jpeg_quality": 82,
+    "max_input_age_seconds": 1.0,
+    "max_publication_skew_ms": 80,
+    "blend_width_pixels": 12,
+    "opencv_threads": 2
+  },
+  "state": {
+    "project": "G30_mix",
+    "instance": "3b2b62675b7244aa87a86c7565dd3f36",
+    "pid": 8056,
+    "cameras": [
+      3,
+      4
+    ],
+    "calibrated": true,
+    "running": true,
+    "error": "",
+    "inputs": [
+      {
+        "camera": 3,
+        "age_ms": 52.4
+      },
+      {
+        "camera": 4,
+        "age_ms": 36.4
+      }
+    ],
+    "publication_skew_ms": 16.0,
+    "output_size": [
+      1600,
+      737
+    ],
+    "output_fps": 8.01,
+    "processing_ms": 100.98,
+    "output_age_ms": 55.2,
+    "frames": 11143,
+    "source_dir": "/root/G30/run/frames",
+    "transport": "MJPEG over HTTP/TCP",
+    "seam_percent": 66.0,
+    "calibration_report": {
+      "matches": 47,
+      "inliers": 24,
+      "inlier_ratio": 0.511,
+      "median_error_px": 0.549,
+      "p95_error_px": 1.276,
+      "feature_coverage": [
+        0.060885237805342274,
+        0.05021023886127767
+      ],
+      "model": "planar_homography",
+      "projection": "balanced",
+      "method": "automatic",
+      "alignment_fraction": 0.65,
+      "features": [
+        216,
+        603
+      ],
+      "output_size": [
+        1600,
+        737
+      ],
+      "overlap_fraction": 0.5268
+    }
+  },
+  "meta": [
+    {
+      "camera": 3,
+      "stamp_ns": 1792461210371263914
+    },
+    {
+      "camera": 4,
+      "stamp_ns": 1792461210355264494
+    }
+  ],
+  "hashes": {
+    "core.py": "d961de234bd8e06c7c24a4aad2eb659263c9b487b003cd43dda0dc71fa6e4428",
+    "server.py": "74d2f73389005fad90bdd863f6868585015611985eb8877772d8783c25634896",
+    "web/index.html": "b4914f7017820d0bb14ec36c149e1c6ddd796410822043f9dd5c835af720920a",
+    "tests/test_core.py": "babecf6d1b553b9debb0b129c586f73862fd4390af41cce35d225a4446c6fd32"
+  },
+  "source_config_sha": "2e2c804543ff9ffacdef6e47b105a6fe77fb10211af9f9ed4ce2cf9d75233d8b"
+}

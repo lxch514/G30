@@ -1,0 +1,173 @@
+{
+  "date": "2026-10-20",
+  "project": "/root/G30_mix",
+  "scope": "camera3+camera4 view leveling; no lens calibration",
+  "output_size": [
+    1583,
+    537
+  ],
+  "view": {
+    "version": 1,
+    "projection": "camera3",
+    "rotation_deg": -0.16,
+    "crop_black": true
+  },
+  "lens_calibrated": false,
+  "original_apk_changed": false,
+  "tests": {
+    "count": 18,
+    "passed": true,
+    "log": "test_accepted_calibration_is_reloaded_after_restart (test_core.RegistrationTests) ... ok\ntest_automatic_known_overlap (test_core.RegistrationTests) ... ok\ntest_changed_resolution_requires_new_calibration (test_core.RegistrationTests) ... ok\ntest_degenerate_manual_points_rejected (test_core.RegistrationTests) ... ok\ntest_failed_sample_save_keeps_accepted_calibration (test_core.RegistrationTests) ... ok\ntest_manual_known_overlap (test_core.RegistrationTests) ... ok\ntest_nonoverlapping_transform_rejected (test_core.RegistrationTests) ... ok\ntest_projective_pole_rejected (test_core.RegistrationTests) ... ok\ntest_real_union_content_is_preserved (test_core.RegistrationTests) ... ok\ntest_stale_input_rejected (test_core.RegistrationTests) ... ok\ntest_unrelated_blank_images_rejected (test_core.RegistrationTests) ... ok\ntest_auto_rotation_cancels_known_roll (test_view.ViewTests) ... ok\ntest_bad_view_values_rejected (test_view.ViewTests) ... ok\ntest_failed_view_write_keeps_runtime_state (test_view.ViewTests) ... ok\ntest_largest_rectangle_matches_bruteforce (test_view.ViewTests) ... ok\ntest_no_reference_lines_rejected (test_view.ViewTests) ... ok\ntest_projection_rotation_keep_corresponding_points_aligned (test_view.ViewTests) ... ok\ntest_view_persists_and_does_not_change_stitch_calibration (test_view.ViewTests) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 1.780s\n\nOK\n",
+    "javascript_syntax_check": "passed"
+  },
+  "live_validation": {
+    "seconds": 15.021786422000332,
+    "decoded_preview_frames": 20,
+    "output_fps_median": 7.99,
+    "processing_ms_median": 82.34,
+    "one_local_viewer_jpeg_payload_mbps": 5.193558882716094,
+    "bandwidth_is_g30_fiber_measurement": false,
+    "original_all_online_all_samples": true,
+    "settings_unchanged": true
+  },
+  "service_restart_validation": {
+    "stopped_live_pid": 9162,
+    "new_pid": 9338,
+    "saved_files_preserved": true,
+    "view_reloaded": true,
+    "view": {
+      "version": 1,
+      "projection": "camera3",
+      "rotation_deg": -0.16,
+      "crop_black": true
+    },
+    "state": {
+      "project": "G30_mix",
+      "instance": "b3a78fe5f1294ee0acd2469e18cf598f",
+      "pid": 9338,
+      "cameras": [
+        3,
+        4
+      ],
+      "calibrated": true,
+      "running": true,
+      "error": "",
+      "inputs": [
+        {
+          "camera": 3,
+          "age_ms": 60.8
+        },
+        {
+          "camera": 4,
+          "age_ms": 44.8
+        }
+      ],
+      "publication_skew_ms": 16.0,
+      "output_size": [
+        1583,
+        537
+      ],
+      "output_fps": 0.0,
+      "processing_ms": 1117.5,
+      "output_age_ms": 45.6,
+      "frames": 1,
+      "source_dir": "/root/G30/run/frames",
+      "transport": "MJPEG over HTTP/TCP",
+      "view": {
+        "version": 1,
+        "projection": "camera3",
+        "rotation_deg": -0.16,
+        "crop_black": true
+      },
+      "lens_calibrated": false,
+      "view_geometry": {
+        "canvas_size": [
+          1600,
+          895
+        ],
+        "crop_rect": [
+          15,
+          159,
+          1583,
+          537
+        ],
+        "retained_valid_percent": 82.8
+      },
+      "seam_percent": 66.0,
+      "calibration_report": {
+        "matches": 47,
+        "inliers": 24,
+        "inlier_ratio": 0.511,
+        "median_error_px": 0.549,
+        "p95_error_px": 1.276,
+        "feature_coverage": [
+          0.060885237805342274,
+          0.05021023886127767
+        ],
+        "model": "planar_homography",
+        "projection": "balanced",
+        "method": "automatic",
+        "alignment_fraction": 0.65,
+        "features": [
+          216,
+          603
+        ],
+        "output_size": [
+          1600,
+          737
+        ],
+        "overlap_fraction": 0.5268
+      }
+    },
+    "hashes": {
+      "config/view.json": "bae19f1653550ff7980c8306fd736dee66ceacf4228b1b0ada9690e59ea9c960",
+      "config/calibration.json": "4558cf2801ee26a995cd53002a94fe54a0634d0c0590eab0721ca4bbd43fcc2c"
+    }
+  },
+  "original_preservation": {
+    "original_source_preserved": true,
+    "hashes": {
+      "config/g30.json": "2e2c804543ff9ffacdef6e47b105a6fe77fb10211af9f9ed4ce2cf9d75233d8b",
+      "board/g30_service.py": "f67d37a5ce5cf50630ee96ab3e655b3d8f4bfd0b5f739c69b08246f2aba68115",
+      "board/capture_supervisor.py": "a179649523d5c42ecf645f888bdb28f8066de1e9c75ee27c8fa8f8c0653d33a4",
+      "board/uvc_cap_test.c": "4cf91265495cb75fba6fb6c250d51c7af13bfe130fcc9ff20a4271d4497ff97c",
+      "board/uvc_cap_test": "443c5f9b07a13d1da16c89a1d88c44361bf57bd3f6406f61fff78b8359306d34",
+      "board/h264_encoder.py": "36cdcc475c8bdb663011c3796b0f9254e6de558a18ec5adbe26b1faa9530000d",
+      "remote/android/app/src/main/java/g30/sixcamera/app/MainActivity.java": "0ab2255041d1d0c8675f56b8eb90099ef135d970e72c7701d7bc09a619aba396",
+      "remote/android/app/src/main/java/g30/sixcamera/app/CameraGuideView.java": "dec1fe73784c6d8534f4eefb7cb9bf916ef0c8a25435ddd5efa98f0d0dcf3085"
+    },
+    "original_processes": {
+      "5723": "/usr/bin/python3 /root/G30/board/capture_supervisor.py ",
+      "5724": "/usr/bin/python3 /root/G30/board/g30_service.py ",
+      "5726": "/root/G30/board/uvc_cap_test 1920 1080 30 1536 0 6 /root/G30/run/frames publish "
+    },
+    "same_input_pair": true,
+    "before_size": [
+      1600,
+      737
+    ],
+    "after_size": [
+      1583,
+      537
+    ],
+    "view": {
+      "version": 1,
+      "projection": "camera3",
+      "rotation_deg": -0.16,
+      "crop_black": true
+    }
+  },
+  "full_power_cycle_tested": false,
+  "browser_button_automation_tested": false,
+  "details": [
+    "docs/view-live-validation.json",
+    "docs/view-restart-validation.json",
+    "docs/view-final-preservation.json"
+  ],
+  "limitations": [
+    "No camera intrinsics or distortion coefficients measured.",
+    "Cropping reduces edge field of view; nearby objects can retain parallax seams.",
+    "Existing recoverable input JPEG warnings are outside this change.",
+    "No optical end-to-end latency measurement or long-duration reliability qualification."
+  ]
+}
