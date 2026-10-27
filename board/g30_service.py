@@ -24,7 +24,7 @@ def load_config(path):
     value = json.loads(path.read_text())
     for key, low, high in [('cameras',6,6),('width',160,3840),('height',120,2160),
                            ('fps',20,30),('bitrate',100000,20000000),('http_port',1024,65535),
-                           ('mtu',256,1400),('lease_seconds',6,60)]:
+                           ('mtu',256,1400),('lease_seco nds',6,60)]:
         if type(value.get(key)) is not int or not low <= value[key] <= high:
             raise ValueError('Invalid configuration: '+key)
     if value['fps'] not in (20,25,30):

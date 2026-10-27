@@ -1,0 +1,372 @@
+{
+  "date": "2026-10-27",
+  "project": "/root/G30",
+  "cause": "camera2 received incomplete MJPEG under fixed USB payload 1024; supervisor globally restarted six channels",
+  "before_payloads": [
+    3072,
+    1024,
+    1024,
+    1536,
+    1536,
+    1536
+  ],
+  "after_payloads": [
+    1536,
+    1536,
+    2048,
+    1536,
+    1536,
+    1536
+  ],
+  "before_camera2_5s": {
+    "received": 150,
+    "valid": 0,
+    "incomplete": 150
+  },
+  "changed_runtime_file": "config/g30.json",
+  "program_source_changed": false,
+  "apk_changed": false,
+  "network_configuration_changed": false,
+  "mode": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "bitrate_per_camera": 2000000
+  },
+  "stability": {
+    "seconds": 120.35211236600003,
+    "passed": true,
+    "deltas": [
+      {
+        "camera": 0,
+        "valid_frames": 3604,
+        "incomplete": 0,
+        "bad_headers": 0,
+        "encoded_frames": 3610,
+        "restarts": 0
+      },
+      {
+        "camera": 1,
+        "valid_frames": 3603,
+        "incomplete": 0,
+        "bad_headers": 0,
+        "encoded_frames": 3610,
+        "restarts": 0
+      },
+      {
+        "camera": 2,
+        "valid_frames": 3603,
+        "incomplete": 0,
+        "bad_headers": 0,
+        "encoded_frames": 3610,
+        "restarts": 0
+      },
+      {
+        "camera": 3,
+        "valid_frames": 3603,
+        "incomplete": 0,
+        "bad_headers": 0,
+        "encoded_frames": 3610,
+        "restarts": 0
+      },
+      {
+        "camera": 4,
+        "valid_frames": 3604,
+        "incomplete": 0,
+        "bad_headers": 0,
+        "encoded_frames": 3611,
+        "restarts": 0
+      },
+      {
+        "camera": 5,
+        "valid_frames": 3603,
+        "incomplete": 0,
+        "bad_headers": 0,
+        "encoded_frames": 3610,
+        "restarts": 0
+      }
+    ]
+  },
+  "tcp": {
+    "passed": true,
+    "frames_per_camera": 300,
+    "total_decoded_frames": 1800,
+    "mode": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 30
+    }
+  },
+  "board_connection": {
+    "same_endpoints_all_samples": true,
+    "seconds": 122.09640425700013,
+    "same_project_processes": true,
+    "pids": {
+      "supervisor": 12339,
+      "service": 5234,
+      "captures": [
+        12342
+      ]
+    }
+  },
+  "g30": {
+    "date": "2026-10-27",
+    "route": "192.168.144.10 dev eth0 src 192.168.144.11 uid 2000 \r\n    cache \r\n",
+    "seconds": 60.0,
+    "ethernet_deltas": {
+      "rx_bytes": 93991886,
+      "tx_bytes": 1854876,
+      "rx_errors": 0,
+      "rx_dropped": 0,
+      "tx_errors": 0,
+      "tx_dropped": 0
+    },
+    "ethernet_rx_mbps": 12.532251466666667,
+    "same_video_connection": true,
+    "same_app_pid": true,
+    "samples": [
+      {
+        "elapsed": 0.06300000000192085,
+        "counters": {
+          "rx_bytes": 1447347679,
+          "tx_bytes": 28057419,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:39444              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "3996"
+      },
+      {
+        "elapsed": 5.063000000001921,
+        "counters": {
+          "rx_bytes": 1455195916,
+          "tx_bytes": 28212705,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       5866   0      [::ffff:192.168.144.11]:39444              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "3996"
+      },
+      {
+        "elapsed": 10.06300000000192,
+        "counters": {
+          "rx_bytes": 1463012441,
+          "tx_bytes": 28368919,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:39444              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "3996"
+      },
+      {
+        "elapsed": 15.078000000001339,
+        "counters": {
+          "rx_bytes": 1470868820,
+          "tx_bytes": 28525789,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:39444              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "3996"
+      },
+      {
+        "elapsed": 20.06300000000192,
+        "counters": {
+          "rx_bytes": 1478707284,
+          "tx_bytes": 28680353,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       5158   0      [::ffff:192.168.144.11]:39444              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "3996"
+      },
+      {
+        "elapsed": 25.06300000000192,
+        "counters": {
+          "rx_bytes": 1486505329,
+          "tx_bytes": 28834385,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:39444              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "3996"
+      },
+      {
+        "elapsed": 30.06300000000192,
+        "counters": {
+          "rx_bytes": 1494363181,
+          "tx_bytes": 28988619,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:39444              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "3996"
+      },
+      {
+        "elapsed": 35.07800000000134,
+        "counters": {
+          "rx_bytes": 1502192470,
+          "tx_bytes": 29143509,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:39444              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "3996"
+      },
+      {
+        "elapsed": 40.06300000000192,
+        "counters": {
+          "rx_bytes": 1510016152,
+          "tx_bytes": 29300515,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:39444              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "3996"
+      },
+      {
+        "elapsed": 45.07800000000134,
+        "counters": {
+          "rx_bytes": 1517880870,
+          "tx_bytes": 29454085,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       5479   0      [::ffff:192.168.144.11]:39444              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "3996"
+      },
+      {
+        "elapsed": 50.06300000000192,
+        "counters": {
+          "rx_bytes": 1525651039,
+          "tx_bytes": 29609573,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:39444              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "3996"
+      },
+      {
+        "elapsed": 55.06300000000192,
+        "counters": {
+          "rx_bytes": 1533522795,
+          "tx_bytes": 29761163,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:39444              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "3996"
+      },
+      {
+        "elapsed": 60.06300000000192,
+        "counters": {
+          "rx_bytes": 1541339565,
+          "tx_bytes": 29912295,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:39444              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "3996"
+      }
+    ],
+    "same_raw_ss_rows": true,
+    "comparison": "TCP state and socket endpoints; ignore queue lengths and column spacing",
+    "screen_readings": {
+      "before": {
+        "reconnects": 134,
+        "resyncs": 0,
+        "displayed_channels": 6,
+        "app_payload_mbps": 11.97
+      },
+      "after": {
+        "reconnects": 134,
+        "resyncs": 0,
+        "displayed_channels": 6,
+        "app_payload_mbps": 12.0
+      }
+    }
+  },
+  "source_hashes": {
+    "board/capture_supervisor.py": "a179649523d5c42ecf645f888bdb28f8066de1e9c75ee27c8fa8f8c0653d33a4",
+    "board/uvc_cap_test.c": "4cf91265495cb75fba6fb6c250d51c7af13bfe130fcc9ff20a4271d4497ff97c",
+    "board/h264_encoder.py": "36cdcc475c8bdb663011c3796b0f9254e6de558a18ec5adbe26b1faa9530000d",
+    "board/g30_service.py": "f67d37a5ce5cf50630ee96ab3e655b3d8f4bfd0b5f739c69b08246f2aba68115",
+    "scripts/start.sh": "9da5a1aa68167544e9bb9ef70f3f9df39a5b289f0ee5302e028f9b9af4509dd9",
+    "scripts/stop.sh": "ea16a4198e5a48683f617255fef7748a9f4123bfd3c07ee4efb65f6a9e4e4847",
+    "scripts/prepare-usb-host.sh": "765791b5703dc7c3728e7584395d86890be04144ba03ea2e5e235e805d593b25"
+  },
+  "prior_usb_device_disconnects": {
+    "camera": 5,
+    "usb_path": "7-1.2",
+    "times": [
+      "16:07:44",
+      "16:07:49"
+    ],
+    "user_confirmed_no_unplugging": true
+  },
+  "final_observation_new_usb_disconnects": [],
+  "final_observation_kernel_lines": [
+    "[ 1823.204067] xhci-hcd xhci-hcd.10.auto: WARN: HC couldn't access mem fast enough for slot 3 ep 2",
+    "[ 1823.961356] xhci-hcd xhci-hcd.10.auto: WARN: HC couldn't access mem fast enough for slot 4 ep 2",
+    "[ 1824.408065] xhci-hcd xhci-hcd.10.auto: WARN: HC couldn't access mem fast enough for slot 3 ep 2"
+  ],
+  "limitations": [
+    "Fixed payloads are indexed by USB bus/physical port order, not unique camera identity.",
+    "USB plug changes, camera replacements and different scenes require verification.",
+    "Supervisor still restarts the entire capture process if a channel stays stale.",
+    "Physical USB disconnects and xHCI memory-access warnings were observed before the final allocation; their underlying hardware/controller cause remains unconfirmed.",
+    "Two-minute observation is not long-duration reliability acceptance or optical power measurement."
+  ]
+}

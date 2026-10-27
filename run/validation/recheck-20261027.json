@@ -1,0 +1,1046 @@
+{
+  "time": "2026-10-27 16:17:11",
+  "duration_seconds": 122.09640425700013,
+  "stability": {
+    "code": 0,
+    "out": "{\n  \"scope\": \"Two-minute live capture and encoding counter observation; not long-run reliability acceptance\",\n  \"duration_seconds\": 120.35211236600003,\n  \"deltas\": [\n    {\n      \"camera\": 0,\n      \"valid_frames\": 3604,\n      \"incomplete\": 0,\n      \"bad_headers\": 0,\n      \"encoded_frames\": 3610,\n      \"restarts\": 0\n    },\n    {\n      \"camera\": 1,\n      \"valid_frames\": 3603,\n      \"incomplete\": 0,\n      \"bad_headers\": 0,\n      \"encoded_frames\": 3610,\n      \"restarts\": 0\n    },\n    {\n      \"camera\": 2,\n      \"valid_frames\": 3603,\n      \"incomplete\": 0,\n      \"bad_headers\": 0,\n      \"encoded_frames\": 3610,\n      \"restarts\": 0\n    },\n    {\n      \"camera\": 3,\n      \"valid_frames\": 3603,\n      \"incomplete\": 0,\n      \"bad_headers\": 0,\n      \"encoded_frames\": 3610,\n      \"restarts\": 0\n    },\n    {\n      \"camera\": 4,\n      \"valid_frames\": 3604,\n      \"incomplete\": 0,\n      \"bad_headers\": 0,\n      \"encoded_frames\": 3611,\n      \"restarts\": 0\n    },\n    {\n      \"camera\": 5,\n      \"valid_frames\": 3603,\n      \"incomplete\": 0,\n      \"bad_headers\": 0,\n      \"encoded_frames\": 3610,\n      \"restarts\": 0\n    }\n  ],\n  \"passed\": true\n}\n",
+    "err": ""
+  },
+  "tcp": {
+    "code": 0,
+    "out": "{\n  \"scope\": \"Six real cameras received simultaneously over one local TCP connection; clips decoded by FFmpeg. Not G30 display acceptance.\",\n  \"test_pattern\": false,\n  \"bitrate_per_camera\": 2000000,\n  \"mode\": {\n    \"width\": 1920,\n    \"height\": 1080,\n    \"fps\": 30\n  },\n  \"capture_seconds\": 10.949141102000112,\n  \"results\": [\n    {\n      \"camera\": 0,\n      \"received_frames\": 300,\n      \"keyframes\": 10,\n      \"bytes\": 2504895,\n      \"decoded_frames\": 300,\n      \"decoded_width\": 1920,\n      \"decoded_height\": 1080,\n      \"exit_code\": 0,\n      \"errors\": \"\",\n      \"probe_exit_code\": 0,\n      \"probe_errors\": \"\"\n    },\n    {\n      \"camera\": 1,\n      \"received_frames\": 300,\n      \"keyframes\": 10,\n      \"bytes\": 2501045,\n      \"decoded_frames\": 300,\n      \"decoded_width\": 1920,\n      \"decoded_height\": 1080,\n      \"exit_code\": 0,\n      \"errors\": \"\",\n      \"probe_exit_code\": 0,\n      \"probe_errors\": \"\"\n    },\n    {\n      \"camera\": 2,\n      \"received_frames\": 300,\n      \"keyframes\": 10,\n      \"bytes\": 2500432,\n      \"decoded_frames\": 300,\n      \"decoded_width\": 1920,\n      \"decoded_height\": 1080,\n      \"exit_code\": 0,\n      \"errors\": \"\",\n      \"probe_exit_code\": 0,\n      \"probe_errors\": \"\"\n    },\n    {\n      \"camera\": 3,\n      \"received_frames\": 300,\n      \"keyframes\": 10,\n      \"bytes\": 2511017,\n      \"decoded_frames\": 300,\n      \"decoded_width\": 1920,\n      \"decoded_height\": 1080,\n      \"exit_code\": 0,\n      \"errors\": \"\",\n      \"probe_exit_code\": 0,\n      \"probe_errors\": \"\"\n    },\n    {\n      \"camera\": 4,\n      \"received_frames\": 300,\n      \"keyframes\": 10,\n      \"bytes\": 2502561,\n      \"decoded_frames\": 300,\n      \"decoded_width\": 1920,\n      \"decoded_height\": 1080,\n      \"exit_code\": 0,\n      \"errors\": \"\",\n      \"probe_exit_code\": 0,\n      \"probe_errors\": \"\"\n    },\n    {\n      \"camera\": 5,\n      \"received_frames\": 300,\n      \"keyframes\": 10,\n      \"bytes\": 2507047,\n      \"decoded_frames\": 300,\n      \"decoded_width\": 1920,\n      \"decoded_height\": 1080,\n      \"exit_code\": 0,\n      \"errors\": \"\",\n      \"probe_exit_code\": 0,\n      \"probe_errors\": \"\"\n    }\n  ],\n  \"passed\": true\n}\n",
+    "err": ""
+  },
+  "ethernet_counter_deltas": {
+    "tx_errors": 0,
+    "rx_length_errors": 0,
+    "rx_packets": 56757,
+    "tx_carrier_errors": 0,
+    "tx_dropped": 0,
+    "rx_missed_errors": 0,
+    "rx_over_errors": 0,
+    "tx_aborted_errors": 0,
+    "rx_crc_errors": 0,
+    "rx_frame_errors": 0,
+    "rx_nohandler": 0,
+    "tx_fifo_errors": 0,
+    "multicast": 0,
+    "tx_packets": 22687,
+    "tx_window_errors": 0,
+    "rx_bytes": 3757602,
+    "collisions": 0,
+    "rx_dropped": 0,
+    "tx_bytes": 185952843,
+    "tx_heartbeat_errors": 0,
+    "rx_fifo_errors": 0,
+    "rx_errors": 0,
+    "tx_compressed": 0,
+    "rx_compressed": 0
+  },
+  "ethernet_tx_mbps": 12.184001265661436,
+  "connections_before": [
+    "ESTAB 0      0      192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+  ],
+  "connections_after": [
+    "ESTAB 0      0      192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+  ],
+  "pid_before": {
+    "supervisor": 12339,
+    "service": 5234,
+    "captures": [
+      12342
+    ]
+  },
+  "pid_after": {
+    "supervisor": 12339,
+    "service": 5234,
+    "captures": [
+      12342
+    ]
+  },
+  "same_g30_connection_all_samples": false,
+  "same_project_processes_all_samples": true,
+  "network_samples": [
+    {
+      "elapsed": 0.003606902000001355,
+      "connections": [
+        "ESTAB 0      3909   192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 422993,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 177807,
+        "tx_window_errors": 0,
+        "rx_bytes": 28145042,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1404486288,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 5.106245403000003,
+      "connections": [
+        "ESTAB    0      0      192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 425394,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 178755,
+        "tx_window_errors": 0,
+        "rx_bytes": 28303562,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1412257065,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 10.190027242000042,
+      "connections": [
+        "ESTAB    0      0                192.168.144.10:8096     192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 427792,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 179701,
+        "tx_window_errors": 0,
+        "rx_bytes": 28462218,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1419961029,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 15.269528478999973,
+      "connections": [
+        "ESTAB    0      5655             192.168.144.10:8096     192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 430176,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 180647,
+        "tx_window_errors": 0,
+        "rx_bytes": 28620144,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1427626824,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 20.325523773999976,
+      "connections": [
+        "ESTAB 0      0      192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 432532,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 181592,
+        "tx_window_errors": 0,
+        "rx_bytes": 28776028,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1435334114,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 25.41460126800007,
+      "connections": [
+        "ESTAB 0      0      192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 434897,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 182542,
+        "tx_window_errors": 0,
+        "rx_bytes": 28932700,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1443009099,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 30.50186731200006,
+      "connections": [
+        "ESTAB 0      4934   192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 437265,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 183487,
+        "tx_window_errors": 0,
+        "rx_bytes": 29089508,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1450766043,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 35.58961110900009,
+      "connections": [
+        "ESTAB 0      0      192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 439634,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 184437,
+        "tx_window_errors": 0,
+        "rx_bytes": 29246312,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1458450694,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 40.67351440900006,
+      "connections": [
+        "ESTAB 0      0      192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 442027,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 185378,
+        "tx_window_errors": 0,
+        "rx_bytes": 29404638,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1466149446,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 45.75460558899999,
+      "connections": [
+        "ESTAB 0      0      192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 444382,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 186326,
+        "tx_window_errors": 0,
+        "rx_bytes": 29560782,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1473857758,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 50.83756542500009,
+      "connections": [
+        "ESTAB 0      3706   192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 446749,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 187265,
+        "tx_window_errors": 0,
+        "rx_bytes": 29717260,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1481516236,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 55.92191472700006,
+      "connections": [
+        "ESTAB 0      0      192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 449060,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 188216,
+        "tx_window_errors": 0,
+        "rx_bytes": 29870500,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1489242716,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 61.006056098000045,
+      "connections": [
+        "ESTAB 0      2623   192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 451469,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 189159,
+        "tx_window_errors": 0,
+        "rx_bytes": 30029882,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1497149312,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 66.09370697700001,
+      "connections": [
+        "ESTAB    0      6013   192.168.144.10:8096   192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 453860,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 190106,
+        "tx_window_errors": 0,
+        "rx_bytes": 30188732,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1504995861,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 71.17535064899994,
+      "connections": [
+        "ESTAB    0      6282             192.168.144.10:8096     192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 456201,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 191049,
+        "tx_window_errors": 0,
+        "rx_bytes": 30343164,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1512710675,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 76.2570841700001,
+      "connections": [
+        "ESTAB    0      0                192.168.144.10:8096     192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 458534,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 191994,
+        "tx_window_errors": 0,
+        "rx_bytes": 30497592,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1520409791,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 81.34267893300012,
+      "connections": [
+        "ESTAB 0      5807   192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 460860,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 192938,
+        "tx_window_errors": 0,
+        "rx_bytes": 30651496,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1528100231,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 86.42798235100008,
+      "connections": [
+        "ESTAB 0      5772   192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 463184,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 193878,
+        "tx_window_errors": 0,
+        "rx_bytes": 30805462,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1535815940,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 91.51364106899996,
+      "connections": [
+        "ESTAB 0      0      192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 465522,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 194817,
+        "tx_window_errors": 0,
+        "rx_bytes": 30960158,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1543548944,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 96.59757874299999,
+      "connections": [
+        "ESTAB 0      0      192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 467807,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 195755,
+        "tx_window_errors": 0,
+        "rx_bytes": 31111682,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1551231907,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 101.68154326800004,
+      "connections": [
+        "ESTAB 0      5682   192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 470139,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 196692,
+        "tx_window_errors": 0,
+        "rx_bytes": 31265850,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1558930230,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 106.765575765,
+      "connections": [
+        "ESTAB 0      0      192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 472489,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 197632,
+        "tx_window_errors": 0,
+        "rx_bytes": 31421796,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1566604967,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 111.8525399990001,
+      "connections": [
+        "ESTAB 0      5932   192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 474859,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 198581,
+        "tx_window_errors": 0,
+        "rx_bytes": 31578340,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1574321569,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 116.93228023999995,
+      "connections": [
+        "ESTAB 0      0      192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 477187,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 199524,
+        "tx_window_errors": 0,
+        "rx_bytes": 31732570,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1582079015,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    },
+    {
+      "elapsed": 122.01757682400012,
+      "connections": [
+        "ESTAB 0      0      192.168.144.10:8096  192.168.144.11:39444 users:((\"python3\",pid=5234,fd=36))        "
+      ],
+      "pids": {
+        "supervisor": 12339,
+        "service": 5234,
+        "captures": [
+          12342
+        ]
+      },
+      "counters": {
+        "tx_errors": 0,
+        "rx_length_errors": 0,
+        "rx_packets": 479626,
+        "tx_carrier_errors": 0,
+        "tx_dropped": 0,
+        "rx_missed_errors": 0,
+        "rx_over_errors": 0,
+        "tx_aborted_errors": 0,
+        "rx_crc_errors": 0,
+        "rx_frame_errors": 0,
+        "rx_nohandler": 0,
+        "tx_fifo_errors": 0,
+        "multicast": 0,
+        "tx_packets": 200468,
+        "tx_window_errors": 0,
+        "rx_bytes": 31893932,
+        "collisions": 0,
+        "rx_dropped": 233,
+        "tx_bytes": 1589926046,
+        "tx_heartbeat_errors": 0,
+        "rx_fifo_errors": 0,
+        "rx_errors": 0,
+        "tx_compressed": 0,
+        "rx_compressed": 0
+      }
+    }
+  ],
+  "new_kernel_lines": [
+    "[ 1823.204067] xhci-hcd xhci-hcd.10.auto: WARN: HC couldn't access mem fast enough for slot 3 ep 2",
+    "[ 1823.961356] xhci-hcd xhci-hcd.10.auto: WARN: HC couldn't access mem fast enough for slot 4 ep 2",
+    "[ 1824.408065] xhci-hcd xhci-hcd.10.auto: WARN: HC couldn't access mem fast enough for slot 3 ep 2"
+  ],
+  "new_usb_disconnects": []
+}
