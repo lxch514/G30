@@ -145,10 +145,13 @@ public final class MainActivity extends Activity {
             double mbps=state.getInt("bitrate_per_camera")/1000000.0;
             boolean test=state.optBoolean("test_pattern");
             JSONArray cameras=state.getJSONArray("cameras");
+            JSONArray configuredRotations=state.optJSONArray("display_rotation_degrees");
+            int[] rotations=new int[6];
             String[] labels=new String[6];
             double encodedTotal=0;
             for(int i=0;i<6;i++) {
                 JSONObject camera=cameras.getJSONObject(i),source=camera.getJSONObject("source"),encoded=camera.getJSONObject("transcode");
+                rotations[i]=configuredRotations!=null&&configuredRotations.optInt(i,0)==180?180:0;
                 labels[i]=test?"测试图":!source.optBoolean("online")?"USB 相机未就绪":!encoded.optBoolean("online")?"编码未就绪":"H.264";
                 if(source.optBoolean("online")&&encoded.optBoolean("online"))encodedTotal+=encoded.optDouble("encoded_mbps",0);
             }
@@ -158,7 +161,7 @@ public final class MainActivity extends Activity {
                 if(!active||generation!=current)return;
                 encodedMbps=sourceMbps;responseMs=roundTrip;sourceResyncs=state.optLong("http_resyncs_total",0);lastStateMs=android.os.SystemClock.elapsedRealtime();
                 networkMessage=(test?"【测试图】 ":"")+address+"  ·  TCP  ·  "+String.format(java.util.Locale.ROOT,"%.0fM/路",mbps);
-                for(int i=0;i<6;i++){if(streams[i]!=null)streams[i].setMode(width,height,fps);grid.tile(i).mode(width,height);grid.tile(i).sourceStatus(labels[i]);}
+                for(int i=0;i<6;i++){if(streams[i]!=null)streams[i].setMode(width,height,fps);grid.tile(i).rotation(rotations[i]);grid.tile(i).mode(width,height);grid.tile(i).sourceStatus(labels[i]);}
             });
         } catch(Exception error) {
             if(!active||generation!=current)return;

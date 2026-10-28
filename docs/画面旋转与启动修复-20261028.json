@@ -1,0 +1,417 @@
+{
+  "date": "2026-10-28",
+  "project": "/root/G30",
+  "apk_version": "1.4.0",
+  "rotation_location": "Android TextureView GPU",
+  "display_rotation_degrees": [
+    180,
+    180,
+    180,
+    180,
+    180,
+    180
+  ],
+  "startup_failure_fixed": {
+    "file": "board/g30_service.py",
+    "incorrect_key": "lease_seco nds",
+    "correct_key": "lease_seconds"
+  },
+  "board_encoder_restored_to_original": true,
+  "board_encoder_sha256": "36cdcc475c8bdb663011c3796b0f9254e6de558a18ec5adbe26b1faa9530000d",
+  "unit_tests": {
+    "passed": true,
+    "count": 5
+  },
+  "tcp": {
+    "scope": "Six real cameras received simultaneously over one local TCP connection; clips decoded by FFmpeg. Not G30 display acceptance.",
+    "test_pattern": false,
+    "bitrate_per_camera": 2000000,
+    "mode": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 30
+    },
+    "capture_seconds": 10.983523375000004,
+    "results": [
+      {
+        "camera": 0,
+        "received_frames": 300,
+        "keyframes": 10,
+        "bytes": 2504866,
+        "decoded_frames": 300,
+        "decoded_width": 1920,
+        "decoded_height": 1080,
+        "exit_code": 0,
+        "errors": "",
+        "probe_exit_code": 0,
+        "probe_errors": ""
+      },
+      {
+        "camera": 1,
+        "received_frames": 300,
+        "keyframes": 10,
+        "bytes": 2500834,
+        "decoded_frames": 300,
+        "decoded_width": 1920,
+        "decoded_height": 1080,
+        "exit_code": 0,
+        "errors": "",
+        "probe_exit_code": 0,
+        "probe_errors": ""
+      },
+      {
+        "camera": 2,
+        "received_frames": 300,
+        "keyframes": 10,
+        "bytes": 2510623,
+        "decoded_frames": 300,
+        "decoded_width": 1920,
+        "decoded_height": 1080,
+        "exit_code": 0,
+        "errors": "",
+        "probe_exit_code": 0,
+        "probe_errors": ""
+      },
+      {
+        "camera": 3,
+        "received_frames": 300,
+        "keyframes": 10,
+        "bytes": 2507376,
+        "decoded_frames": 300,
+        "decoded_width": 1920,
+        "decoded_height": 1080,
+        "exit_code": 0,
+        "errors": "",
+        "probe_exit_code": 0,
+        "probe_errors": ""
+      },
+      {
+        "camera": 4,
+        "received_frames": 300,
+        "keyframes": 10,
+        "bytes": 2514889,
+        "decoded_frames": 300,
+        "decoded_width": 1920,
+        "decoded_height": 1080,
+        "exit_code": 0,
+        "errors": "",
+        "probe_exit_code": 0,
+        "probe_errors": ""
+      },
+      {
+        "camera": 5,
+        "received_frames": 300,
+        "keyframes": 10,
+        "bytes": 2505206,
+        "decoded_frames": 300,
+        "decoded_width": 1920,
+        "decoded_height": 1080,
+        "exit_code": 0,
+        "errors": "",
+        "probe_exit_code": 0,
+        "probe_errors": ""
+      }
+    ],
+    "passed": true
+  },
+  "stability": {
+    "seconds": 120.397892533,
+    "passed": true,
+    "deltas": [
+      {
+        "camera": 0,
+        "valid_frames": 3603,
+        "incomplete": 0,
+        "bad_headers": 0,
+        "encoded_frames": 3609,
+        "restarts": 0
+      },
+      {
+        "camera": 1,
+        "valid_frames": 3604,
+        "incomplete": 0,
+        "bad_headers": 0,
+        "encoded_frames": 3611,
+        "restarts": 0
+      },
+      {
+        "camera": 2,
+        "valid_frames": 3604,
+        "incomplete": 0,
+        "bad_headers": 0,
+        "encoded_frames": 3611,
+        "restarts": 0
+      },
+      {
+        "camera": 3,
+        "valid_frames": 3603,
+        "incomplete": 0,
+        "bad_headers": 0,
+        "encoded_frames": 3610,
+        "restarts": 0
+      },
+      {
+        "camera": 4,
+        "valid_frames": 3604,
+        "incomplete": 0,
+        "bad_headers": 0,
+        "encoded_frames": 3612,
+        "restarts": 0
+      },
+      {
+        "camera": 5,
+        "valid_frames": 3603,
+        "incomplete": 0,
+        "bad_headers": 0,
+        "encoded_frames": 3610,
+        "restarts": 0
+      }
+    ]
+  },
+  "board_video_connection_stable": true,
+  "project_processes_stable": true,
+  "g30": {
+    "date": "2026-10-28",
+    "route": "192.168.144.10 dev eth0 src 192.168.144.11 uid 2000 \r\n    cache \r\n",
+    "interface": "eth0",
+    "seconds": 60.0,
+    "ethernet_deltas": {
+      "rx_bytes": 94119808,
+      "tx_bytes": 1834618,
+      "rx_errors": 0,
+      "rx_dropped": 0,
+      "tx_errors": 0,
+      "tx_dropped": 0
+    },
+    "ethernet_rx_mbps": 12.549307733333332,
+    "same_video_connection": true,
+    "same_app_pid": true,
+    "samples": [
+      {
+        "elapsed": 0.06299999999987449,
+        "counters": {
+          "rx_bytes": 1013758082,
+          "tx_bytes": 19733861,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:41670              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "13212"
+      },
+      {
+        "elapsed": 5.0629999999998745,
+        "counters": {
+          "rx_bytes": 1021597652,
+          "tx_bytes": 19886841,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:41670              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "13212"
+      },
+      {
+        "elapsed": 10.062999999999874,
+        "counters": {
+          "rx_bytes": 1029424673,
+          "tx_bytes": 20037309,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:41670              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "13212"
+      },
+      {
+        "elapsed": 15.062999999999874,
+        "counters": {
+          "rx_bytes": 1037241970,
+          "tx_bytes": 20188441,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:41670              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "13212"
+      },
+      {
+        "elapsed": 20.077999999999975,
+        "counters": {
+          "rx_bytes": 1045100749,
+          "tx_bytes": 20344981,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:41670              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "13212"
+      },
+      {
+        "elapsed": 25.047000000000025,
+        "counters": {
+          "rx_bytes": 1052910847,
+          "tx_bytes": 20496179,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:41670              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "13212"
+      },
+      {
+        "elapsed": 30.077999999999975,
+        "counters": {
+          "rx_bytes": 1060789386,
+          "tx_bytes": 20649287,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:41670              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "13212"
+      },
+      {
+        "elapsed": 35.062999999999874,
+        "counters": {
+          "rx_bytes": 1068622236,
+          "tx_bytes": 20801079,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:41670              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "13212"
+      },
+      {
+        "elapsed": 40.062999999999874,
+        "counters": {
+          "rx_bytes": 1076446693,
+          "tx_bytes": 20954521,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:41670              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "13212"
+      },
+      {
+        "elapsed": 45.062999999999874,
+        "counters": {
+          "rx_bytes": 1084299204,
+          "tx_bytes": 21107629,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:41670              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "13212"
+      },
+      {
+        "elapsed": 50.062999999999874,
+        "counters": {
+          "rx_bytes": 1092144733,
+          "tx_bytes": 21262985,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:41670              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "13212"
+      },
+      {
+        "elapsed": 55.047000000000025,
+        "counters": {
+          "rx_bytes": 1100014638,
+          "tx_bytes": 21415631,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:41670              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "13212"
+      },
+      {
+        "elapsed": 60.062999999999874,
+        "counters": {
+          "rx_bytes": 1107877890,
+          "tx_bytes": 21568479,
+          "rx_errors": 0,
+          "rx_dropped": 0,
+          "tx_errors": 0,
+          "tx_dropped": 0
+        },
+        "connections": [
+          "ESTAB       0      0      [::ffff:192.168.144.11]:41670              [::ffff:192.168.144.10]:8096"
+        ],
+        "app_pid": "13212"
+      }
+    ]
+  },
+  "apk_install": {
+    "package": "g30.sixcamera.app",
+    "version": "1.4.0",
+    "installed": true,
+    "settings_restored_byte_identical": true,
+    "settings_sha256": "075ba486f21c7579048435f9c90cafe487591156226c4d50c76e49bc1ab39a54",
+    "setting_keys": [
+      "guide0.bottom",
+      "guide0.enabled",
+      "guide0.left",
+      "guide0.right",
+      "guide0.top",
+      "guide1.enabled",
+      "guide1.left",
+      "guide1.red",
+      "guide1.right",
+      "guide1.yellow"
+    ],
+    "new_apk_sha256": "55c7cdf8ca9bd358f3afea16da0745814b44d41d213c39fec4fadb49e42164be",
+    "temporary_old_version_backups": "removed after successful validation at user request"
+  },
+  "fullscreen_camera0_and_return_verified": true,
+  "full_power_cycle_tested": false,
+  "raw_usb_jpeg_and_h264_rotated": false,
+  "limitations": [
+    "Display rotation requires G30 app 1.4.0 or later; other clients and G30_mix still receive original orientation.",
+    "Earlier hardware rotation trial was withdrawn after a stuck pipeline; original board encoder restored.",
+    "Earlier ar_net0 path under-received video; final eth0 path was verified after the user saved fiber mode.",
+    "Short observations are not long-duration reliability or power-cycle qualification."
+  ]
+}

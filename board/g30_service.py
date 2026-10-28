@@ -24,11 +24,14 @@ def load_config(path):
     value = json.loads(path.read_text())
     for key, low, high in [('cameras',6,6),('width',160,3840),('height',120,2160),
                            ('fps',20,30),('bitrate',100000,20000000),('http_port',1024,65535),
-                           ('mtu',256,1400),('lease_seco nds',6,60)]:
+                           ('mtu',256,1400),('lease_seconds',6,60)]:
         if type(value.get(key)) is not int or not low <= value[key] <= high:
             raise ValueError('Invalid configuration: '+key)
     if value['fps'] not in (20,25,30):
         raise ValueError('FPS must be 20, 25 or 30')
+    rotations = value.setdefault('display_rotation_degrees', [0] * 6)
+    if not isinstance(rotations, list) or len(rotations) != 6 or any(type(angle) is not int or angle not in (0, 180) for angle in rotations):
+        raise ValueError('display_rotation_degrees must contain six values, each 0 or 180')
     return value
 
 class Session:
@@ -145,6 +148,7 @@ class Manager:
         with self.lock:
             sessions=[s.describe() for s in self.sessions.values()]
         return dict(ok=True,project='G30-six-camera',codec='H264',transport='HTTP/TCP or RTP/UDP',
+                    display_rotation_degrees=list(self.config['display_rotation_degrees']),
                     mode=dict(width=self.config['width'],height=self.config['height'],fps=self.config['fps']),
                     bitrate_per_camera=self.hub.bitrate,nominal_total_mbps=6*self.hub.bitrate/1e6,
                     cameras=sources,sessions=sessions,http_viewers=self.http_viewers,http_resyncs_total=self.hub.tcp_resyncs,

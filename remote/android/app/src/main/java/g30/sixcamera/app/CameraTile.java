@@ -40,6 +40,10 @@ public final class CameraTile extends FrameLayout implements TextureView.Surface
     private int dp(int value){return Math.round(value*getResources().getDisplayMetrics().density);}
     public void attach(VideoStream value){stream=value;if(value!=null)value.setSurface(surface);previousFrames=0;previousBytes=0;previousAt=0;}
     public void mode(int w,int h){videoWidth=w;videoHeight=h;SurfaceTexture st=texture.getSurfaceTexture();if(st!=null)st.setDefaultBufferSize(w,h);fit();}
+    public void rotation(int degrees){
+        int angle=degrees==180?180:0;
+        if(texture.getRotation()!=angle)texture.setRotation(angle);
+    }
     public void sourceStatus(String value){sourceStatus=value;}
     public CameraGuideView guide(){return guide;}
     public void refresh() {

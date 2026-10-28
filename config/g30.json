@@ -11,6 +11,7 @@
   "rtp_stride": 2,
   "mtu": 1200,
   "lease_seconds": 12,
+  "display_rotation_degrees": [180, 180, 180, 180, 180, 180],
   "payload_limits": [
     1536,
     1536,
