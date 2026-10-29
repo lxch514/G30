@@ -1,0 +1,170 @@
+{
+  "date": "2026-10-28",
+  "project": "/root/G30_mix",
+  "features": [
+    "all six source previews rotated 180 degrees",
+    "select any 1-6 cameras",
+    "connected overlap fusion via automatic SIFT/RANSAC or manual corresponding points",
+    "per-camera X/Y, arrow and canvas drag positioning",
+    "atomic project parameter persistence"
+  ],
+  "tests": {
+    "count": 26,
+    "passed": true,
+    "log": "test_automatic_known_overlap (test_core.RegistrationTests) ... ok\ntest_changed_resolution_requires_new_calibration (test_core.RegistrationTests) ... ok\ntest_degenerate_manual_points_rejected (test_core.RegistrationTests) ... ok\ntest_manual_known_overlap (test_core.RegistrationTests) ... ok\ntest_nonoverlapping_transform_rejected (test_core.RegistrationTests) ... ok\ntest_projective_pole_rejected (test_core.RegistrationTests) ... ok\ntest_real_union_content_is_preserved (test_core.RegistrationTests) ... ok\ntest_stale_input_rejected (test_core.RegistrationTests) ... ok\ntest_unrelated_blank_images_rejected (test_core.RegistrationTests) ... ok\ntest_arbitrary_camera_ids_and_three_view_union (test_project.ProjectTests) ... ok\ntest_automatic_chain_recovers_known_geometry (test_project.ProjectTests) ... ok\ntest_disconnected_selection_and_excessive_move_rejected (test_project.ProjectTests) ... ok\ntest_disk_write_failure_preserves_running_engine_and_file (test_project.ProjectTests) ... ok\ntest_failed_sample_save_preserves_accepted_calibration (test_project.ProjectTests) ... ok\ntest_frozen_and_live_source_previews_use_the_same_rotation (test_project.ProjectTests) ... ok\ntest_invalid_project_and_changed_rotation_rejected (test_project.ProjectTests) ... ok\ntest_legacy_correspondence_is_conjugated_after_180_turn (test_project.ProjectTests) ... ok\ntest_manual_connections_accumulate_until_all_sources_connected (test_project.ProjectTests) ... ok\ntest_saved_position_and_view_are_reloaded (test_project.ProjectTests) ... ok\ntest_single_source_preview_and_expired_manual_token (test_project.ProjectTests) ... ok\ntest_vertical_overlap_fuses_above_and_below (test_project.ProjectTests) ... ok\ntest_auto_rotation_cancels_known_roll (test_view.ViewTests) ... ok\ntest_bad_view_values_rejected (test_view.ViewTests) ... ok\ntest_largest_rectangle_matches_bruteforce (test_view.ViewTests) ... ok\ntest_no_reference_lines_rejected (test_view.ViewTests) ... ok\ntest_projection_rotation_keep_corresponding_points_aligned (test_view.ViewTests) ... ok\n\n----------------------------------------------------------------------\nRan 26 tests in 4.643s\n\nOK\n",
+    "javascript_syntax_check": "passed"
+  },
+  "browser": {
+    "desktop_edge": true,
+    "g30_browser_tested": false,
+    "normal": {
+      "initial_running": true,
+      "six_upright_previews_loaded": true,
+      "position_arrow_saved": true,
+      "reset_positions_saved": true,
+      "page_errors": [],
+      "initial_cameras": [
+        3,
+        4
+      ]
+    },
+    "six_camera_fixture": {
+      "initial_running": true,
+      "six_upright_previews_loaded": true,
+      "position_arrow_saved": true,
+      "reset_positions_saved": true,
+      "page_errors": [],
+      "initial_cameras": [
+        3,
+        4
+      ],
+      "layout_drag_saved": true,
+      "arbitrary_single_camera_preview": true,
+      "all_six_automatic_fusion": true,
+      "frozen_pair_selection_loaded": true
+    }
+  },
+  "two_camera_live": {
+    "test": "multi-camera live TCP preview",
+    "cameras": [
+      3,
+      4
+    ],
+    "decoded_frames": 20,
+    "preview_fps": 8.348375351819294,
+    "preview_payload_mbps": 8.418047553155438,
+    "output_fps_median": 7.99,
+    "processing_ms_median": 90.53,
+    "original_six_online_all_samples": true,
+    "original_counter_deltas": [
+      {
+        "incomplete": 0,
+        "restarts": 0
+      },
+      {
+        "incomplete": 0,
+        "restarts": 0
+      },
+      {
+        "incomplete": 0,
+        "restarts": 0
+      },
+      {
+        "incomplete": 0,
+        "restarts": 0
+      },
+      {
+        "incomplete": 0,
+        "restarts": 0
+      },
+      {
+        "incomplete": 0,
+        "restarts": 0
+      }
+    ],
+    "project_file_unchanged": true,
+    "optical_latency_measured": false,
+    "power_cycle_tested": false
+  },
+  "six_camera_live": {
+    "test": "multi-camera live TCP preview",
+    "cameras": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "decoded_frames": 20,
+    "preview_fps": 3.1315809256348475,
+    "preview_payload_mbps": 3.6124564715163725,
+    "output_fps_median": 3.02,
+    "processing_ms_median": 325.73,
+    "original_six_online_all_samples": true,
+    "original_counter_deltas": [
+      {
+        "incomplete": 0,
+        "restarts": 0
+      },
+      {
+        "incomplete": 0,
+        "restarts": 0
+      },
+      {
+        "incomplete": 0,
+        "restarts": 0
+      },
+      {
+        "incomplete": 0,
+        "restarts": 0
+      },
+      {
+        "incomplete": 0,
+        "restarts": 0
+      },
+      {
+        "incomplete": 0,
+        "restarts": 0
+      }
+    ],
+    "project_file_unchanged": true,
+    "optical_latency_measured": false,
+    "power_cycle_tested": false
+  },
+  "six_camera_test_condition": "isolated acceptance instance in parallel with the normal two-camera fusion and original six H264 streams",
+  "persistence": {
+    "saved_six_project_reloaded": true,
+    "unchanged_file_hash": "0501c280e4e835bf81f5b6c461765ef1275c81c37fde9a27452eb0c64f0f4abc",
+    "old_pid": 17835,
+    "new_pid": 17945
+  },
+  "preservation": {
+    "original_hashes_unchanged": true,
+    "original_pids_unchanged": true,
+    "original_six_online": true,
+    "hashes": {
+      "config/g30.json": "0f74b3ee408fe1a49fd90fd4ead623a8757dd4aa6ee3979b588f106ff9adfd25",
+      "board/g30_service.py": "2e34947d07ca33dfa63bb4be7adfcbc061d9066a7d57c621dae09c83caaaf47d",
+      "board/h264_encoder.py": "36cdcc475c8bdb663011c3796b0f9254e6de558a18ec5adbe26b1faa9530000d",
+      "board/capture_supervisor.py": "a179649523d5c42ecf645f888bdb28f8066de1e9c75ee27c8fa8f8c0653d33a4",
+      "board/uvc_cap_test": "443c5f9b07a13d1da16c89a1d88c44361bf57bd3f6406f61fff78b8359306d34"
+    },
+    "pids": {
+      "service.pid": "15585",
+      "capture-supervisor.pid": "15584"
+    }
+  },
+  "settings_file": "config/project.json",
+  "original_apk_changed": false,
+  "full_board_power_cycle_tested": false,
+  "optical_latency_measured": false,
+  "long_duration_qualification": false,
+  "limitations": [
+    "Selected cameras must form a connected graph of real overlap.",
+    "Single planar homography does not remove depth parallax; near table and wires still have visible seams.",
+    "No measured lens intrinsics/distortion or true distance estimation.",
+    "Frame publication skew is not synchronized exposure time.",
+    "MJPEG byte rate measured locally is not G30 fiber capacity or signal attenuation."
+  ]
+}

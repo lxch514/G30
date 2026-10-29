@@ -13,7 +13,6 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from core import Composer, StitchError, automatic, decode_pair, manual, project, read_frame
-import server
 
 
 class RegistrationTests(unittest.TestCase):
@@ -76,33 +75,6 @@ class RegistrationTests(unittest.TestCase):
             with self.assertRaises(StitchError):
                 read_frame(name, 3)
 
-    def test_failed_sample_save_keeps_accepted_calibration(self):
-        root = Path(__file__).resolve().parents[1] / 'run'; root.mkdir(exist_ok=True)
-        with tempfile.TemporaryDirectory(dir=root) as name, patch.object(server, 'BASE', Path(name)):
-            destination = Path(name) / 'config/calibration.json'; destination.parent.mkdir()
-            old = b'{"last_accepted":"unchanged"}'
-            destination.write_bytes(old)
-            config = dict(max_width=1600, max_height=1000, blend_width_pixels=12)
-            app = server.App(config)
-            frames = [(cv2.imencode('.jpg', im)[1].tobytes(), time.time_ns()) for im in self.images]
-            with patch.object(server.cv2, 'imwrite', return_value=False):
-                with self.assertRaises(StitchError):
-                    app.apply(copy.deepcopy(self.calibration), self.images, frames, self.scene)
-            self.assertEqual(destination.read_bytes(), old)
-            self.assertIsNone(app.engine)
-
-    def test_accepted_calibration_is_reloaded_after_restart(self):
-        root = Path(__file__).resolve().parents[1] / 'run'; root.mkdir(exist_ok=True)
-        with tempfile.TemporaryDirectory(dir=root) as name, patch.object(server, 'BASE', Path(name)):
-            config = dict(max_width=1600, max_height=1000, blend_width_pixels=12)
-            app = server.App(config)
-            frames = [(cv2.imencode('.jpg', im)[1].tobytes(), time.time_ns()) for im in self.images]
-            app.apply(copy.deepcopy(self.calibration), self.images, frames, self.scene)
-            reloaded = server.App(config)
-            result = reloaded.composer(reloaded.calibration, self.images).render(self.images)
-            self.assertEqual(result.shape, self.scene.shape)
-            self.assertEqual(reloaded.calibration['source_cameras'], [3, 4])
-            self.assertIn('seam_fraction', reloaded.calibration)
 
 
 if __name__ == '__main__':

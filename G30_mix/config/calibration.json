@@ -16,50 +16,50 @@
   ],
   "H_4_to_3": [
     [
-      2.0398208146185746,
-      0.0088983048621245,
-      -1278.7877178972544
+      2.0708194458227447,
+      0.05384769893050893,
+      -1291.3940428566057
     ],
     [
-      0.298357653305151,
-      1.6887262617499101,
-      -305.9612731676171
+      0.29756588807196993,
+      1.7525860421098127,
+      -313.3292744779192
     ],
     [
-      0.0005884016125647383,
-      2.2768340383163678e-05,
+      0.0005927480586841195,
+      0.00010987431648932539,
       1.0
     ]
   ],
   "report": {
-    "matches": 47,
-    "inliers": 24,
-    "inlier_ratio": 0.511,
-    "median_error_px": 0.549,
-    "p95_error_px": 1.276,
+    "matches": 36,
+    "inliers": 26,
+    "inlier_ratio": 0.722,
+    "median_error_px": 0.726,
+    "p95_error_px": 1.211,
     "feature_coverage": [
-      0.060885237805342274,
-      0.05021023886127767
+      0.0955061639053729,
+      0.09383502923785676
     ],
     "model": "planar_homography",
     "projection": "balanced",
     "method": "automatic",
     "alignment_fraction": 0.65,
     "features": [
-      216,
-      603
+      94,
+      404
     ],
     "output_size": [
-      1600,
-      737
+      1522,
+      534
     ],
-    "overlap_fraction": 0.5268
+    "overlap_fraction": 0.6068
   },
-  "updated_at_ns": 1792459168432183879,
-  "seam_fraction": 0.52,
+  "updated_at_ns": 1792466688824896889,
+  "seam_fraction": 0.44,
   "publication_timestamps_ns": [
-    1792459168092724319,
-    1792459168108723705
+    1792466688473291554,
+    1792466688485291109
   ],
   "source_note": "Input file publication times, not synchronized camera exposures"
 }

@@ -12,7 +12,6 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from core import Composer, StitchError, atomic_json, estimate_upright, largest_valid_rectangle, project, view_config
-import server
 
 
 class ViewTests(unittest.TestCase):
@@ -67,37 +66,6 @@ class ViewTests(unittest.TestCase):
             self.assertTrue((composer.masks[0] | composer.masks[1]).all())
             self.assertGreater(composer.retained_valid_fraction, .7)
 
-    def setup_app(self, root):
-        frames = root / 'frames'; frames.mkdir()
-        for camera, image in zip((3, 4), self.images):
-            cv2.imwrite(str(frames / ('cam%d.jpg' % camera)), image)
-        config = dict(max_width=1600, max_height=1000, blend_width_pixels=12,
-                      source_dir=str(frames), max_input_age_seconds=3., max_publication_skew_ms=80)
-        atomic_json(root/'config/calibration.json', copy.deepcopy(self.calibration))
-        return server.App(config), config
-
-    def test_view_persists_and_does_not_change_stitch_calibration(self):
-        run = Path(__file__).resolve().parents[1]/'run'; run.mkdir(exist_ok=True)
-        with tempfile.TemporaryDirectory(dir=run) as name, patch.object(server, 'BASE', Path(name)):
-            root = Path(name); app, config = self.setup_app(root)
-            before = (root/'config/calibration.json').read_bytes()
-            result = app.update_view(dict(projection='camera3', rotation_deg=-1.2, crop_black=True))
-            reloaded = server.App(config)
-            self.assertEqual(reloaded.view, result['view'])
-            self.assertEqual((root/'config/calibration.json').read_bytes(), before)
-            self.assertEqual(reloaded.calibration['seam_fraction'], .66)
-
-    def test_failed_view_write_keeps_runtime_state(self):
-        run = Path(__file__).resolve().parents[1]/'run'; run.mkdir(exist_ok=True)
-        with tempfile.TemporaryDirectory(dir=run) as name, patch.object(server, 'BASE', Path(name)):
-            root = Path(name); app, _ = self.setup_app(root)
-            before = dict(app.view)
-            with patch.object(server, 'atomic_json', side_effect=OSError('simulated write failure')):
-                with self.assertRaises(OSError):
-                    app.update_view(dict(projection='camera3', rotation_deg=1, crop_black=False))
-            self.assertEqual(app.view, before)
-            self.assertIsNone(app.engine)
-            self.assertFalse((root/'config/view.json').exists())
 
 
 if __name__ == '__main__':

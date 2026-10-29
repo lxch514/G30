@@ -1,0 +1,13 @@
+{
+  "hashes": {
+    "config/g30.json": "0f74b3ee408fe1a49fd90fd4ead623a8757dd4aa6ee3979b588f106ff9adfd25",
+    "board/g30_service.py": "2e34947d07ca33dfa63bb4be7adfcbc061d9066a7d57c621dae09c83caaaf47d",
+    "board/h264_encoder.py": "36cdcc475c8bdb663011c3796b0f9254e6de558a18ec5adbe26b1faa9530000d",
+    "board/capture_supervisor.py": "a179649523d5c42ecf645f888bdb28f8066de1e9c75ee27c8fa8f8c0653d33a4",
+    "board/uvc_cap_test": "443c5f9b07a13d1da16c89a1d88c44361bf57bd3f6406f61fff78b8359306d34"
+  },
+  "pids": {
+    "service.pid": "15585",
+    "capture-supervisor.pid": "15584"
+  }
+}

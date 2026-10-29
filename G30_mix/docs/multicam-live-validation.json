@@ -1,0 +1,4060 @@
+{
+  "test": "multi-camera live TCP preview",
+  "cameras": [
+    3,
+    4
+  ],
+  "decoded_frames": 20,
+  "preview_fps": 8.348375351819294,
+  "preview_payload_mbps": 8.418047553155438,
+  "output_fps_median": 7.99,
+  "processing_ms_median": 90.53,
+  "original_six_online_all_samples": true,
+  "original_counter_deltas": [
+    {
+      "incomplete": 0,
+      "restarts": 0
+    },
+    {
+      "incomplete": 0,
+      "restarts": 0
+    },
+    {
+      "incomplete": 0,
+      "restarts": 0
+    },
+    {
+      "incomplete": 0,
+      "restarts": 0
+    },
+    {
+      "incomplete": 0,
+      "restarts": 0
+    },
+    {
+      "incomplete": 0,
+      "restarts": 0
+    }
+  ],
+  "project_file_unchanged": true,
+  "optical_latency_measured": false,
+  "power_cycle_tested": false,
+  "samples": [
+    {
+      "elapsed": 0.011683725002512801,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "df86dcba13574181b4d6412572e42d03",
+        "pid": 16601,
+        "revision": 32,
+        "cameras": [
+          3,
+          4
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            3,
+            4
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              -143.5,
+              -153.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": -0.11,
+            "crop_black": true
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 3,
+            "age_ms": 128.7
+          },
+          {
+            "camera": 4,
+            "age_ms": 100.7
+          }
+        ],
+        "publication_skew_ms": 28.0,
+        "output_size": [
+          1520,
+          479
+        ],
+        "output_fps": 7.98,
+        "processing_ms": 87.81,
+        "frames": 23570,
+        "output_age_ms": 7.1,
+        "geometry": {
+          "scale": 0.47661602621388144,
+          "offset_to_output": [
+            [
+              0.47661514784160924,
+              -0.0009150365196544518
+            ],
+            [
+              0.0009150365196544518,
+              0.47661514784160924
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            824
+          ],
+          "crop_rect": [
+            3,
+            118,
+            1520,
+            479
+          ],
+          "retained_valid_percent": 76.3,
+          "seam_axis": "horizontal",
+          "cameras": [
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  -1.67,
+                  -35.2
+                ],
+                [
+                  913.43,
+                  -33.44
+                ],
+                [
+                  912.44,
+                  481.3
+                ],
+                [
+                  -2.66,
+                  479.54
+                ]
+              ],
+              "center": [
+                455.39,
+                223.05
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  402.11,
+                  98.82
+                ],
+                [
+                  1508.18,
+                  -117.6
+                ],
+                [
+                  1596.88,
+                  705.48
+                ],
+                [
+                  382.17,
+                  495.65
+                ]
+              ],
+              "center": [
+                768.87,
+                285.05
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 36,
+              "inliers": 26,
+              "inlier_ratio": 0.722,
+              "median_error_px": 0.726,
+              "p95_error_px": 1.211,
+              "feature_coverage": [
+                0.0955061639053729,
+                0.09383502923785676
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 0.65,
+              "features": [
+                94,
+                404
+              ],
+              "output_size": [
+                1522,
+                534
+              ],
+              "overlap_fraction": 0.6068
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.96,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.02,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.03,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.0,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 30.97,
+          "encoded_fps": 29.95,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.97,
+          "encoded_fps": 29.91,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 1.013322816001164,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "df86dcba13574181b4d6412572e42d03",
+        "pid": 16601,
+        "revision": 32,
+        "cameras": [
+          3,
+          4
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            3,
+            4
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              -143.5,
+              -153.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": -0.11,
+            "crop_black": true
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 3,
+            "age_ms": 129.7
+          },
+          {
+            "camera": 4,
+            "age_ms": 101.7
+          }
+        ],
+        "publication_skew_ms": 28.0,
+        "output_size": [
+          1520,
+          479
+        ],
+        "output_fps": 8.04,
+        "processing_ms": 90.74,
+        "frames": 23578,
+        "output_age_ms": 4.1,
+        "geometry": {
+          "scale": 0.47661602621388144,
+          "offset_to_output": [
+            [
+              0.47661514784160924,
+              -0.0009150365196544518
+            ],
+            [
+              0.0009150365196544518,
+              0.47661514784160924
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            824
+          ],
+          "crop_rect": [
+            3,
+            118,
+            1520,
+            479
+          ],
+          "retained_valid_percent": 76.3,
+          "seam_axis": "horizontal",
+          "cameras": [
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  -1.67,
+                  -35.2
+                ],
+                [
+                  913.43,
+                  -33.44
+                ],
+                [
+                  912.44,
+                  481.3
+                ],
+                [
+                  -2.66,
+                  479.54
+                ]
+              ],
+              "center": [
+                455.39,
+                223.05
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  402.11,
+                  98.82
+                ],
+                [
+                  1508.18,
+                  -117.6
+                ],
+                [
+                  1596.88,
+                  705.48
+                ],
+                [
+                  382.17,
+                  495.65
+                ]
+              ],
+              "center": [
+                768.87,
+                285.05
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 36,
+              "inliers": 26,
+              "inlier_ratio": 0.722,
+              "median_error_px": 0.726,
+              "p95_error_px": 1.211,
+              "feature_coverage": [
+                0.0955061639053729,
+                0.09383502923785676
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 0.65,
+              "features": [
+                94,
+                404
+              ],
+              "output_size": [
+                1522,
+                534
+              ],
+              "overlap_fraction": 0.6068
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 30.97,
+          "encoded_fps": 29.96,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.97,
+          "encoded_fps": 30.04,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.97,
+          "encoded_fps": 30.04,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.97,
+          "encoded_fps": 30.01,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 29.96,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 29.95,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 2.0158348330005538,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "df86dcba13574181b4d6412572e42d03",
+        "pid": 16601,
+        "revision": 32,
+        "cameras": [
+          3,
+          4
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            3,
+            4
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              -143.5,
+              -153.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": -0.11,
+            "crop_black": true
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 3,
+            "age_ms": 130.5
+          },
+          {
+            "camera": 4,
+            "age_ms": 102.5
+          }
+        ],
+        "publication_skew_ms": 28.0,
+        "output_size": [
+          1520,
+          479
+        ],
+        "output_fps": 7.99,
+        "processing_ms": 89.39,
+        "frames": 23585,
+        "output_age_ms": 130.3,
+        "geometry": {
+          "scale": 0.47661602621388144,
+          "offset_to_output": [
+            [
+              0.47661514784160924,
+              -0.0009150365196544518
+            ],
+            [
+              0.0009150365196544518,
+              0.47661514784160924
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            824
+          ],
+          "crop_rect": [
+            3,
+            118,
+            1520,
+            479
+          ],
+          "retained_valid_percent": 76.3,
+          "seam_axis": "horizontal",
+          "cameras": [
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  -1.67,
+                  -35.2
+                ],
+                [
+                  913.43,
+                  -33.44
+                ],
+                [
+                  912.44,
+                  481.3
+                ],
+                [
+                  -2.66,
+                  479.54
+                ]
+              ],
+              "center": [
+                455.39,
+                223.05
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  402.11,
+                  98.82
+                ],
+                [
+                  1508.18,
+                  -117.6
+                ],
+                [
+                  1596.88,
+                  705.48
+                ],
+                [
+                  382.17,
+                  495.65
+                ]
+              ],
+              "center": [
+                768.87,
+                285.05
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 36,
+              "inliers": 26,
+              "inlier_ratio": 0.722,
+              "median_error_px": 0.726,
+              "p95_error_px": 1.211,
+              "feature_coverage": [
+                0.0955061639053729,
+                0.09383502923785676
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 0.65,
+              "features": [
+                94,
+                404
+              ],
+              "output_size": [
+                1522,
+                534
+              ],
+              "overlap_fraction": 0.6068
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 29.91,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 30.03,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 30.0,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 30.02,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 29.95,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 29.88,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 3.0092518600031326,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "df86dcba13574181b4d6412572e42d03",
+        "pid": 16601,
+        "revision": 32,
+        "cameras": [
+          3,
+          4
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            3,
+            4
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              -143.5,
+              -153.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": -0.11,
+            "crop_black": true
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 3,
+            "age_ms": 126.1
+          },
+          {
+            "camera": 4,
+            "age_ms": 102.1
+          }
+        ],
+        "publication_skew_ms": 24.0,
+        "output_size": [
+          1520,
+          479
+        ],
+        "output_fps": 7.99,
+        "processing_ms": 89.3,
+        "frames": 23594,
+        "output_age_ms": 3.8,
+        "geometry": {
+          "scale": 0.47661602621388144,
+          "offset_to_output": [
+            [
+              0.47661514784160924,
+              -0.0009150365196544518
+            ],
+            [
+              0.0009150365196544518,
+              0.47661514784160924
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            824
+          ],
+          "crop_rect": [
+            3,
+            118,
+            1520,
+            479
+          ],
+          "retained_valid_percent": 76.3,
+          "seam_axis": "horizontal",
+          "cameras": [
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  -1.67,
+                  -35.2
+                ],
+                [
+                  913.43,
+                  -33.44
+                ],
+                [
+                  912.44,
+                  481.3
+                ],
+                [
+                  -2.66,
+                  479.54
+                ]
+              ],
+              "center": [
+                455.39,
+                223.05
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  402.11,
+                  98.82
+                ],
+                [
+                  1508.18,
+                  -117.6
+                ],
+                [
+                  1596.88,
+                  705.48
+                ],
+                [
+                  382.17,
+                  495.65
+                ]
+              ],
+              "center": [
+                768.87,
+                285.05
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 36,
+              "inliers": 26,
+              "inlier_ratio": 0.722,
+              "median_error_px": 0.726,
+              "p95_error_px": 1.211,
+              "feature_coverage": [
+                0.0955061639053729,
+                0.09383502923785676
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 0.65,
+              "features": [
+                94,
+                404
+              ],
+              "output_size": [
+                1522,
+                534
+              ],
+              "overlap_fraction": 0.6068
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 30.05,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 30.03,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 30.14,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.03,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.96,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.98,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 4.0122757330027525,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "df86dcba13574181b4d6412572e42d03",
+        "pid": 16601,
+        "revision": 32,
+        "cameras": [
+          3,
+          4
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            3,
+            4
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              -143.5,
+              -153.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": -0.11,
+            "crop_black": true
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 3,
+            "age_ms": 130.4
+          },
+          {
+            "camera": 4,
+            "age_ms": 102.4
+          }
+        ],
+        "publication_skew_ms": 28.0,
+        "output_size": [
+          1520,
+          479
+        ],
+        "output_fps": 7.99,
+        "processing_ms": 91.13,
+        "frames": 23601,
+        "output_age_ms": 126.4,
+        "geometry": {
+          "scale": 0.47661602621388144,
+          "offset_to_output": [
+            [
+              0.47661514784160924,
+              -0.0009150365196544518
+            ],
+            [
+              0.0009150365196544518,
+              0.47661514784160924
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            824
+          ],
+          "crop_rect": [
+            3,
+            118,
+            1520,
+            479
+          ],
+          "retained_valid_percent": 76.3,
+          "seam_axis": "horizontal",
+          "cameras": [
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  -1.67,
+                  -35.2
+                ],
+                [
+                  913.43,
+                  -33.44
+                ],
+                [
+                  912.44,
+                  481.3
+                ],
+                [
+                  -2.66,
+                  479.54
+                ]
+              ],
+              "center": [
+                455.39,
+                223.05
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  402.11,
+                  98.82
+                ],
+                [
+                  1508.18,
+                  -117.6
+                ],
+                [
+                  1596.88,
+                  705.48
+                ],
+                [
+                  382.17,
+                  495.65
+                ]
+              ],
+              "center": [
+                768.87,
+                285.05
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 36,
+              "inliers": 26,
+              "inlier_ratio": 0.722,
+              "median_error_px": 0.726,
+              "p95_error_px": 1.211,
+              "feature_coverage": [
+                0.0955061639053729,
+                0.09383502923785676
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 0.65,
+              "features": [
+                94,
+                404
+              ],
+              "output_size": [
+                1522,
+                534
+              ],
+              "overlap_fraction": 0.6068
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 29.98,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 30.04,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 30.07,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 30.03,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 30.13,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 29.97,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 5.009351871001854,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "df86dcba13574181b4d6412572e42d03",
+        "pid": 16601,
+        "revision": 32,
+        "cameras": [
+          3,
+          4
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            3,
+            4
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              -143.5,
+              -153.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": -0.11,
+            "crop_black": true
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 3,
+            "age_ms": 129.0
+          },
+          {
+            "camera": 4,
+            "age_ms": 101.1
+          }
+        ],
+        "publication_skew_ms": 28.0,
+        "output_size": [
+          1520,
+          479
+        ],
+        "output_fps": 8.0,
+        "processing_ms": 86.89,
+        "frames": 23610,
+        "output_age_ms": 3.1,
+        "geometry": {
+          "scale": 0.47661602621388144,
+          "offset_to_output": [
+            [
+              0.47661514784160924,
+              -0.0009150365196544518
+            ],
+            [
+              0.0009150365196544518,
+              0.47661514784160924
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            824
+          ],
+          "crop_rect": [
+            3,
+            118,
+            1520,
+            479
+          ],
+          "retained_valid_percent": 76.3,
+          "seam_axis": "horizontal",
+          "cameras": [
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  -1.67,
+                  -35.2
+                ],
+                [
+                  913.43,
+                  -33.44
+                ],
+                [
+                  912.44,
+                  481.3
+                ],
+                [
+                  -2.66,
+                  479.54
+                ]
+              ],
+              "center": [
+                455.39,
+                223.05
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  402.11,
+                  98.82
+                ],
+                [
+                  1508.18,
+                  -117.6
+                ],
+                [
+                  1596.88,
+                  705.48
+                ],
+                [
+                  382.17,
+                  495.65
+                ]
+              ],
+              "center": [
+                768.87,
+                285.05
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 36,
+              "inliers": 26,
+              "inlier_ratio": 0.722,
+              "median_error_px": 0.726,
+              "p95_error_px": 1.211,
+              "feature_coverage": [
+                0.0955061639053729,
+                0.09383502923785676
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 0.65,
+              "features": [
+                94,
+                404
+              ],
+              "output_size": [
+                1522,
+                534
+              ],
+              "overlap_fraction": 0.6068
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.97,
+          "encoded_fps": 30.01,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.97,
+          "encoded_fps": 30.02,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 30.94,
+          "encoded_fps": 30.03,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.94,
+          "encoded_fps": 30.04,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.94,
+          "encoded_fps": 30.04,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.94,
+          "encoded_fps": 30.08,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 6.010958297003526,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "df86dcba13574181b4d6412572e42d03",
+        "pid": 16601,
+        "revision": 32,
+        "cameras": [
+          3,
+          4
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            3,
+            4
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              -143.5,
+              -153.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": -0.11,
+            "crop_black": true
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 3,
+            "age_ms": 93.6
+          },
+          {
+            "camera": 4,
+            "age_ms": 101.7
+          }
+        ],
+        "publication_skew_ms": 8.0,
+        "output_size": [
+          1520,
+          479
+        ],
+        "output_fps": 8.01,
+        "processing_ms": 86.3,
+        "frames": 23617,
+        "output_age_ms": 128.4,
+        "geometry": {
+          "scale": 0.47661602621388144,
+          "offset_to_output": [
+            [
+              0.47661514784160924,
+              -0.0009150365196544518
+            ],
+            [
+              0.0009150365196544518,
+              0.47661514784160924
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            824
+          ],
+          "crop_rect": [
+            3,
+            118,
+            1520,
+            479
+          ],
+          "retained_valid_percent": 76.3,
+          "seam_axis": "horizontal",
+          "cameras": [
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  -1.67,
+                  -35.2
+                ],
+                [
+                  913.43,
+                  -33.44
+                ],
+                [
+                  912.44,
+                  481.3
+                ],
+                [
+                  -2.66,
+                  479.54
+                ]
+              ],
+              "center": [
+                455.39,
+                223.05
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  402.11,
+                  98.82
+                ],
+                [
+                  1508.18,
+                  -117.6
+                ],
+                [
+                  1596.88,
+                  705.48
+                ],
+                [
+                  382.17,
+                  495.65
+                ]
+              ],
+              "center": [
+                768.87,
+                285.05
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 36,
+              "inliers": 26,
+              "inlier_ratio": 0.722,
+              "median_error_px": 0.726,
+              "p95_error_px": 1.211,
+              "feature_coverage": [
+                0.0955061639053729,
+                0.09383502923785676
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 0.65,
+              "features": [
+                94,
+                404
+              ],
+              "output_size": [
+                1522,
+                534
+              ],
+              "overlap_fraction": 0.6068
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.96,
+          "encoded_fps": 29.94,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.96,
+          "encoded_fps": 30.02,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.97,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.04,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.99,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.93,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 7.010264726002788,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "df86dcba13574181b4d6412572e42d03",
+        "pid": 16601,
+        "revision": 32,
+        "cameras": [
+          3,
+          4
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            3,
+            4
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              -143.5,
+              -153.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": -0.11,
+            "crop_black": true
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 3,
+            "age_ms": 94.1
+          },
+          {
+            "camera": 4,
+            "age_ms": 102.1
+          }
+        ],
+        "publication_skew_ms": 8.0,
+        "output_size": [
+          1520,
+          479
+        ],
+        "output_fps": 8.01,
+        "processing_ms": 96.98,
+        "frames": 23625,
+        "output_age_ms": 117.1,
+        "geometry": {
+          "scale": 0.47661602621388144,
+          "offset_to_output": [
+            [
+              0.47661514784160924,
+              -0.0009150365196544518
+            ],
+            [
+              0.0009150365196544518,
+              0.47661514784160924
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            824
+          ],
+          "crop_rect": [
+            3,
+            118,
+            1520,
+            479
+          ],
+          "retained_valid_percent": 76.3,
+          "seam_axis": "horizontal",
+          "cameras": [
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  -1.67,
+                  -35.2
+                ],
+                [
+                  913.43,
+                  -33.44
+                ],
+                [
+                  912.44,
+                  481.3
+                ],
+                [
+                  -2.66,
+                  479.54
+                ]
+              ],
+              "center": [
+                455.39,
+                223.05
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  402.11,
+                  98.82
+                ],
+                [
+                  1508.18,
+                  -117.6
+                ],
+                [
+                  1596.88,
+                  705.48
+                ],
+                [
+                  382.17,
+                  495.65
+                ]
+              ],
+              "center": [
+                768.87,
+                285.05
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 36,
+              "inliers": 26,
+              "inlier_ratio": 0.722,
+              "median_error_px": 0.726,
+              "p95_error_px": 1.211,
+              "feature_coverage": [
+                0.0955061639053729,
+                0.09383502923785676
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 0.65,
+              "features": [
+                94,
+                404
+              ],
+              "output_size": [
+                1522,
+                534
+              ],
+              "overlap_fraction": 0.6068
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.99,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.01,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.06,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 30.03,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 30.0,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 29.93,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 8.010770443001093,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "df86dcba13574181b4d6412572e42d03",
+        "pid": 16601,
+        "revision": 32,
+        "cameras": [
+          3,
+          4
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            3,
+            4
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              -143.5,
+              -153.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": -0.11,
+            "crop_black": true
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 3,
+            "age_ms": 130.5
+          },
+          {
+            "camera": 4,
+            "age_ms": 102.5
+          }
+        ],
+        "publication_skew_ms": 28.0,
+        "output_size": [
+          1520,
+          479
+        ],
+        "output_fps": 7.99,
+        "processing_ms": 90.52,
+        "frames": 23633,
+        "output_age_ms": 122.9,
+        "geometry": {
+          "scale": 0.47661602621388144,
+          "offset_to_output": [
+            [
+              0.47661514784160924,
+              -0.0009150365196544518
+            ],
+            [
+              0.0009150365196544518,
+              0.47661514784160924
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            824
+          ],
+          "crop_rect": [
+            3,
+            118,
+            1520,
+            479
+          ],
+          "retained_valid_percent": 76.3,
+          "seam_axis": "horizontal",
+          "cameras": [
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  -1.67,
+                  -35.2
+                ],
+                [
+                  913.43,
+                  -33.44
+                ],
+                [
+                  912.44,
+                  481.3
+                ],
+                [
+                  -2.66,
+                  479.54
+                ]
+              ],
+              "center": [
+                455.39,
+                223.05
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  402.11,
+                  98.82
+                ],
+                [
+                  1508.18,
+                  -117.6
+                ],
+                [
+                  1596.88,
+                  705.48
+                ],
+                [
+                  382.17,
+                  495.65
+                ]
+              ],
+              "center": [
+                768.87,
+                285.05
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 36,
+              "inliers": 26,
+              "inlier_ratio": 0.722,
+              "median_error_px": 0.726,
+              "p95_error_px": 1.211,
+              "feature_coverage": [
+                0.0955061639053729,
+                0.09383502923785676
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 0.65,
+              "features": [
+                94,
+                404
+              ],
+              "output_size": [
+                1522,
+                534
+              ],
+              "overlap_fraction": 0.6068
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.96,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.07,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.04,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.05,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.02,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.95,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 9.018826833002095,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "df86dcba13574181b4d6412572e42d03",
+        "pid": 16601,
+        "revision": 32,
+        "cameras": [
+          3,
+          4
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            3,
+            4
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              -143.5,
+              -153.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": -0.11,
+            "crop_black": true
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 3,
+            "age_ms": 94.8
+          },
+          {
+            "camera": 4,
+            "age_ms": 102.9
+          }
+        ],
+        "publication_skew_ms": 8.0,
+        "output_size": [
+          1520,
+          479
+        ],
+        "output_fps": 8.0,
+        "processing_ms": 101.69,
+        "frames": 23641,
+        "output_age_ms": 110.9,
+        "geometry": {
+          "scale": 0.47661602621388144,
+          "offset_to_output": [
+            [
+              0.47661514784160924,
+              -0.0009150365196544518
+            ],
+            [
+              0.0009150365196544518,
+              0.47661514784160924
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            824
+          ],
+          "crop_rect": [
+            3,
+            118,
+            1520,
+            479
+          ],
+          "retained_valid_percent": 76.3,
+          "seam_axis": "horizontal",
+          "cameras": [
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  -1.67,
+                  -35.2
+                ],
+                [
+                  913.43,
+                  -33.44
+                ],
+                [
+                  912.44,
+                  481.3
+                ],
+                [
+                  -2.66,
+                  479.54
+                ]
+              ],
+              "center": [
+                455.39,
+                223.05
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  402.11,
+                  98.82
+                ],
+                [
+                  1508.18,
+                  -117.6
+                ],
+                [
+                  1596.88,
+                  705.48
+                ],
+                [
+                  382.17,
+                  495.65
+                ]
+              ],
+              "center": [
+                768.87,
+                285.05
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 36,
+              "inliers": 26,
+              "inlier_ratio": 0.722,
+              "median_error_px": 0.726,
+              "p95_error_px": 1.211,
+              "feature_coverage": [
+                0.0955061639053729,
+                0.09383502923785676
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 0.65,
+              "features": [
+                94,
+                404
+              ],
+              "output_size": [
+                1522,
+                534
+              ],
+              "overlap_fraction": 0.6068
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.02,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.03,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.0,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.99,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.97,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.88,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 10.009385051002027,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "df86dcba13574181b4d6412572e42d03",
+        "pid": 16601,
+        "revision": 32,
+        "cameras": [
+          3,
+          4
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            3,
+            4
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              -143.5,
+              -153.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": -0.11,
+            "crop_black": true
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 3,
+            "age_ms": 93.8
+          },
+          {
+            "camera": 4,
+            "age_ms": 101.9
+          }
+        ],
+        "publication_skew_ms": 8.0,
+        "output_size": [
+          1520,
+          479
+        ],
+        "output_fps": 7.99,
+        "processing_ms": 88.55,
+        "frames": 23649,
+        "output_age_ms": 122.0,
+        "geometry": {
+          "scale": 0.47661602621388144,
+          "offset_to_output": [
+            [
+              0.47661514784160924,
+              -0.0009150365196544518
+            ],
+            [
+              0.0009150365196544518,
+              0.47661514784160924
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            824
+          ],
+          "crop_rect": [
+            3,
+            118,
+            1520,
+            479
+          ],
+          "retained_valid_percent": 76.3,
+          "seam_axis": "horizontal",
+          "cameras": [
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  -1.67,
+                  -35.2
+                ],
+                [
+                  913.43,
+                  -33.44
+                ],
+                [
+                  912.44,
+                  481.3
+                ],
+                [
+                  -2.66,
+                  479.54
+                ]
+              ],
+              "center": [
+                455.39,
+                223.05
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  402.11,
+                  98.82
+                ],
+                [
+                  1508.18,
+                  -117.6
+                ],
+                [
+                  1596.88,
+                  705.48
+                ],
+                [
+                  382.17,
+                  495.65
+                ]
+              ],
+              "center": [
+                768.87,
+                285.05
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 36,
+              "inliers": 26,
+              "inlier_ratio": 0.722,
+              "median_error_px": 0.726,
+              "p95_error_px": 1.211,
+              "feature_coverage": [
+                0.0955061639053729,
+                0.09383502923785676
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 0.65,
+              "features": [
+                94,
+                404
+              ],
+              "output_size": [
+                1522,
+                534
+              ],
+              "overlap_fraction": 0.6068
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.93,
+          "encoded_fps": 30.0,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.92,
+          "encoded_fps": 30.04,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.92,
+          "encoded_fps": 30.05,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 30.91,
+          "encoded_fps": 30.01,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.92,
+          "encoded_fps": 29.95,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.91,
+          "encoded_fps": 29.99,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 11.01332384700072,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "df86dcba13574181b4d6412572e42d03",
+        "pid": 16601,
+        "revision": 32,
+        "cameras": [
+          3,
+          4
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            3,
+            4
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              -143.5,
+              -153.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": -0.11,
+            "crop_black": true
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 3,
+            "age_ms": 94.3
+          },
+          {
+            "camera": 4,
+            "age_ms": 102.4
+          }
+        ],
+        "publication_skew_ms": 8.0,
+        "output_size": [
+          1520,
+          479
+        ],
+        "output_fps": 8.01,
+        "processing_ms": 90.54,
+        "frames": 23657,
+        "output_age_ms": 119.3,
+        "geometry": {
+          "scale": 0.47661602621388144,
+          "offset_to_output": [
+            [
+              0.47661514784160924,
+              -0.0009150365196544518
+            ],
+            [
+              0.0009150365196544518,
+              0.47661514784160924
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            824
+          ],
+          "crop_rect": [
+            3,
+            118,
+            1520,
+            479
+          ],
+          "retained_valid_percent": 76.3,
+          "seam_axis": "horizontal",
+          "cameras": [
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  -1.67,
+                  -35.2
+                ],
+                [
+                  913.43,
+                  -33.44
+                ],
+                [
+                  912.44,
+                  481.3
+                ],
+                [
+                  -2.66,
+                  479.54
+                ]
+              ],
+              "center": [
+                455.39,
+                223.05
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  402.11,
+                  98.82
+                ],
+                [
+                  1508.18,
+                  -117.6
+                ],
+                [
+                  1596.88,
+                  705.48
+                ],
+                [
+                  382.17,
+                  495.65
+                ]
+              ],
+              "center": [
+                768.87,
+                285.05
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 36,
+              "inliers": 26,
+              "inlier_ratio": 0.722,
+              "median_error_px": 0.726,
+              "p95_error_px": 1.211,
+              "feature_coverage": [
+                0.0955061639053729,
+                0.09383502923785676
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 0.65,
+              "features": [
+                94,
+                404
+              ],
+              "output_size": [
+                1522,
+                534
+              ],
+              "overlap_fraction": 0.6068
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.97,
+          "encoded_fps": 30.02,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.97,
+          "encoded_fps": 29.98,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.97,
+          "encoded_fps": 30.02,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.04,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.98,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.97,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 12.018626715002029,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "df86dcba13574181b4d6412572e42d03",
+        "pid": 16601,
+        "revision": 32,
+        "cameras": [
+          3,
+          4
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            3,
+            4
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              -143.5,
+              -153.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": -0.11,
+            "crop_black": true
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 3,
+            "age_ms": 95.3
+          },
+          {
+            "camera": 4,
+            "age_ms": 103.3
+          }
+        ],
+        "publication_skew_ms": 8.0,
+        "output_size": [
+          1520,
+          479
+        ],
+        "output_fps": 7.97,
+        "processing_ms": 102.72,
+        "frames": 23665,
+        "output_age_ms": 106.8,
+        "geometry": {
+          "scale": 0.47661602621388144,
+          "offset_to_output": [
+            [
+              0.47661514784160924,
+              -0.0009150365196544518
+            ],
+            [
+              0.0009150365196544518,
+              0.47661514784160924
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            824
+          ],
+          "crop_rect": [
+            3,
+            118,
+            1520,
+            479
+          ],
+          "retained_valid_percent": 76.3,
+          "seam_axis": "horizontal",
+          "cameras": [
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  -1.67,
+                  -35.2
+                ],
+                [
+                  913.43,
+                  -33.44
+                ],
+                [
+                  912.44,
+                  481.3
+                ],
+                [
+                  -2.66,
+                  479.54
+                ]
+              ],
+              "center": [
+                455.39,
+                223.05
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  402.11,
+                  98.82
+                ],
+                [
+                  1508.18,
+                  -117.6
+                ],
+                [
+                  1596.88,
+                  705.48
+                ],
+                [
+                  382.17,
+                  495.65
+                ]
+              ],
+              "center": [
+                768.87,
+                285.05
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 36,
+              "inliers": 26,
+              "inlier_ratio": 0.722,
+              "median_error_px": 0.726,
+              "p95_error_px": 1.211,
+              "feature_coverage": [
+                0.0955061639053729,
+                0.09383502923785676
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 0.65,
+              "features": [
+                94,
+                404
+              ],
+              "output_size": [
+                1522,
+                534
+              ],
+              "overlap_fraction": 0.6068
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.99,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.93,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.98,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.0,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.98,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.96,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 13.011931163000554,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "df86dcba13574181b4d6412572e42d03",
+        "pid": 16601,
+        "revision": 32,
+        "cameras": [
+          3,
+          4
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            3,
+            4
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              -143.5,
+              -153.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": -0.11,
+            "crop_black": true
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 3,
+            "age_ms": 94.6
+          },
+          {
+            "camera": 4,
+            "age_ms": 102.7
+          }
+        ],
+        "publication_skew_ms": 8.0,
+        "output_size": [
+          1520,
+          479
+        ],
+        "output_fps": 7.98,
+        "processing_ms": 98.43,
+        "frames": 23673,
+        "output_age_ms": 109.3,
+        "geometry": {
+          "scale": 0.47661602621388144,
+          "offset_to_output": [
+            [
+              0.47661514784160924,
+              -0.0009150365196544518
+            ],
+            [
+              0.0009150365196544518,
+              0.47661514784160924
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            824
+          ],
+          "crop_rect": [
+            3,
+            118,
+            1520,
+            479
+          ],
+          "retained_valid_percent": 76.3,
+          "seam_axis": "horizontal",
+          "cameras": [
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  -1.67,
+                  -35.2
+                ],
+                [
+                  913.43,
+                  -33.44
+                ],
+                [
+                  912.44,
+                  481.3
+                ],
+                [
+                  -2.66,
+                  479.54
+                ]
+              ],
+              "center": [
+                455.39,
+                223.05
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  402.11,
+                  98.82
+                ],
+                [
+                  1508.18,
+                  -117.6
+                ],
+                [
+                  1596.88,
+                  705.48
+                ],
+                [
+                  382.17,
+                  495.65
+                ]
+              ],
+              "center": [
+                768.87,
+                285.05
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 36,
+              "inliers": 26,
+              "inlier_ratio": 0.722,
+              "median_error_px": 0.726,
+              "p95_error_px": 1.211,
+              "feature_coverage": [
+                0.0955061639053729,
+                0.09383502923785676
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 0.65,
+              "features": [
+                94,
+                404
+              ],
+              "output_size": [
+                1522,
+                534
+              ],
+              "overlap_fraction": 0.6068
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.97,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.95,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.02,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 30.0,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 30.0,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.99,
+          "encoded_fps": 29.96,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 14.017496229000244,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "df86dcba13574181b4d6412572e42d03",
+        "pid": 16601,
+        "revision": 32,
+        "cameras": [
+          3,
+          4
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            3,
+            4
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              -143.5,
+              -153.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": -0.11,
+            "crop_black": true
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 3,
+            "age_ms": 95.6
+          },
+          {
+            "camera": 4,
+            "age_ms": 103.6
+          }
+        ],
+        "publication_skew_ms": 8.0,
+        "output_size": [
+          1520,
+          479
+        ],
+        "output_fps": 8.02,
+        "processing_ms": 88.89,
+        "frames": 23681,
+        "output_age_ms": 118.7,
+        "geometry": {
+          "scale": 0.47661602621388144,
+          "offset_to_output": [
+            [
+              0.47661514784160924,
+              -0.0009150365196544518
+            ],
+            [
+              0.0009150365196544518,
+              0.47661514784160924
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            824
+          ],
+          "crop_rect": [
+            3,
+            118,
+            1520,
+            479
+          ],
+          "retained_valid_percent": 76.3,
+          "seam_axis": "horizontal",
+          "cameras": [
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  -1.67,
+                  -35.2
+                ],
+                [
+                  913.43,
+                  -33.44
+                ],
+                [
+                  912.44,
+                  481.3
+                ],
+                [
+                  -2.66,
+                  479.54
+                ]
+              ],
+              "center": [
+                455.39,
+                223.05
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  402.11,
+                  98.82
+                ],
+                [
+                  1508.18,
+                  -117.6
+                ],
+                [
+                  1596.88,
+                  705.48
+                ],
+                [
+                  382.17,
+                  495.65
+                ]
+              ],
+              "center": [
+                768.87,
+                285.05
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 36,
+              "inliers": 26,
+              "inlier_ratio": 0.722,
+              "median_error_px": 0.726,
+              "p95_error_px": 1.211,
+              "feature_coverage": [
+                0.0955061639053729,
+                0.09383502923785676
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 0.65,
+              "features": [
+                94,
+                404
+              ],
+              "output_size": [
+                1522,
+                534
+              ],
+              "overlap_fraction": 0.6068
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.95,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.97,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.05,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.02,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.01,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.9,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 15.018295351001143,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "df86dcba13574181b4d6412572e42d03",
+        "pid": 16601,
+        "revision": 32,
+        "cameras": [
+          3,
+          4
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            3,
+            4
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              -143.5,
+              -153.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": -0.11,
+            "crop_black": true
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 3,
+            "age_ms": 95.3
+          },
+          {
+            "camera": 4,
+            "age_ms": 103.3
+          }
+        ],
+        "publication_skew_ms": 8.0,
+        "output_size": [
+          1520,
+          479
+        ],
+        "output_fps": 7.99,
+        "processing_ms": 97.43,
+        "frames": 23689,
+        "output_age_ms": 108.7,
+        "geometry": {
+          "scale": 0.47661602621388144,
+          "offset_to_output": [
+            [
+              0.47661514784160924,
+              -0.0009150365196544518
+            ],
+            [
+              0.0009150365196544518,
+              0.47661514784160924
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            824
+          ],
+          "crop_rect": [
+            3,
+            118,
+            1520,
+            479
+          ],
+          "retained_valid_percent": 76.3,
+          "seam_axis": "horizontal",
+          "cameras": [
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  -1.67,
+                  -35.2
+                ],
+                [
+                  913.43,
+                  -33.44
+                ],
+                [
+                  912.44,
+                  481.3
+                ],
+                [
+                  -2.66,
+                  479.54
+                ]
+              ],
+              "center": [
+                455.39,
+                223.05
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  402.11,
+                  98.82
+                ],
+                [
+                  1508.18,
+                  -117.6
+                ],
+                [
+                  1596.88,
+                  705.48
+                ],
+                [
+                  382.17,
+                  495.65
+                ]
+              ],
+              "center": [
+                768.87,
+                285.05
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 36,
+              "inliers": 26,
+              "inlier_ratio": 0.722,
+              "median_error_px": 0.726,
+              "p95_error_px": 1.211,
+              "feature_coverage": [
+                0.0955061639053729,
+                0.09383502923785676
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 0.65,
+              "features": [
+                94,
+                404
+              ],
+              "output_size": [
+                1522,
+                534
+              ],
+              "overlap_fraction": 0.6068
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.97,
+          "encoded_fps": 29.97,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.97,
+          "encoded_fps": 29.98,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.97,
+          "encoded_fps": 30.05,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.97,
+          "encoded_fps": 30.06,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.97,
+          "encoded_fps": 30.05,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.96,
+          "encoded_fps": 29.92,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    }
+  ]
+}

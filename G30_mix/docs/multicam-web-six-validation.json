@@ -1,0 +1,510 @@
+{
+  "initial_running": true,
+  "six_upright_previews_loaded": true,
+  "position_arrow_saved": true,
+  "reset_positions_saved": true,
+  "page_errors": [],
+  "initial_cameras": [
+    3,
+    4
+  ],
+  "layout_drag_saved": true,
+  "arbitrary_single_camera_preview": true,
+  "all_six_automatic_fusion": true,
+  "six_camera_state": {
+    "project": "G30_mix",
+    "instance": "4618f592cf78473b8eea547b82ea1cc9",
+    "pid": 17835,
+    "revision": 6,
+    "cameras": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "settings": {
+      "version": 2,
+      "cameras": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "anchor": 3,
+      "rotations": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ],
+      "offsets": {
+        "0": [
+          0,
+          0
+        ],
+        "1": [
+          0,
+          0
+        ],
+        "2": [
+          0,
+          0
+        ],
+        "3": [
+          0,
+          0
+        ],
+        "4": [
+          0,
+          0
+        ],
+        "5": [
+          0,
+          0
+        ]
+      },
+      "view": {
+        "rotation_deg": 0,
+        "crop_black": false
+      },
+      "blend_width": 12,
+      "seam_percent": 56.00000000000001
+    },
+    "calibrated": true,
+    "running": true,
+    "error": "",
+    "busy": false,
+    "progress": "",
+    "inputs": [
+      {
+        "camera": 0,
+        "age_ms": 145.2
+      },
+      {
+        "camera": 1,
+        "age_ms": 169.2
+      },
+      {
+        "camera": 2,
+        "age_ms": 149.2
+      },
+      {
+        "camera": 3,
+        "age_ms": 173.2
+      },
+      {
+        "camera": 4,
+        "age_ms": 153.2
+      },
+      {
+        "camera": 5,
+        "age_ms": 161.2
+      }
+    ],
+    "publication_skew_ms": 28,
+    "output_size": [
+      1600,
+      853
+    ],
+    "output_fps": 3.08,
+    "processing_ms": 319.21,
+    "frames": 71,
+    "output_age_ms": 146.8,
+    "geometry": {
+      "scale": 0.36347114947751025,
+      "offset_to_output": [
+        [
+          0.36347114947751025,
+          0
+        ],
+        [
+          0,
+          0.36347114947751025
+        ]
+      ],
+      "canvas_size": [
+        1600,
+        853
+      ],
+      "crop_rect": [
+        0,
+        0,
+        1600,
+        853
+      ],
+      "retained_valid_percent": 100,
+      "seam_axis": null,
+      "cameras": [
+        {
+          "camera": 0,
+          "polygon": [
+            [
+              205.07,
+              296.37
+            ],
+            [
+              899.1,
+              356.48
+            ],
+            [
+              906.76,
+              767.23
+            ],
+            [
+              160.66,
+              726.76
+            ]
+          ],
+          "center": [
+            553.15,
+            529.95
+          ]
+        },
+        {
+          "camera": 1,
+          "polygon": [
+            [
+              498.01,
+              356.27
+            ],
+            [
+              1263.67,
+              0.3
+            ],
+            [
+              1599.64,
+              353
+            ],
+            [
+              638.36,
+              710.02
+            ]
+          ],
+          "center": [
+            951.22,
+            354.92
+          ]
+        },
+        {
+          "camera": 2,
+          "polygon": [
+            [
+              179.5,
+              304.54
+            ],
+            [
+              827.81,
+              379.28
+            ],
+            [
+              819.65,
+              762.28
+            ],
+            [
+              140.81,
+              715.48
+            ]
+          ],
+          "center": [
+            504.97,
+            537.27
+          ]
+        },
+        {
+          "camera": 3,
+          "polygon": [
+            [
+              264.24,
+              331.85
+            ],
+            [
+              962.11,
+              331.85
+            ],
+            [
+              962.11,
+              724.4
+            ],
+            [
+              264.24,
+              724.4
+            ]
+          ],
+          "center": [
+            613.18,
+            528.12
+          ]
+        },
+        {
+          "camera": 4,
+          "polygon": [
+            [
+              405.73,
+              443.59
+            ],
+            [
+              1029.83,
+              370.14
+            ],
+            [
+              1105.48,
+              688.7
+            ],
+            [
+              415.55,
+              825.19
+            ]
+          ],
+          "center": [
+            762.15,
+            568.44
+          ]
+        },
+        {
+          "camera": 5,
+          "polygon": [
+            [
+              83.2,
+              297.72
+            ],
+            [
+              640.06,
+              454.04
+            ],
+            [
+              552.51,
+              852.64
+            ],
+            [
+              0.07,
+              659.6
+            ]
+          ],
+          "center": [
+            306.12,
+            561.3
+          ]
+        }
+      ]
+    },
+    "transport": "MJPEG over HTTP/TCP",
+    "edges": [
+      {
+        "a": 0,
+        "b": 2,
+        "report": {
+          "matches": 210,
+          "inliers": 128,
+          "inlier_ratio": 0.61,
+          "median_error_px": 2.317,
+          "p95_error_px": 3.787,
+          "feature_coverage": [
+            0.2019031644657171,
+            0.23194609363555657
+          ],
+          "model": "planar_homography",
+          "projection": "balanced",
+          "method": "automatic",
+          "alignment_fraction": 1,
+          "features": [
+            1450,
+            1420
+          ]
+        }
+      },
+      {
+        "a": 0,
+        "b": 3,
+        "report": {
+          "matches": 150,
+          "inliers": 97,
+          "inlier_ratio": 0.647,
+          "median_error_px": 1.456,
+          "p95_error_px": 3.585,
+          "feature_coverage": [
+            0.1379814891488476,
+            0.15331984717694727
+          ],
+          "model": "planar_homography",
+          "projection": "balanced",
+          "method": "automatic",
+          "alignment_fraction": 1,
+          "features": [
+            1450,
+            1384
+          ]
+        }
+      },
+      {
+        "a": 0,
+        "b": 5,
+        "report": {
+          "matches": 121,
+          "inliers": 42,
+          "inlier_ratio": 0.347,
+          "median_error_px": 1.193,
+          "p95_error_px": 2.437,
+          "feature_coverage": [
+            0.025551627394026954,
+            0.03703378618597874
+          ],
+          "model": "planar_homography",
+          "projection": "balanced",
+          "method": "automatic",
+          "alignment_fraction": 1,
+          "features": [
+            1450,
+            1889
+          ]
+        }
+      },
+      {
+        "a": 1,
+        "b": 3,
+        "report": {
+          "matches": 37,
+          "inliers": 16,
+          "inlier_ratio": 0.432,
+          "median_error_px": 0.707,
+          "p95_error_px": 1.844,
+          "feature_coverage": [
+            0.08106160737334392,
+            0.09344937697455447
+          ],
+          "model": "planar_homography",
+          "projection": "balanced",
+          "method": "automatic",
+          "alignment_fraction": 1,
+          "features": [
+            476,
+            1384
+          ]
+        }
+      },
+      {
+        "a": 1,
+        "b": 4,
+        "report": {
+          "matches": 39,
+          "inliers": 16,
+          "inlier_ratio": 0.41,
+          "median_error_px": 0.874,
+          "p95_error_px": 2.373,
+          "feature_coverage": [
+            0.032817522973182266,
+            0.04212275344706282
+          ],
+          "model": "planar_homography",
+          "projection": "balanced",
+          "method": "automatic",
+          "alignment_fraction": 1,
+          "features": [
+            476,
+            1029
+          ]
+        }
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "report": {
+          "matches": 186,
+          "inliers": 79,
+          "inlier_ratio": 0.425,
+          "median_error_px": 1.274,
+          "p95_error_px": 3.193,
+          "feature_coverage": [
+            0.08129960299232972,
+            0.08396189126882678
+          ],
+          "model": "planar_homography",
+          "projection": "balanced",
+          "method": "automatic",
+          "alignment_fraction": 1,
+          "features": [
+            1420,
+            1384
+          ]
+        }
+      },
+      {
+        "a": 2,
+        "b": 4,
+        "report": {
+          "matches": 47,
+          "inliers": 17,
+          "inlier_ratio": 0.362,
+          "median_error_px": 1.244,
+          "p95_error_px": 2.94,
+          "feature_coverage": [
+            0.052299692167692646,
+            0.056441616816607705
+          ],
+          "model": "planar_homography",
+          "projection": "balanced",
+          "method": "automatic",
+          "alignment_fraction": 1,
+          "features": [
+            1420,
+            1029
+          ]
+        }
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "report": {
+          "matches": 74,
+          "inliers": 27,
+          "inlier_ratio": 0.365,
+          "median_error_px": 0.916,
+          "p95_error_px": 2.788,
+          "feature_coverage": [
+            0.04330129273774039,
+            0.04937996542925315
+          ],
+          "model": "planar_homography",
+          "projection": "balanced",
+          "method": "automatic",
+          "alignment_fraction": 1,
+          "features": [
+            1384,
+            1029
+          ]
+        }
+      },
+      {
+        "a": 3,
+        "b": 5,
+        "report": {
+          "matches": 85,
+          "inliers": 28,
+          "inlier_ratio": 0.329,
+          "median_error_px": 1.906,
+          "p95_error_px": 3.8,
+          "feature_coverage": [
+            0.022646887698325752,
+            0.022094112909592997
+          ],
+          "model": "planar_homography",
+          "projection": "balanced",
+          "method": "automatic",
+          "alignment_fraction": 1,
+          "features": [
+            1384,
+            1889
+          ]
+        }
+      }
+    ],
+    "lens_calibrated": false,
+    "source_dir": "/root/G30/run/frames"
+  },
+  "frozen_pair_selection_loaded": true
+}

@@ -1,0 +1,6142 @@
+{
+  "test": "multi-camera live TCP preview",
+  "cameras": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "decoded_frames": 20,
+  "preview_fps": 3.1315809256348475,
+  "preview_payload_mbps": 3.6124564715163725,
+  "output_fps_median": 3.02,
+  "processing_ms_median": 325.73,
+  "original_six_online_all_samples": true,
+  "original_counter_deltas": [
+    {
+      "incomplete": 0,
+      "restarts": 0
+    },
+    {
+      "incomplete": 0,
+      "restarts": 0
+    },
+    {
+      "incomplete": 0,
+      "restarts": 0
+    },
+    {
+      "incomplete": 0,
+      "restarts": 0
+    },
+    {
+      "incomplete": 0,
+      "restarts": 0
+    },
+    {
+      "incomplete": 0,
+      "restarts": 0
+    }
+  ],
+  "project_file_unchanged": true,
+  "optical_latency_measured": false,
+  "power_cycle_tested": false,
+  "samples": [
+    {
+      "elapsed": 0.009122405001107836,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "4618f592cf78473b8eea547b82ea1cc9",
+        "pid": 17835,
+        "revision": 6,
+        "cameras": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              0.0,
+              0.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": 0.0,
+            "crop_black": false
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 0,
+            "age_ms": 362.2
+          },
+          {
+            "camera": 1,
+            "age_ms": 378.2
+          },
+          {
+            "camera": 2,
+            "age_ms": 358.2
+          },
+          {
+            "camera": 3,
+            "age_ms": 354.2
+          },
+          {
+            "camera": 4,
+            "age_ms": 362.2
+          },
+          {
+            "camera": 5,
+            "age_ms": 374.2
+          }
+        ],
+        "publication_skew_ms": 24.0,
+        "output_size": [
+          1600,
+          853
+        ],
+        "output_fps": 3.07,
+        "processing_ms": 327.81,
+        "frames": 454,
+        "output_age_ms": 19.1,
+        "geometry": {
+          "scale": 0.36347114947751025,
+          "offset_to_output": [
+            [
+              0.36347114947751025,
+              0.0
+            ],
+            [
+              -0.0,
+              0.36347114947751025
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            853
+          ],
+          "crop_rect": [
+            0,
+            0,
+            1600,
+            853
+          ],
+          "retained_valid_percent": 100.0,
+          "seam_axis": null,
+          "cameras": [
+            {
+              "camera": 0,
+              "polygon": [
+                [
+                  205.07,
+                  296.37
+                ],
+                [
+                  899.1,
+                  356.48
+                ],
+                [
+                  906.76,
+                  767.23
+                ],
+                [
+                  160.66,
+                  726.76
+                ]
+              ],
+              "center": [
+                553.15,
+                529.95
+              ]
+            },
+            {
+              "camera": 1,
+              "polygon": [
+                [
+                  498.01,
+                  356.27
+                ],
+                [
+                  1263.67,
+                  0.3
+                ],
+                [
+                  1599.64,
+                  353.0
+                ],
+                [
+                  638.36,
+                  710.02
+                ]
+              ],
+              "center": [
+                951.22,
+                354.92
+              ]
+            },
+            {
+              "camera": 2,
+              "polygon": [
+                [
+                  179.5,
+                  304.54
+                ],
+                [
+                  827.81,
+                  379.28
+                ],
+                [
+                  819.65,
+                  762.28
+                ],
+                [
+                  140.81,
+                  715.48
+                ]
+              ],
+              "center": [
+                504.97,
+                537.27
+              ]
+            },
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  264.24,
+                  331.85
+                ],
+                [
+                  962.11,
+                  331.85
+                ],
+                [
+                  962.11,
+                  724.4
+                ],
+                [
+                  264.24,
+                  724.4
+                ]
+              ],
+              "center": [
+                613.18,
+                528.12
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  405.73,
+                  443.59
+                ],
+                [
+                  1029.83,
+                  370.14
+                ],
+                [
+                  1105.48,
+                  688.7
+                ],
+                [
+                  415.55,
+                  825.19
+                ]
+              ],
+              "center": [
+                762.15,
+                568.44
+              ]
+            },
+            {
+              "camera": 5,
+              "polygon": [
+                [
+                  83.2,
+                  297.72
+                ],
+                [
+                  640.06,
+                  454.04
+                ],
+                [
+                  552.51,
+                  852.64
+                ],
+                [
+                  0.07,
+                  659.6
+                ]
+              ],
+              "center": [
+                306.12,
+                561.3
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 0,
+            "b": 2,
+            "report": {
+              "matches": 210,
+              "inliers": 128,
+              "inlier_ratio": 0.61,
+              "median_error_px": 2.317,
+              "p95_error_px": 3.787,
+              "feature_coverage": [
+                0.2019031644657171,
+                0.23194609363555657
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1420
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 3,
+            "report": {
+              "matches": 150,
+              "inliers": 97,
+              "inlier_ratio": 0.647,
+              "median_error_px": 1.456,
+              "p95_error_px": 3.585,
+              "feature_coverage": [
+                0.1379814891488476,
+                0.15331984717694727
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 5,
+            "report": {
+              "matches": 121,
+              "inliers": 42,
+              "inlier_ratio": 0.347,
+              "median_error_px": 1.193,
+              "p95_error_px": 2.437,
+              "feature_coverage": [
+                0.025551627394026954,
+                0.03703378618597874
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1889
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 3,
+            "report": {
+              "matches": 37,
+              "inliers": 16,
+              "inlier_ratio": 0.432,
+              "median_error_px": 0.707,
+              "p95_error_px": 1.844,
+              "feature_coverage": [
+                0.08106160737334392,
+                0.09344937697455447
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 4,
+            "report": {
+              "matches": 39,
+              "inliers": 16,
+              "inlier_ratio": 0.41,
+              "median_error_px": 0.874,
+              "p95_error_px": 2.373,
+              "feature_coverage": [
+                0.032817522973182266,
+                0.04212275344706282
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "report": {
+              "matches": 186,
+              "inliers": 79,
+              "inlier_ratio": 0.425,
+              "median_error_px": 1.274,
+              "p95_error_px": 3.193,
+              "feature_coverage": [
+                0.08129960299232972,
+                0.08396189126882678
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 4,
+            "report": {
+              "matches": 47,
+              "inliers": 17,
+              "inlier_ratio": 0.362,
+              "median_error_px": 1.244,
+              "p95_error_px": 2.94,
+              "feature_coverage": [
+                0.052299692167692646,
+                0.056441616816607705
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 74,
+              "inliers": 27,
+              "inlier_ratio": 0.365,
+              "median_error_px": 0.916,
+              "p95_error_px": 2.788,
+              "feature_coverage": [
+                0.04330129273774039,
+                0.04937996542925315
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 5,
+            "report": {
+              "matches": 85,
+              "inliers": 28,
+              "inlier_ratio": 0.329,
+              "median_error_px": 1.906,
+              "p95_error_px": 3.8,
+              "feature_coverage": [
+                0.022646887698325752,
+                0.022094112909592997
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1889
+              ]
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.97,
+          "encoded_fps": 29.97,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.96,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.03,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.96,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.06,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.97,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 1.0151652070017008,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "4618f592cf78473b8eea547b82ea1cc9",
+        "pid": 17835,
+        "revision": 6,
+        "cameras": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              0.0,
+              0.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": 0.0,
+            "crop_black": false
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 0,
+            "age_ms": 363.6
+          },
+          {
+            "camera": 1,
+            "age_ms": 379.6
+          },
+          {
+            "camera": 2,
+            "age_ms": 359.7
+          },
+          {
+            "camera": 3,
+            "age_ms": 355.7
+          },
+          {
+            "camera": 4,
+            "age_ms": 363.7
+          },
+          {
+            "camera": 5,
+            "age_ms": 375.7
+          }
+        ],
+        "publication_skew_ms": 24.0,
+        "output_size": [
+          1600,
+          853
+        ],
+        "output_fps": 3.05,
+        "processing_ms": 321.39,
+        "frames": 457,
+        "output_age_ms": 17.6,
+        "geometry": {
+          "scale": 0.36347114947751025,
+          "offset_to_output": [
+            [
+              0.36347114947751025,
+              0.0
+            ],
+            [
+              -0.0,
+              0.36347114947751025
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            853
+          ],
+          "crop_rect": [
+            0,
+            0,
+            1600,
+            853
+          ],
+          "retained_valid_percent": 100.0,
+          "seam_axis": null,
+          "cameras": [
+            {
+              "camera": 0,
+              "polygon": [
+                [
+                  205.07,
+                  296.37
+                ],
+                [
+                  899.1,
+                  356.48
+                ],
+                [
+                  906.76,
+                  767.23
+                ],
+                [
+                  160.66,
+                  726.76
+                ]
+              ],
+              "center": [
+                553.15,
+                529.95
+              ]
+            },
+            {
+              "camera": 1,
+              "polygon": [
+                [
+                  498.01,
+                  356.27
+                ],
+                [
+                  1263.67,
+                  0.3
+                ],
+                [
+                  1599.64,
+                  353.0
+                ],
+                [
+                  638.36,
+                  710.02
+                ]
+              ],
+              "center": [
+                951.22,
+                354.92
+              ]
+            },
+            {
+              "camera": 2,
+              "polygon": [
+                [
+                  179.5,
+                  304.54
+                ],
+                [
+                  827.81,
+                  379.28
+                ],
+                [
+                  819.65,
+                  762.28
+                ],
+                [
+                  140.81,
+                  715.48
+                ]
+              ],
+              "center": [
+                504.97,
+                537.27
+              ]
+            },
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  264.24,
+                  331.85
+                ],
+                [
+                  962.11,
+                  331.85
+                ],
+                [
+                  962.11,
+                  724.4
+                ],
+                [
+                  264.24,
+                  724.4
+                ]
+              ],
+              "center": [
+                613.18,
+                528.12
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  405.73,
+                  443.59
+                ],
+                [
+                  1029.83,
+                  370.14
+                ],
+                [
+                  1105.48,
+                  688.7
+                ],
+                [
+                  415.55,
+                  825.19
+                ]
+              ],
+              "center": [
+                762.15,
+                568.44
+              ]
+            },
+            {
+              "camera": 5,
+              "polygon": [
+                [
+                  83.2,
+                  297.72
+                ],
+                [
+                  640.06,
+                  454.04
+                ],
+                [
+                  552.51,
+                  852.64
+                ],
+                [
+                  0.07,
+                  659.6
+                ]
+              ],
+              "center": [
+                306.12,
+                561.3
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 0,
+            "b": 2,
+            "report": {
+              "matches": 210,
+              "inliers": 128,
+              "inlier_ratio": 0.61,
+              "median_error_px": 2.317,
+              "p95_error_px": 3.787,
+              "feature_coverage": [
+                0.2019031644657171,
+                0.23194609363555657
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1420
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 3,
+            "report": {
+              "matches": 150,
+              "inliers": 97,
+              "inlier_ratio": 0.647,
+              "median_error_px": 1.456,
+              "p95_error_px": 3.585,
+              "feature_coverage": [
+                0.1379814891488476,
+                0.15331984717694727
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 5,
+            "report": {
+              "matches": 121,
+              "inliers": 42,
+              "inlier_ratio": 0.347,
+              "median_error_px": 1.193,
+              "p95_error_px": 2.437,
+              "feature_coverage": [
+                0.025551627394026954,
+                0.03703378618597874
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1889
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 3,
+            "report": {
+              "matches": 37,
+              "inliers": 16,
+              "inlier_ratio": 0.432,
+              "median_error_px": 0.707,
+              "p95_error_px": 1.844,
+              "feature_coverage": [
+                0.08106160737334392,
+                0.09344937697455447
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 4,
+            "report": {
+              "matches": 39,
+              "inliers": 16,
+              "inlier_ratio": 0.41,
+              "median_error_px": 0.874,
+              "p95_error_px": 2.373,
+              "feature_coverage": [
+                0.032817522973182266,
+                0.04212275344706282
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "report": {
+              "matches": 186,
+              "inliers": 79,
+              "inlier_ratio": 0.425,
+              "median_error_px": 1.274,
+              "p95_error_px": 3.193,
+              "feature_coverage": [
+                0.08129960299232972,
+                0.08396189126882678
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 4,
+            "report": {
+              "matches": 47,
+              "inliers": 17,
+              "inlier_ratio": 0.362,
+              "median_error_px": 1.244,
+              "p95_error_px": 2.94,
+              "feature_coverage": [
+                0.052299692167692646,
+                0.056441616816607705
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 74,
+              "inliers": 27,
+              "inlier_ratio": 0.365,
+              "median_error_px": 0.916,
+              "p95_error_px": 2.788,
+              "feature_coverage": [
+                0.04330129273774039,
+                0.04937996542925315
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 5,
+            "report": {
+              "matches": 85,
+              "inliers": 28,
+              "inlier_ratio": 0.329,
+              "median_error_px": 1.906,
+              "p95_error_px": 3.8,
+              "feature_coverage": [
+                0.022646887698325752,
+                0.022094112909592997
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1889
+              ]
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.01,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.97,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.01,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.99,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.01,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.98,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 2.017753347001417,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "4618f592cf78473b8eea547b82ea1cc9",
+        "pid": 17835,
+        "revision": 6,
+        "cameras": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              0.0,
+              0.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": 0.0,
+            "crop_black": false
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 0,
+            "age_ms": 363.8
+          },
+          {
+            "camera": 1,
+            "age_ms": 379.9
+          },
+          {
+            "camera": 2,
+            "age_ms": 359.9
+          },
+          {
+            "camera": 3,
+            "age_ms": 391.9
+          },
+          {
+            "camera": 4,
+            "age_ms": 363.9
+          },
+          {
+            "camera": 5,
+            "age_ms": 379.9
+          }
+        ],
+        "publication_skew_ms": 32.0,
+        "output_size": [
+          1600,
+          853
+        ],
+        "output_fps": 3.03,
+        "processing_ms": 320.35,
+        "frames": 460,
+        "output_age_ms": 31.4,
+        "geometry": {
+          "scale": 0.36347114947751025,
+          "offset_to_output": [
+            [
+              0.36347114947751025,
+              0.0
+            ],
+            [
+              -0.0,
+              0.36347114947751025
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            853
+          ],
+          "crop_rect": [
+            0,
+            0,
+            1600,
+            853
+          ],
+          "retained_valid_percent": 100.0,
+          "seam_axis": null,
+          "cameras": [
+            {
+              "camera": 0,
+              "polygon": [
+                [
+                  205.07,
+                  296.37
+                ],
+                [
+                  899.1,
+                  356.48
+                ],
+                [
+                  906.76,
+                  767.23
+                ],
+                [
+                  160.66,
+                  726.76
+                ]
+              ],
+              "center": [
+                553.15,
+                529.95
+              ]
+            },
+            {
+              "camera": 1,
+              "polygon": [
+                [
+                  498.01,
+                  356.27
+                ],
+                [
+                  1263.67,
+                  0.3
+                ],
+                [
+                  1599.64,
+                  353.0
+                ],
+                [
+                  638.36,
+                  710.02
+                ]
+              ],
+              "center": [
+                951.22,
+                354.92
+              ]
+            },
+            {
+              "camera": 2,
+              "polygon": [
+                [
+                  179.5,
+                  304.54
+                ],
+                [
+                  827.81,
+                  379.28
+                ],
+                [
+                  819.65,
+                  762.28
+                ],
+                [
+                  140.81,
+                  715.48
+                ]
+              ],
+              "center": [
+                504.97,
+                537.27
+              ]
+            },
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  264.24,
+                  331.85
+                ],
+                [
+                  962.11,
+                  331.85
+                ],
+                [
+                  962.11,
+                  724.4
+                ],
+                [
+                  264.24,
+                  724.4
+                ]
+              ],
+              "center": [
+                613.18,
+                528.12
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  405.73,
+                  443.59
+                ],
+                [
+                  1029.83,
+                  370.14
+                ],
+                [
+                  1105.48,
+                  688.7
+                ],
+                [
+                  415.55,
+                  825.19
+                ]
+              ],
+              "center": [
+                762.15,
+                568.44
+              ]
+            },
+            {
+              "camera": 5,
+              "polygon": [
+                [
+                  83.2,
+                  297.72
+                ],
+                [
+                  640.06,
+                  454.04
+                ],
+                [
+                  552.51,
+                  852.64
+                ],
+                [
+                  0.07,
+                  659.6
+                ]
+              ],
+              "center": [
+                306.12,
+                561.3
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 0,
+            "b": 2,
+            "report": {
+              "matches": 210,
+              "inliers": 128,
+              "inlier_ratio": 0.61,
+              "median_error_px": 2.317,
+              "p95_error_px": 3.787,
+              "feature_coverage": [
+                0.2019031644657171,
+                0.23194609363555657
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1420
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 3,
+            "report": {
+              "matches": 150,
+              "inliers": 97,
+              "inlier_ratio": 0.647,
+              "median_error_px": 1.456,
+              "p95_error_px": 3.585,
+              "feature_coverage": [
+                0.1379814891488476,
+                0.15331984717694727
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 5,
+            "report": {
+              "matches": 121,
+              "inliers": 42,
+              "inlier_ratio": 0.347,
+              "median_error_px": 1.193,
+              "p95_error_px": 2.437,
+              "feature_coverage": [
+                0.025551627394026954,
+                0.03703378618597874
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1889
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 3,
+            "report": {
+              "matches": 37,
+              "inliers": 16,
+              "inlier_ratio": 0.432,
+              "median_error_px": 0.707,
+              "p95_error_px": 1.844,
+              "feature_coverage": [
+                0.08106160737334392,
+                0.09344937697455447
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 4,
+            "report": {
+              "matches": 39,
+              "inliers": 16,
+              "inlier_ratio": 0.41,
+              "median_error_px": 0.874,
+              "p95_error_px": 2.373,
+              "feature_coverage": [
+                0.032817522973182266,
+                0.04212275344706282
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "report": {
+              "matches": 186,
+              "inliers": 79,
+              "inlier_ratio": 0.425,
+              "median_error_px": 1.274,
+              "p95_error_px": 3.193,
+              "feature_coverage": [
+                0.08129960299232972,
+                0.08396189126882678
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 4,
+            "report": {
+              "matches": 47,
+              "inliers": 17,
+              "inlier_ratio": 0.362,
+              "median_error_px": 1.244,
+              "p95_error_px": 2.94,
+              "feature_coverage": [
+                0.052299692167692646,
+                0.056441616816607705
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 74,
+              "inliers": 27,
+              "inlier_ratio": 0.365,
+              "median_error_px": 0.916,
+              "p95_error_px": 2.788,
+              "feature_coverage": [
+                0.04330129273774039,
+                0.04937996542925315
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 5,
+            "report": {
+              "matches": 85,
+              "inliers": 28,
+              "inlier_ratio": 0.329,
+              "median_error_px": 1.906,
+              "p95_error_px": 3.8,
+              "feature_coverage": [
+                0.022646887698325752,
+                0.022094112909592997
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1889
+              ]
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.02,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.98,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.01,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.03,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.07,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.98,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 3.0130556379990594,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "4618f592cf78473b8eea547b82ea1cc9",
+        "pid": 17835,
+        "revision": 6,
+        "cameras": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              0.0,
+              0.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": 0.0,
+            "crop_black": false
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 0,
+            "age_ms": 395.3
+          },
+          {
+            "camera": 1,
+            "age_ms": 379.3
+          },
+          {
+            "camera": 2,
+            "age_ms": 395.3
+          },
+          {
+            "camera": 3,
+            "age_ms": 391.3
+          },
+          {
+            "camera": 4,
+            "age_ms": 395.3
+          },
+          {
+            "camera": 5,
+            "age_ms": 375.3
+          }
+        ],
+        "publication_skew_ms": 20.0,
+        "output_size": [
+          1600,
+          853
+        ],
+        "output_fps": 3.02,
+        "processing_ms": 336.48,
+        "frames": 463,
+        "output_age_ms": 25.4,
+        "geometry": {
+          "scale": 0.36347114947751025,
+          "offset_to_output": [
+            [
+              0.36347114947751025,
+              0.0
+            ],
+            [
+              -0.0,
+              0.36347114947751025
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            853
+          ],
+          "crop_rect": [
+            0,
+            0,
+            1600,
+            853
+          ],
+          "retained_valid_percent": 100.0,
+          "seam_axis": null,
+          "cameras": [
+            {
+              "camera": 0,
+              "polygon": [
+                [
+                  205.07,
+                  296.37
+                ],
+                [
+                  899.1,
+                  356.48
+                ],
+                [
+                  906.76,
+                  767.23
+                ],
+                [
+                  160.66,
+                  726.76
+                ]
+              ],
+              "center": [
+                553.15,
+                529.95
+              ]
+            },
+            {
+              "camera": 1,
+              "polygon": [
+                [
+                  498.01,
+                  356.27
+                ],
+                [
+                  1263.67,
+                  0.3
+                ],
+                [
+                  1599.64,
+                  353.0
+                ],
+                [
+                  638.36,
+                  710.02
+                ]
+              ],
+              "center": [
+                951.22,
+                354.92
+              ]
+            },
+            {
+              "camera": 2,
+              "polygon": [
+                [
+                  179.5,
+                  304.54
+                ],
+                [
+                  827.81,
+                  379.28
+                ],
+                [
+                  819.65,
+                  762.28
+                ],
+                [
+                  140.81,
+                  715.48
+                ]
+              ],
+              "center": [
+                504.97,
+                537.27
+              ]
+            },
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  264.24,
+                  331.85
+                ],
+                [
+                  962.11,
+                  331.85
+                ],
+                [
+                  962.11,
+                  724.4
+                ],
+                [
+                  264.24,
+                  724.4
+                ]
+              ],
+              "center": [
+                613.18,
+                528.12
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  405.73,
+                  443.59
+                ],
+                [
+                  1029.83,
+                  370.14
+                ],
+                [
+                  1105.48,
+                  688.7
+                ],
+                [
+                  415.55,
+                  825.19
+                ]
+              ],
+              "center": [
+                762.15,
+                568.44
+              ]
+            },
+            {
+              "camera": 5,
+              "polygon": [
+                [
+                  83.2,
+                  297.72
+                ],
+                [
+                  640.06,
+                  454.04
+                ],
+                [
+                  552.51,
+                  852.64
+                ],
+                [
+                  0.07,
+                  659.6
+                ]
+              ],
+              "center": [
+                306.12,
+                561.3
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 0,
+            "b": 2,
+            "report": {
+              "matches": 210,
+              "inliers": 128,
+              "inlier_ratio": 0.61,
+              "median_error_px": 2.317,
+              "p95_error_px": 3.787,
+              "feature_coverage": [
+                0.2019031644657171,
+                0.23194609363555657
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1420
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 3,
+            "report": {
+              "matches": 150,
+              "inliers": 97,
+              "inlier_ratio": 0.647,
+              "median_error_px": 1.456,
+              "p95_error_px": 3.585,
+              "feature_coverage": [
+                0.1379814891488476,
+                0.15331984717694727
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 5,
+            "report": {
+              "matches": 121,
+              "inliers": 42,
+              "inlier_ratio": 0.347,
+              "median_error_px": 1.193,
+              "p95_error_px": 2.437,
+              "feature_coverage": [
+                0.025551627394026954,
+                0.03703378618597874
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1889
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 3,
+            "report": {
+              "matches": 37,
+              "inliers": 16,
+              "inlier_ratio": 0.432,
+              "median_error_px": 0.707,
+              "p95_error_px": 1.844,
+              "feature_coverage": [
+                0.08106160737334392,
+                0.09344937697455447
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 4,
+            "report": {
+              "matches": 39,
+              "inliers": 16,
+              "inlier_ratio": 0.41,
+              "median_error_px": 0.874,
+              "p95_error_px": 2.373,
+              "feature_coverage": [
+                0.032817522973182266,
+                0.04212275344706282
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "report": {
+              "matches": 186,
+              "inliers": 79,
+              "inlier_ratio": 0.425,
+              "median_error_px": 1.274,
+              "p95_error_px": 3.193,
+              "feature_coverage": [
+                0.08129960299232972,
+                0.08396189126882678
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 4,
+            "report": {
+              "matches": 47,
+              "inliers": 17,
+              "inlier_ratio": 0.362,
+              "median_error_px": 1.244,
+              "p95_error_px": 2.94,
+              "feature_coverage": [
+                0.052299692167692646,
+                0.056441616816607705
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 74,
+              "inliers": 27,
+              "inlier_ratio": 0.365,
+              "median_error_px": 0.916,
+              "p95_error_px": 2.788,
+              "feature_coverage": [
+                0.04330129273774039,
+                0.04937996542925315
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 5,
+            "report": {
+              "matches": 85,
+              "inliers": 28,
+              "inlier_ratio": 0.329,
+              "median_error_px": 1.906,
+              "p95_error_px": 3.8,
+              "feature_coverage": [
+                0.022646887698325752,
+                0.022094112909592997
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1889
+              ]
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.02,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.97,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.97,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.99,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.02,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.98,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 4.010271481001837,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "4618f592cf78473b8eea547b82ea1cc9",
+        "pid": 17835,
+        "revision": 6,
+        "cameras": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              0.0,
+              0.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": 0.0,
+            "crop_black": false
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 0,
+            "age_ms": 363.0
+          },
+          {
+            "camera": 1,
+            "age_ms": 379.0
+          },
+          {
+            "camera": 2,
+            "age_ms": 359.0
+          },
+          {
+            "camera": 3,
+            "age_ms": 391.0
+          },
+          {
+            "camera": 4,
+            "age_ms": 363.0
+          },
+          {
+            "camera": 5,
+            "age_ms": 375.0
+          }
+        ],
+        "publication_skew_ms": 32.0,
+        "output_size": [
+          1600,
+          853
+        ],
+        "output_fps": 3.0,
+        "processing_ms": 332.48,
+        "frames": 466,
+        "output_age_ms": 14.5,
+        "geometry": {
+          "scale": 0.36347114947751025,
+          "offset_to_output": [
+            [
+              0.36347114947751025,
+              0.0
+            ],
+            [
+              -0.0,
+              0.36347114947751025
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            853
+          ],
+          "crop_rect": [
+            0,
+            0,
+            1600,
+            853
+          ],
+          "retained_valid_percent": 100.0,
+          "seam_axis": null,
+          "cameras": [
+            {
+              "camera": 0,
+              "polygon": [
+                [
+                  205.07,
+                  296.37
+                ],
+                [
+                  899.1,
+                  356.48
+                ],
+                [
+                  906.76,
+                  767.23
+                ],
+                [
+                  160.66,
+                  726.76
+                ]
+              ],
+              "center": [
+                553.15,
+                529.95
+              ]
+            },
+            {
+              "camera": 1,
+              "polygon": [
+                [
+                  498.01,
+                  356.27
+                ],
+                [
+                  1263.67,
+                  0.3
+                ],
+                [
+                  1599.64,
+                  353.0
+                ],
+                [
+                  638.36,
+                  710.02
+                ]
+              ],
+              "center": [
+                951.22,
+                354.92
+              ]
+            },
+            {
+              "camera": 2,
+              "polygon": [
+                [
+                  179.5,
+                  304.54
+                ],
+                [
+                  827.81,
+                  379.28
+                ],
+                [
+                  819.65,
+                  762.28
+                ],
+                [
+                  140.81,
+                  715.48
+                ]
+              ],
+              "center": [
+                504.97,
+                537.27
+              ]
+            },
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  264.24,
+                  331.85
+                ],
+                [
+                  962.11,
+                  331.85
+                ],
+                [
+                  962.11,
+                  724.4
+                ],
+                [
+                  264.24,
+                  724.4
+                ]
+              ],
+              "center": [
+                613.18,
+                528.12
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  405.73,
+                  443.59
+                ],
+                [
+                  1029.83,
+                  370.14
+                ],
+                [
+                  1105.48,
+                  688.7
+                ],
+                [
+                  415.55,
+                  825.19
+                ]
+              ],
+              "center": [
+                762.15,
+                568.44
+              ]
+            },
+            {
+              "camera": 5,
+              "polygon": [
+                [
+                  83.2,
+                  297.72
+                ],
+                [
+                  640.06,
+                  454.04
+                ],
+                [
+                  552.51,
+                  852.64
+                ],
+                [
+                  0.07,
+                  659.6
+                ]
+              ],
+              "center": [
+                306.12,
+                561.3
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 0,
+            "b": 2,
+            "report": {
+              "matches": 210,
+              "inliers": 128,
+              "inlier_ratio": 0.61,
+              "median_error_px": 2.317,
+              "p95_error_px": 3.787,
+              "feature_coverage": [
+                0.2019031644657171,
+                0.23194609363555657
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1420
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 3,
+            "report": {
+              "matches": 150,
+              "inliers": 97,
+              "inlier_ratio": 0.647,
+              "median_error_px": 1.456,
+              "p95_error_px": 3.585,
+              "feature_coverage": [
+                0.1379814891488476,
+                0.15331984717694727
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 5,
+            "report": {
+              "matches": 121,
+              "inliers": 42,
+              "inlier_ratio": 0.347,
+              "median_error_px": 1.193,
+              "p95_error_px": 2.437,
+              "feature_coverage": [
+                0.025551627394026954,
+                0.03703378618597874
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1889
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 3,
+            "report": {
+              "matches": 37,
+              "inliers": 16,
+              "inlier_ratio": 0.432,
+              "median_error_px": 0.707,
+              "p95_error_px": 1.844,
+              "feature_coverage": [
+                0.08106160737334392,
+                0.09344937697455447
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 4,
+            "report": {
+              "matches": 39,
+              "inliers": 16,
+              "inlier_ratio": 0.41,
+              "median_error_px": 0.874,
+              "p95_error_px": 2.373,
+              "feature_coverage": [
+                0.032817522973182266,
+                0.04212275344706282
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "report": {
+              "matches": 186,
+              "inliers": 79,
+              "inlier_ratio": 0.425,
+              "median_error_px": 1.274,
+              "p95_error_px": 3.193,
+              "feature_coverage": [
+                0.08129960299232972,
+                0.08396189126882678
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 4,
+            "report": {
+              "matches": 47,
+              "inliers": 17,
+              "inlier_ratio": 0.362,
+              "median_error_px": 1.244,
+              "p95_error_px": 2.94,
+              "feature_coverage": [
+                0.052299692167692646,
+                0.056441616816607705
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 74,
+              "inliers": 27,
+              "inlier_ratio": 0.365,
+              "median_error_px": 0.916,
+              "p95_error_px": 2.788,
+              "feature_coverage": [
+                0.04330129273774039,
+                0.04937996542925315
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 5,
+            "report": {
+              "matches": 85,
+              "inliers": 28,
+              "inlier_ratio": 0.329,
+              "median_error_px": 1.906,
+              "p95_error_px": 3.8,
+              "feature_coverage": [
+                0.022646887698325752,
+                0.022094112909592997
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1889
+              ]
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.99,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.94,
+          "encoded_fps": 30.04,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.94,
+          "encoded_fps": 29.98,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.93,
+          "encoded_fps": 30.0,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.93,
+          "encoded_fps": 30.05,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.93,
+          "encoded_fps": 30.04,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 5.0135301379996235,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "4618f592cf78473b8eea547b82ea1cc9",
+        "pid": 17835,
+        "revision": 6,
+        "cameras": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              0.0,
+              0.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": 0.0,
+            "crop_black": false
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 0,
+            "age_ms": 364.0
+          },
+          {
+            "camera": 1,
+            "age_ms": 380.0
+          },
+          {
+            "camera": 2,
+            "age_ms": 360.1
+          },
+          {
+            "camera": 3,
+            "age_ms": 392.1
+          },
+          {
+            "camera": 4,
+            "age_ms": 364.1
+          },
+          {
+            "camera": 5,
+            "age_ms": 376.1
+          }
+        ],
+        "publication_skew_ms": 32.0,
+        "output_size": [
+          1600,
+          853
+        ],
+        "output_fps": 3.02,
+        "processing_ms": 319.19,
+        "frames": 469,
+        "output_age_ms": 33.2,
+        "geometry": {
+          "scale": 0.36347114947751025,
+          "offset_to_output": [
+            [
+              0.36347114947751025,
+              0.0
+            ],
+            [
+              -0.0,
+              0.36347114947751025
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            853
+          ],
+          "crop_rect": [
+            0,
+            0,
+            1600,
+            853
+          ],
+          "retained_valid_percent": 100.0,
+          "seam_axis": null,
+          "cameras": [
+            {
+              "camera": 0,
+              "polygon": [
+                [
+                  205.07,
+                  296.37
+                ],
+                [
+                  899.1,
+                  356.48
+                ],
+                [
+                  906.76,
+                  767.23
+                ],
+                [
+                  160.66,
+                  726.76
+                ]
+              ],
+              "center": [
+                553.15,
+                529.95
+              ]
+            },
+            {
+              "camera": 1,
+              "polygon": [
+                [
+                  498.01,
+                  356.27
+                ],
+                [
+                  1263.67,
+                  0.3
+                ],
+                [
+                  1599.64,
+                  353.0
+                ],
+                [
+                  638.36,
+                  710.02
+                ]
+              ],
+              "center": [
+                951.22,
+                354.92
+              ]
+            },
+            {
+              "camera": 2,
+              "polygon": [
+                [
+                  179.5,
+                  304.54
+                ],
+                [
+                  827.81,
+                  379.28
+                ],
+                [
+                  819.65,
+                  762.28
+                ],
+                [
+                  140.81,
+                  715.48
+                ]
+              ],
+              "center": [
+                504.97,
+                537.27
+              ]
+            },
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  264.24,
+                  331.85
+                ],
+                [
+                  962.11,
+                  331.85
+                ],
+                [
+                  962.11,
+                  724.4
+                ],
+                [
+                  264.24,
+                  724.4
+                ]
+              ],
+              "center": [
+                613.18,
+                528.12
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  405.73,
+                  443.59
+                ],
+                [
+                  1029.83,
+                  370.14
+                ],
+                [
+                  1105.48,
+                  688.7
+                ],
+                [
+                  415.55,
+                  825.19
+                ]
+              ],
+              "center": [
+                762.15,
+                568.44
+              ]
+            },
+            {
+              "camera": 5,
+              "polygon": [
+                [
+                  83.2,
+                  297.72
+                ],
+                [
+                  640.06,
+                  454.04
+                ],
+                [
+                  552.51,
+                  852.64
+                ],
+                [
+                  0.07,
+                  659.6
+                ]
+              ],
+              "center": [
+                306.12,
+                561.3
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 0,
+            "b": 2,
+            "report": {
+              "matches": 210,
+              "inliers": 128,
+              "inlier_ratio": 0.61,
+              "median_error_px": 2.317,
+              "p95_error_px": 3.787,
+              "feature_coverage": [
+                0.2019031644657171,
+                0.23194609363555657
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1420
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 3,
+            "report": {
+              "matches": 150,
+              "inliers": 97,
+              "inlier_ratio": 0.647,
+              "median_error_px": 1.456,
+              "p95_error_px": 3.585,
+              "feature_coverage": [
+                0.1379814891488476,
+                0.15331984717694727
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 5,
+            "report": {
+              "matches": 121,
+              "inliers": 42,
+              "inlier_ratio": 0.347,
+              "median_error_px": 1.193,
+              "p95_error_px": 2.437,
+              "feature_coverage": [
+                0.025551627394026954,
+                0.03703378618597874
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1889
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 3,
+            "report": {
+              "matches": 37,
+              "inliers": 16,
+              "inlier_ratio": 0.432,
+              "median_error_px": 0.707,
+              "p95_error_px": 1.844,
+              "feature_coverage": [
+                0.08106160737334392,
+                0.09344937697455447
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 4,
+            "report": {
+              "matches": 39,
+              "inliers": 16,
+              "inlier_ratio": 0.41,
+              "median_error_px": 0.874,
+              "p95_error_px": 2.373,
+              "feature_coverage": [
+                0.032817522973182266,
+                0.04212275344706282
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "report": {
+              "matches": 186,
+              "inliers": 79,
+              "inlier_ratio": 0.425,
+              "median_error_px": 1.274,
+              "p95_error_px": 3.193,
+              "feature_coverage": [
+                0.08129960299232972,
+                0.08396189126882678
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 4,
+            "report": {
+              "matches": 47,
+              "inliers": 17,
+              "inlier_ratio": 0.362,
+              "median_error_px": 1.244,
+              "p95_error_px": 2.94,
+              "feature_coverage": [
+                0.052299692167692646,
+                0.056441616816607705
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 74,
+              "inliers": 27,
+              "inlier_ratio": 0.365,
+              "median_error_px": 0.916,
+              "p95_error_px": 2.788,
+              "feature_coverage": [
+                0.04330129273774039,
+                0.04937996542925315
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 5,
+            "report": {
+              "matches": 85,
+              "inliers": 28,
+              "inlier_ratio": 0.329,
+              "median_error_px": 1.906,
+              "p95_error_px": 3.8,
+              "feature_coverage": [
+                0.022646887698325752,
+                0.022094112909592997
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1889
+              ]
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.93,
+          "encoded_fps": 29.99,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.97,
+          "encoded_fps": 30.0,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.97,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.0,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.05,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.97,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 6.015200437999738,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "4618f592cf78473b8eea547b82ea1cc9",
+        "pid": 17835,
+        "revision": 6,
+        "cameras": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              0.0,
+              0.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": 0.0,
+            "crop_black": false
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 0,
+            "age_ms": 363.4
+          },
+          {
+            "camera": 1,
+            "age_ms": 379.4
+          },
+          {
+            "camera": 2,
+            "age_ms": 359.4
+          },
+          {
+            "camera": 3,
+            "age_ms": 391.4
+          },
+          {
+            "camera": 4,
+            "age_ms": 363.4
+          },
+          {
+            "camera": 5,
+            "age_ms": 379.4
+          }
+        ],
+        "publication_skew_ms": 32.0,
+        "output_size": [
+          1600,
+          853
+        ],
+        "output_fps": 3.0,
+        "processing_ms": 328.25,
+        "frames": 472,
+        "output_age_ms": 21.3,
+        "geometry": {
+          "scale": 0.36347114947751025,
+          "offset_to_output": [
+            [
+              0.36347114947751025,
+              0.0
+            ],
+            [
+              -0.0,
+              0.36347114947751025
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            853
+          ],
+          "crop_rect": [
+            0,
+            0,
+            1600,
+            853
+          ],
+          "retained_valid_percent": 100.0,
+          "seam_axis": null,
+          "cameras": [
+            {
+              "camera": 0,
+              "polygon": [
+                [
+                  205.07,
+                  296.37
+                ],
+                [
+                  899.1,
+                  356.48
+                ],
+                [
+                  906.76,
+                  767.23
+                ],
+                [
+                  160.66,
+                  726.76
+                ]
+              ],
+              "center": [
+                553.15,
+                529.95
+              ]
+            },
+            {
+              "camera": 1,
+              "polygon": [
+                [
+                  498.01,
+                  356.27
+                ],
+                [
+                  1263.67,
+                  0.3
+                ],
+                [
+                  1599.64,
+                  353.0
+                ],
+                [
+                  638.36,
+                  710.02
+                ]
+              ],
+              "center": [
+                951.22,
+                354.92
+              ]
+            },
+            {
+              "camera": 2,
+              "polygon": [
+                [
+                  179.5,
+                  304.54
+                ],
+                [
+                  827.81,
+                  379.28
+                ],
+                [
+                  819.65,
+                  762.28
+                ],
+                [
+                  140.81,
+                  715.48
+                ]
+              ],
+              "center": [
+                504.97,
+                537.27
+              ]
+            },
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  264.24,
+                  331.85
+                ],
+                [
+                  962.11,
+                  331.85
+                ],
+                [
+                  962.11,
+                  724.4
+                ],
+                [
+                  264.24,
+                  724.4
+                ]
+              ],
+              "center": [
+                613.18,
+                528.12
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  405.73,
+                  443.59
+                ],
+                [
+                  1029.83,
+                  370.14
+                ],
+                [
+                  1105.48,
+                  688.7
+                ],
+                [
+                  415.55,
+                  825.19
+                ]
+              ],
+              "center": [
+                762.15,
+                568.44
+              ]
+            },
+            {
+              "camera": 5,
+              "polygon": [
+                [
+                  83.2,
+                  297.72
+                ],
+                [
+                  640.06,
+                  454.04
+                ],
+                [
+                  552.51,
+                  852.64
+                ],
+                [
+                  0.07,
+                  659.6
+                ]
+              ],
+              "center": [
+                306.12,
+                561.3
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 0,
+            "b": 2,
+            "report": {
+              "matches": 210,
+              "inliers": 128,
+              "inlier_ratio": 0.61,
+              "median_error_px": 2.317,
+              "p95_error_px": 3.787,
+              "feature_coverage": [
+                0.2019031644657171,
+                0.23194609363555657
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1420
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 3,
+            "report": {
+              "matches": 150,
+              "inliers": 97,
+              "inlier_ratio": 0.647,
+              "median_error_px": 1.456,
+              "p95_error_px": 3.585,
+              "feature_coverage": [
+                0.1379814891488476,
+                0.15331984717694727
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 5,
+            "report": {
+              "matches": 121,
+              "inliers": 42,
+              "inlier_ratio": 0.347,
+              "median_error_px": 1.193,
+              "p95_error_px": 2.437,
+              "feature_coverage": [
+                0.025551627394026954,
+                0.03703378618597874
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1889
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 3,
+            "report": {
+              "matches": 37,
+              "inliers": 16,
+              "inlier_ratio": 0.432,
+              "median_error_px": 0.707,
+              "p95_error_px": 1.844,
+              "feature_coverage": [
+                0.08106160737334392,
+                0.09344937697455447
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 4,
+            "report": {
+              "matches": 39,
+              "inliers": 16,
+              "inlier_ratio": 0.41,
+              "median_error_px": 0.874,
+              "p95_error_px": 2.373,
+              "feature_coverage": [
+                0.032817522973182266,
+                0.04212275344706282
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "report": {
+              "matches": 186,
+              "inliers": 79,
+              "inlier_ratio": 0.425,
+              "median_error_px": 1.274,
+              "p95_error_px": 3.193,
+              "feature_coverage": [
+                0.08129960299232972,
+                0.08396189126882678
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 4,
+            "report": {
+              "matches": 47,
+              "inliers": 17,
+              "inlier_ratio": 0.362,
+              "median_error_px": 1.244,
+              "p95_error_px": 2.94,
+              "feature_coverage": [
+                0.052299692167692646,
+                0.056441616816607705
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 74,
+              "inliers": 27,
+              "inlier_ratio": 0.365,
+              "median_error_px": 0.916,
+              "p95_error_px": 2.788,
+              "feature_coverage": [
+                0.04330129273774039,
+                0.04937996542925315
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 5,
+            "report": {
+              "matches": 85,
+              "inliers": 28,
+              "inlier_ratio": 0.329,
+              "median_error_px": 1.906,
+              "p95_error_px": 3.8,
+              "feature_coverage": [
+                0.022646887698325752,
+                0.022094112909592997
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1889
+              ]
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.0,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.99,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.98,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.98,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.01,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.0,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 7.019793127001321,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "4618f592cf78473b8eea547b82ea1cc9",
+        "pid": 17835,
+        "revision": 6,
+        "cameras": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              0.0,
+              0.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": 0.0,
+            "crop_black": false
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 0,
+            "age_ms": 394.5
+          },
+          {
+            "camera": 1,
+            "age_ms": 378.5
+          },
+          {
+            "camera": 2,
+            "age_ms": 394.5
+          },
+          {
+            "camera": 3,
+            "age_ms": 390.5
+          },
+          {
+            "camera": 4,
+            "age_ms": 394.5
+          },
+          {
+            "camera": 5,
+            "age_ms": 374.5
+          }
+        ],
+        "publication_skew_ms": 20.0,
+        "output_size": [
+          1600,
+          853
+        ],
+        "output_fps": 3.0,
+        "processing_ms": 323.48,
+        "frames": 475,
+        "output_age_ms": 35.5,
+        "geometry": {
+          "scale": 0.36347114947751025,
+          "offset_to_output": [
+            [
+              0.36347114947751025,
+              0.0
+            ],
+            [
+              -0.0,
+              0.36347114947751025
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            853
+          ],
+          "crop_rect": [
+            0,
+            0,
+            1600,
+            853
+          ],
+          "retained_valid_percent": 100.0,
+          "seam_axis": null,
+          "cameras": [
+            {
+              "camera": 0,
+              "polygon": [
+                [
+                  205.07,
+                  296.37
+                ],
+                [
+                  899.1,
+                  356.48
+                ],
+                [
+                  906.76,
+                  767.23
+                ],
+                [
+                  160.66,
+                  726.76
+                ]
+              ],
+              "center": [
+                553.15,
+                529.95
+              ]
+            },
+            {
+              "camera": 1,
+              "polygon": [
+                [
+                  498.01,
+                  356.27
+                ],
+                [
+                  1263.67,
+                  0.3
+                ],
+                [
+                  1599.64,
+                  353.0
+                ],
+                [
+                  638.36,
+                  710.02
+                ]
+              ],
+              "center": [
+                951.22,
+                354.92
+              ]
+            },
+            {
+              "camera": 2,
+              "polygon": [
+                [
+                  179.5,
+                  304.54
+                ],
+                [
+                  827.81,
+                  379.28
+                ],
+                [
+                  819.65,
+                  762.28
+                ],
+                [
+                  140.81,
+                  715.48
+                ]
+              ],
+              "center": [
+                504.97,
+                537.27
+              ]
+            },
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  264.24,
+                  331.85
+                ],
+                [
+                  962.11,
+                  331.85
+                ],
+                [
+                  962.11,
+                  724.4
+                ],
+                [
+                  264.24,
+                  724.4
+                ]
+              ],
+              "center": [
+                613.18,
+                528.12
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  405.73,
+                  443.59
+                ],
+                [
+                  1029.83,
+                  370.14
+                ],
+                [
+                  1105.48,
+                  688.7
+                ],
+                [
+                  415.55,
+                  825.19
+                ]
+              ],
+              "center": [
+                762.15,
+                568.44
+              ]
+            },
+            {
+              "camera": 5,
+              "polygon": [
+                [
+                  83.2,
+                  297.72
+                ],
+                [
+                  640.06,
+                  454.04
+                ],
+                [
+                  552.51,
+                  852.64
+                ],
+                [
+                  0.07,
+                  659.6
+                ]
+              ],
+              "center": [
+                306.12,
+                561.3
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 0,
+            "b": 2,
+            "report": {
+              "matches": 210,
+              "inliers": 128,
+              "inlier_ratio": 0.61,
+              "median_error_px": 2.317,
+              "p95_error_px": 3.787,
+              "feature_coverage": [
+                0.2019031644657171,
+                0.23194609363555657
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1420
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 3,
+            "report": {
+              "matches": 150,
+              "inliers": 97,
+              "inlier_ratio": 0.647,
+              "median_error_px": 1.456,
+              "p95_error_px": 3.585,
+              "feature_coverage": [
+                0.1379814891488476,
+                0.15331984717694727
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 5,
+            "report": {
+              "matches": 121,
+              "inliers": 42,
+              "inlier_ratio": 0.347,
+              "median_error_px": 1.193,
+              "p95_error_px": 2.437,
+              "feature_coverage": [
+                0.025551627394026954,
+                0.03703378618597874
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1889
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 3,
+            "report": {
+              "matches": 37,
+              "inliers": 16,
+              "inlier_ratio": 0.432,
+              "median_error_px": 0.707,
+              "p95_error_px": 1.844,
+              "feature_coverage": [
+                0.08106160737334392,
+                0.09344937697455447
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 4,
+            "report": {
+              "matches": 39,
+              "inliers": 16,
+              "inlier_ratio": 0.41,
+              "median_error_px": 0.874,
+              "p95_error_px": 2.373,
+              "feature_coverage": [
+                0.032817522973182266,
+                0.04212275344706282
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "report": {
+              "matches": 186,
+              "inliers": 79,
+              "inlier_ratio": 0.425,
+              "median_error_px": 1.274,
+              "p95_error_px": 3.193,
+              "feature_coverage": [
+                0.08129960299232972,
+                0.08396189126882678
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 4,
+            "report": {
+              "matches": 47,
+              "inliers": 17,
+              "inlier_ratio": 0.362,
+              "median_error_px": 1.244,
+              "p95_error_px": 2.94,
+              "feature_coverage": [
+                0.052299692167692646,
+                0.056441616816607705
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 74,
+              "inliers": 27,
+              "inlier_ratio": 0.365,
+              "median_error_px": 0.916,
+              "p95_error_px": 2.788,
+              "feature_coverage": [
+                0.04330129273774039,
+                0.04937996542925315
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 5,
+            "report": {
+              "matches": 85,
+              "inliers": 28,
+              "inlier_ratio": 0.329,
+              "median_error_px": 1.906,
+              "p95_error_px": 3.8,
+              "feature_coverage": [
+                0.022646887698325752,
+                0.022094112909592997
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1889
+              ]
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.01,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.99,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.99,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.99,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.02,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.99,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 8.020616750000045,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "4618f592cf78473b8eea547b82ea1cc9",
+        "pid": 17835,
+        "revision": 6,
+        "cameras": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              0.0,
+              0.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": 0.0,
+            "crop_black": false
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 0,
+            "age_ms": 395.5
+          },
+          {
+            "camera": 1,
+            "age_ms": 379.6
+          },
+          {
+            "camera": 2,
+            "age_ms": 395.6
+          },
+          {
+            "camera": 3,
+            "age_ms": 391.6
+          },
+          {
+            "camera": 4,
+            "age_ms": 395.6
+          },
+          {
+            "camera": 5,
+            "age_ms": 407.6
+          }
+        ],
+        "publication_skew_ms": 28.0,
+        "output_size": [
+          1600,
+          853
+        ],
+        "output_fps": 3.02,
+        "processing_ms": 319.79,
+        "frames": 478,
+        "output_age_ms": 53.4,
+        "geometry": {
+          "scale": 0.36347114947751025,
+          "offset_to_output": [
+            [
+              0.36347114947751025,
+              0.0
+            ],
+            [
+              -0.0,
+              0.36347114947751025
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            853
+          ],
+          "crop_rect": [
+            0,
+            0,
+            1600,
+            853
+          ],
+          "retained_valid_percent": 100.0,
+          "seam_axis": null,
+          "cameras": [
+            {
+              "camera": 0,
+              "polygon": [
+                [
+                  205.07,
+                  296.37
+                ],
+                [
+                  899.1,
+                  356.48
+                ],
+                [
+                  906.76,
+                  767.23
+                ],
+                [
+                  160.66,
+                  726.76
+                ]
+              ],
+              "center": [
+                553.15,
+                529.95
+              ]
+            },
+            {
+              "camera": 1,
+              "polygon": [
+                [
+                  498.01,
+                  356.27
+                ],
+                [
+                  1263.67,
+                  0.3
+                ],
+                [
+                  1599.64,
+                  353.0
+                ],
+                [
+                  638.36,
+                  710.02
+                ]
+              ],
+              "center": [
+                951.22,
+                354.92
+              ]
+            },
+            {
+              "camera": 2,
+              "polygon": [
+                [
+                  179.5,
+                  304.54
+                ],
+                [
+                  827.81,
+                  379.28
+                ],
+                [
+                  819.65,
+                  762.28
+                ],
+                [
+                  140.81,
+                  715.48
+                ]
+              ],
+              "center": [
+                504.97,
+                537.27
+              ]
+            },
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  264.24,
+                  331.85
+                ],
+                [
+                  962.11,
+                  331.85
+                ],
+                [
+                  962.11,
+                  724.4
+                ],
+                [
+                  264.24,
+                  724.4
+                ]
+              ],
+              "center": [
+                613.18,
+                528.12
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  405.73,
+                  443.59
+                ],
+                [
+                  1029.83,
+                  370.14
+                ],
+                [
+                  1105.48,
+                  688.7
+                ],
+                [
+                  415.55,
+                  825.19
+                ]
+              ],
+              "center": [
+                762.15,
+                568.44
+              ]
+            },
+            {
+              "camera": 5,
+              "polygon": [
+                [
+                  83.2,
+                  297.72
+                ],
+                [
+                  640.06,
+                  454.04
+                ],
+                [
+                  552.51,
+                  852.64
+                ],
+                [
+                  0.07,
+                  659.6
+                ]
+              ],
+              "center": [
+                306.12,
+                561.3
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 0,
+            "b": 2,
+            "report": {
+              "matches": 210,
+              "inliers": 128,
+              "inlier_ratio": 0.61,
+              "median_error_px": 2.317,
+              "p95_error_px": 3.787,
+              "feature_coverage": [
+                0.2019031644657171,
+                0.23194609363555657
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1420
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 3,
+            "report": {
+              "matches": 150,
+              "inliers": 97,
+              "inlier_ratio": 0.647,
+              "median_error_px": 1.456,
+              "p95_error_px": 3.585,
+              "feature_coverage": [
+                0.1379814891488476,
+                0.15331984717694727
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 5,
+            "report": {
+              "matches": 121,
+              "inliers": 42,
+              "inlier_ratio": 0.347,
+              "median_error_px": 1.193,
+              "p95_error_px": 2.437,
+              "feature_coverage": [
+                0.025551627394026954,
+                0.03703378618597874
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1889
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 3,
+            "report": {
+              "matches": 37,
+              "inliers": 16,
+              "inlier_ratio": 0.432,
+              "median_error_px": 0.707,
+              "p95_error_px": 1.844,
+              "feature_coverage": [
+                0.08106160737334392,
+                0.09344937697455447
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 4,
+            "report": {
+              "matches": 39,
+              "inliers": 16,
+              "inlier_ratio": 0.41,
+              "median_error_px": 0.874,
+              "p95_error_px": 2.373,
+              "feature_coverage": [
+                0.032817522973182266,
+                0.04212275344706282
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "report": {
+              "matches": 186,
+              "inliers": 79,
+              "inlier_ratio": 0.425,
+              "median_error_px": 1.274,
+              "p95_error_px": 3.193,
+              "feature_coverage": [
+                0.08129960299232972,
+                0.08396189126882678
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 4,
+            "report": {
+              "matches": 47,
+              "inliers": 17,
+              "inlier_ratio": 0.362,
+              "median_error_px": 1.244,
+              "p95_error_px": 2.94,
+              "feature_coverage": [
+                0.052299692167692646,
+                0.056441616816607705
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 74,
+              "inliers": 27,
+              "inlier_ratio": 0.365,
+              "median_error_px": 0.916,
+              "p95_error_px": 2.788,
+              "feature_coverage": [
+                0.04330129273774039,
+                0.04937996542925315
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 5,
+            "report": {
+              "matches": 85,
+              "inliers": 28,
+              "inlier_ratio": 0.329,
+              "median_error_px": 1.906,
+              "p95_error_px": 3.8,
+              "feature_coverage": [
+                0.022646887698325752,
+                0.022094112909592997
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1889
+              ]
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.01,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.99,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.01,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.0,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.02,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.95,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 9.017235573999642,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "4618f592cf78473b8eea547b82ea1cc9",
+        "pid": 17835,
+        "revision": 6,
+        "cameras": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              0.0,
+              0.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": 0.0,
+            "crop_black": false
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 0,
+            "age_ms": 395.5
+          },
+          {
+            "camera": 1,
+            "age_ms": 379.5
+          },
+          {
+            "camera": 2,
+            "age_ms": 395.5
+          },
+          {
+            "camera": 3,
+            "age_ms": 383.5
+          },
+          {
+            "camera": 4,
+            "age_ms": 395.6
+          },
+          {
+            "camera": 5,
+            "age_ms": 379.6
+          }
+        ],
+        "publication_skew_ms": 16.0,
+        "output_size": [
+          1600,
+          853
+        ],
+        "output_fps": 3.01,
+        "processing_ms": 337.75,
+        "frames": 481,
+        "output_age_ms": 31.4,
+        "geometry": {
+          "scale": 0.36347114947751025,
+          "offset_to_output": [
+            [
+              0.36347114947751025,
+              0.0
+            ],
+            [
+              -0.0,
+              0.36347114947751025
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            853
+          ],
+          "crop_rect": [
+            0,
+            0,
+            1600,
+            853
+          ],
+          "retained_valid_percent": 100.0,
+          "seam_axis": null,
+          "cameras": [
+            {
+              "camera": 0,
+              "polygon": [
+                [
+                  205.07,
+                  296.37
+                ],
+                [
+                  899.1,
+                  356.48
+                ],
+                [
+                  906.76,
+                  767.23
+                ],
+                [
+                  160.66,
+                  726.76
+                ]
+              ],
+              "center": [
+                553.15,
+                529.95
+              ]
+            },
+            {
+              "camera": 1,
+              "polygon": [
+                [
+                  498.01,
+                  356.27
+                ],
+                [
+                  1263.67,
+                  0.3
+                ],
+                [
+                  1599.64,
+                  353.0
+                ],
+                [
+                  638.36,
+                  710.02
+                ]
+              ],
+              "center": [
+                951.22,
+                354.92
+              ]
+            },
+            {
+              "camera": 2,
+              "polygon": [
+                [
+                  179.5,
+                  304.54
+                ],
+                [
+                  827.81,
+                  379.28
+                ],
+                [
+                  819.65,
+                  762.28
+                ],
+                [
+                  140.81,
+                  715.48
+                ]
+              ],
+              "center": [
+                504.97,
+                537.27
+              ]
+            },
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  264.24,
+                  331.85
+                ],
+                [
+                  962.11,
+                  331.85
+                ],
+                [
+                  962.11,
+                  724.4
+                ],
+                [
+                  264.24,
+                  724.4
+                ]
+              ],
+              "center": [
+                613.18,
+                528.12
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  405.73,
+                  443.59
+                ],
+                [
+                  1029.83,
+                  370.14
+                ],
+                [
+                  1105.48,
+                  688.7
+                ],
+                [
+                  415.55,
+                  825.19
+                ]
+              ],
+              "center": [
+                762.15,
+                568.44
+              ]
+            },
+            {
+              "camera": 5,
+              "polygon": [
+                [
+                  83.2,
+                  297.72
+                ],
+                [
+                  640.06,
+                  454.04
+                ],
+                [
+                  552.51,
+                  852.64
+                ],
+                [
+                  0.07,
+                  659.6
+                ]
+              ],
+              "center": [
+                306.12,
+                561.3
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 0,
+            "b": 2,
+            "report": {
+              "matches": 210,
+              "inliers": 128,
+              "inlier_ratio": 0.61,
+              "median_error_px": 2.317,
+              "p95_error_px": 3.787,
+              "feature_coverage": [
+                0.2019031644657171,
+                0.23194609363555657
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1420
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 3,
+            "report": {
+              "matches": 150,
+              "inliers": 97,
+              "inlier_ratio": 0.647,
+              "median_error_px": 1.456,
+              "p95_error_px": 3.585,
+              "feature_coverage": [
+                0.1379814891488476,
+                0.15331984717694727
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 5,
+            "report": {
+              "matches": 121,
+              "inliers": 42,
+              "inlier_ratio": 0.347,
+              "median_error_px": 1.193,
+              "p95_error_px": 2.437,
+              "feature_coverage": [
+                0.025551627394026954,
+                0.03703378618597874
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1889
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 3,
+            "report": {
+              "matches": 37,
+              "inliers": 16,
+              "inlier_ratio": 0.432,
+              "median_error_px": 0.707,
+              "p95_error_px": 1.844,
+              "feature_coverage": [
+                0.08106160737334392,
+                0.09344937697455447
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 4,
+            "report": {
+              "matches": 39,
+              "inliers": 16,
+              "inlier_ratio": 0.41,
+              "median_error_px": 0.874,
+              "p95_error_px": 2.373,
+              "feature_coverage": [
+                0.032817522973182266,
+                0.04212275344706282
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "report": {
+              "matches": 186,
+              "inliers": 79,
+              "inlier_ratio": 0.425,
+              "median_error_px": 1.274,
+              "p95_error_px": 3.193,
+              "feature_coverage": [
+                0.08129960299232972,
+                0.08396189126882678
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 4,
+            "report": {
+              "matches": 47,
+              "inliers": 17,
+              "inlier_ratio": 0.362,
+              "median_error_px": 1.244,
+              "p95_error_px": 2.94,
+              "feature_coverage": [
+                0.052299692167692646,
+                0.056441616816607705
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 74,
+              "inliers": 27,
+              "inlier_ratio": 0.365,
+              "median_error_px": 0.916,
+              "p95_error_px": 2.788,
+              "feature_coverage": [
+                0.04330129273774039,
+                0.04937996542925315
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 5,
+            "report": {
+              "matches": 85,
+              "inliers": 28,
+              "inlier_ratio": 0.329,
+              "median_error_px": 1.906,
+              "p95_error_px": 3.8,
+              "feature_coverage": [
+                0.022646887698325752,
+                0.022094112909592997
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1889
+              ]
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.03,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.97,
+          "encoded_fps": 30.0,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.97,
+          "encoded_fps": 29.96,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.96,
+          "encoded_fps": 30.0,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.96,
+          "encoded_fps": 30.05,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.96,
+          "encoded_fps": 30.01,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    },
+    {
+      "elapsed": 10.019882627999323,
+      "mix": {
+        "project": "G30_mix",
+        "instance": "4618f592cf78473b8eea547b82ea1cc9",
+        "pid": 17835,
+        "revision": 6,
+        "cameras": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "settings": {
+          "version": 2,
+          "cameras": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "anchor": 3,
+          "rotations": [
+            180,
+            180,
+            180,
+            180,
+            180,
+            180
+          ],
+          "offsets": {
+            "0": [
+              0.0,
+              0.0
+            ],
+            "1": [
+              0.0,
+              0.0
+            ],
+            "2": [
+              0.0,
+              0.0
+            ],
+            "3": [
+              0.0,
+              0.0
+            ],
+            "4": [
+              0.0,
+              0.0
+            ],
+            "5": [
+              0.0,
+              0.0
+            ]
+          },
+          "view": {
+            "rotation_deg": 0.0,
+            "crop_black": false
+          },
+          "blend_width": 12,
+          "seam_percent": 56.00000000000001
+        },
+        "calibrated": true,
+        "running": true,
+        "error": "",
+        "busy": false,
+        "progress": "",
+        "inputs": [
+          {
+            "camera": 0,
+            "age_ms": 396.0
+          },
+          {
+            "camera": 1,
+            "age_ms": 380.1
+          },
+          {
+            "camera": 2,
+            "age_ms": 396.1
+          },
+          {
+            "camera": 3,
+            "age_ms": 392.1
+          },
+          {
+            "camera": 4,
+            "age_ms": 364.1
+          },
+          {
+            "camera": 5,
+            "age_ms": 380.1
+          }
+        ],
+        "publication_skew_ms": 32.0,
+        "output_size": [
+          1600,
+          853
+        ],
+        "output_fps": 3.0,
+        "processing_ms": 325.73,
+        "frames": 484,
+        "output_age_ms": 31.8,
+        "geometry": {
+          "scale": 0.36347114947751025,
+          "offset_to_output": [
+            [
+              0.36347114947751025,
+              0.0
+            ],
+            [
+              -0.0,
+              0.36347114947751025
+            ]
+          ],
+          "canvas_size": [
+            1600,
+            853
+          ],
+          "crop_rect": [
+            0,
+            0,
+            1600,
+            853
+          ],
+          "retained_valid_percent": 100.0,
+          "seam_axis": null,
+          "cameras": [
+            {
+              "camera": 0,
+              "polygon": [
+                [
+                  205.07,
+                  296.37
+                ],
+                [
+                  899.1,
+                  356.48
+                ],
+                [
+                  906.76,
+                  767.23
+                ],
+                [
+                  160.66,
+                  726.76
+                ]
+              ],
+              "center": [
+                553.15,
+                529.95
+              ]
+            },
+            {
+              "camera": 1,
+              "polygon": [
+                [
+                  498.01,
+                  356.27
+                ],
+                [
+                  1263.67,
+                  0.3
+                ],
+                [
+                  1599.64,
+                  353.0
+                ],
+                [
+                  638.36,
+                  710.02
+                ]
+              ],
+              "center": [
+                951.22,
+                354.92
+              ]
+            },
+            {
+              "camera": 2,
+              "polygon": [
+                [
+                  179.5,
+                  304.54
+                ],
+                [
+                  827.81,
+                  379.28
+                ],
+                [
+                  819.65,
+                  762.28
+                ],
+                [
+                  140.81,
+                  715.48
+                ]
+              ],
+              "center": [
+                504.97,
+                537.27
+              ]
+            },
+            {
+              "camera": 3,
+              "polygon": [
+                [
+                  264.24,
+                  331.85
+                ],
+                [
+                  962.11,
+                  331.85
+                ],
+                [
+                  962.11,
+                  724.4
+                ],
+                [
+                  264.24,
+                  724.4
+                ]
+              ],
+              "center": [
+                613.18,
+                528.12
+              ]
+            },
+            {
+              "camera": 4,
+              "polygon": [
+                [
+                  405.73,
+                  443.59
+                ],
+                [
+                  1029.83,
+                  370.14
+                ],
+                [
+                  1105.48,
+                  688.7
+                ],
+                [
+                  415.55,
+                  825.19
+                ]
+              ],
+              "center": [
+                762.15,
+                568.44
+              ]
+            },
+            {
+              "camera": 5,
+              "polygon": [
+                [
+                  83.2,
+                  297.72
+                ],
+                [
+                  640.06,
+                  454.04
+                ],
+                [
+                  552.51,
+                  852.64
+                ],
+                [
+                  0.07,
+                  659.6
+                ]
+              ],
+              "center": [
+                306.12,
+                561.3
+              ]
+            }
+          ]
+        },
+        "transport": "MJPEG over HTTP/TCP",
+        "edges": [
+          {
+            "a": 0,
+            "b": 2,
+            "report": {
+              "matches": 210,
+              "inliers": 128,
+              "inlier_ratio": 0.61,
+              "median_error_px": 2.317,
+              "p95_error_px": 3.787,
+              "feature_coverage": [
+                0.2019031644657171,
+                0.23194609363555657
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1420
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 3,
+            "report": {
+              "matches": 150,
+              "inliers": 97,
+              "inlier_ratio": 0.647,
+              "median_error_px": 1.456,
+              "p95_error_px": 3.585,
+              "feature_coverage": [
+                0.1379814891488476,
+                0.15331984717694727
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 0,
+            "b": 5,
+            "report": {
+              "matches": 121,
+              "inliers": 42,
+              "inlier_ratio": 0.347,
+              "median_error_px": 1.193,
+              "p95_error_px": 2.437,
+              "feature_coverage": [
+                0.025551627394026954,
+                0.03703378618597874
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1450,
+                1889
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 3,
+            "report": {
+              "matches": 37,
+              "inliers": 16,
+              "inlier_ratio": 0.432,
+              "median_error_px": 0.707,
+              "p95_error_px": 1.844,
+              "feature_coverage": [
+                0.08106160737334392,
+                0.09344937697455447
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 1,
+            "b": 4,
+            "report": {
+              "matches": 39,
+              "inliers": 16,
+              "inlier_ratio": 0.41,
+              "median_error_px": 0.874,
+              "p95_error_px": 2.373,
+              "feature_coverage": [
+                0.032817522973182266,
+                0.04212275344706282
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                476,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "report": {
+              "matches": 186,
+              "inliers": 79,
+              "inlier_ratio": 0.425,
+              "median_error_px": 1.274,
+              "p95_error_px": 3.193,
+              "feature_coverage": [
+                0.08129960299232972,
+                0.08396189126882678
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1384
+              ]
+            }
+          },
+          {
+            "a": 2,
+            "b": 4,
+            "report": {
+              "matches": 47,
+              "inliers": 17,
+              "inlier_ratio": 0.362,
+              "median_error_px": 1.244,
+              "p95_error_px": 2.94,
+              "feature_coverage": [
+                0.052299692167692646,
+                0.056441616816607705
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1420,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 4,
+            "report": {
+              "matches": 74,
+              "inliers": 27,
+              "inlier_ratio": 0.365,
+              "median_error_px": 0.916,
+              "p95_error_px": 2.788,
+              "feature_coverage": [
+                0.04330129273774039,
+                0.04937996542925315
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1029
+              ]
+            }
+          },
+          {
+            "a": 3,
+            "b": 5,
+            "report": {
+              "matches": 85,
+              "inliers": 28,
+              "inlier_ratio": 0.329,
+              "median_error_px": 1.906,
+              "p95_error_px": 3.8,
+              "feature_coverage": [
+                0.022646887698325752,
+                0.022094112909592997
+              ],
+              "model": "planar_homography",
+              "projection": "balanced",
+              "method": "automatic",
+              "alignment_fraction": 1,
+              "features": [
+                1384,
+                1889
+              ]
+            }
+          }
+        ],
+        "lens_calibrated": false,
+        "source_dir": "/root/G30/run/frames"
+      },
+      "original": [
+        {
+          "camera": 0,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.97,
+          "encoded_fps": 30.04,
+          "incomplete": 2,
+          "restarts": 2
+        },
+        {
+          "camera": 1,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 29.99,
+          "incomplete": 2,
+          "restarts": 1
+        },
+        {
+          "camera": 2,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.0,
+          "incomplete": 0,
+          "restarts": 1
+        },
+        {
+          "camera": 3,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.01,
+          "incomplete": 6,
+          "restarts": 1
+        },
+        {
+          "camera": 4,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.06,
+          "incomplete": 5,
+          "restarts": 1
+        },
+        {
+          "camera": 5,
+          "source_online": true,
+          "transcode_online": true,
+          "source_fps": 29.98,
+          "encoded_fps": 30.0,
+          "incomplete": 0,
+          "restarts": 1
+        }
+      ]
+    }
+  ]
+}
